@@ -14,12 +14,12 @@ export default function Nav() {
     <>
       <nav className="section-container flex items-start justify-between pt-8">
         {/* Logo */}
-        <a href="#" className="block w-40 flex-shrink-0">
+        <a href="#" className="block flex-shrink-0">
           <div className="font-serif text-4xl leading-[0.82] tracking-[-0.04em] uppercase text-indigo font-semibold">
             Bombay<br />Blanc
           </div>
-          <div className="font-mono text-[9px] tracking-[0.12em] uppercase text-ash mt-2 text-center leading-relaxed">
-            A creative production house<br />· Singapore · Bombay
+          <div className="font-mono text-[9px] tracking-[0.12em] uppercase text-ash mt-2 whitespace-nowrap">
+            A creative production house · Singapore · Bombay
           </div>
         </a>
 

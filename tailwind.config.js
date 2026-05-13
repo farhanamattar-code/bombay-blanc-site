@@ -17,7 +17,7 @@ export default {
         "dusk-mid": "#252118",
       },
       fontFamily: {
-        serif: ["Fraunces", "serif"],
+        serif: ["calluna", "serif"],
         sans: ["Inter", "sans-serif"],
         mono: ['"JetBrains Mono"', "monospace"],
       },
