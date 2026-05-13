@@ -37,15 +37,41 @@ export default function ContactSection() {
               </Reveal>
             </div>
 
-            {/* Small statue */}
-            <Reveal className="mt-10 lg:mt-auto">
-              <div className="overflow-hidden" style={{ aspectRatio: '3 / 4', maxWidth: '260px' }}>
-                <img
-                  src="/images/small-statue.png"
-                  alt="Bombay Blanc decorative statue motif"
-                  className="w-full h-full object-cover object-top opacity-90"
-                />
-              </div>
+            {/* Statue — blends into background with gradient fades */}
+            <Reveal className="mt-10 lg:mt-auto relative" style={{ maxWidth: '320px' }}>
+              {/* Top fade */}
+              <div
+                className="absolute top-0 left-0 right-0 pointer-events-none"
+                style={{
+                  height: '45%',
+                  zIndex: 1,
+                  background: 'linear-gradient(to bottom, #E5DBC4 10%, transparent 100%)',
+                }}
+              />
+              {/* Left fade */}
+              <div
+                className="absolute inset-y-0 left-0 pointer-events-none"
+                style={{
+                  width: '30%',
+                  zIndex: 1,
+                  background: 'linear-gradient(to right, #E5DBC4, transparent)',
+                }}
+              />
+              {/* Right fade */}
+              <div
+                className="absolute inset-y-0 right-0 pointer-events-none"
+                style={{
+                  width: '20%',
+                  zIndex: 1,
+                  background: 'linear-gradient(to left, #E5DBC4, transparent)',
+                }}
+              />
+              <img
+                src="/images/small-statue.png"
+                alt="Bombay Blanc decorative statue motif"
+                className="w-full block"
+                style={{ objectFit: 'contain', objectPosition: 'bottom' }}
+              />
             </Reveal>
           </div>
 
