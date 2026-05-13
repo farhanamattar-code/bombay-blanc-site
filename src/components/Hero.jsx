@@ -16,7 +16,7 @@ export default function Hero() {
         style={{ zIndex: 1, width: '65%', background: '#EDE8DF' }}
       >
         <img
-          src="/images/hero-statue.png"
+          src="/images/small-statue.png"
           alt="Lady of Progress statue in architectural arch — Bombay Blanc brand symbol"
           className="w-full h-full animate-heroScale"
           style={{ objectFit: 'cover', objectPosition: 'center' }}
@@ -125,7 +125,7 @@ export default function Hero() {
         {/* Mobile statue — below content, in flow */}
         <div style={{ height: '50vw', minHeight: '240px', position: 'relative', zIndex: 1 }}>
           <img
-            src="/images/hero-statue.png"
+            src="/images/small-statue.png"
             alt="Lady of Progress statue in architectural arch — Bombay Blanc brand symbol"
             className="w-full h-full"
             style={{ objectFit: 'contain', objectPosition: 'center bottom' }}

@@ -67,7 +67,7 @@ export default function ContactSection() {
                 }}
               />
               <img
-                src="/images/small-statue.png"
+                src="/images/hero-statue.png"
                 alt="Bombay Blanc decorative statue motif"
                 className="w-full h-full block"
                 style={{ objectFit: 'contain', objectPosition: 'bottom' }}
