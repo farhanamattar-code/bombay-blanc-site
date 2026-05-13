@@ -10,33 +10,42 @@ export default function Hero() {
       {/* Grain — over everything visual */}
       <div className="hero-grain" aria-hidden="true" style={{ zIndex: 3 }} />
 
-      {/* ── DESKTOP ── Statue: right 58%, full height, gradient fade on left edge */}
+      {/* ── DESKTOP ── Statue: right 65%, full height, multi-edge gradient fades */}
       <div
         className="hidden lg:block absolute right-0 top-0 h-full"
-        style={{ zIndex: 1, width: '58%', background: '#EDE8DF' }}
+        style={{ zIndex: 1, width: '65%', background: '#EDE8DF' }}
       >
         <img
           src="/images/hero-statue.png"
           alt="Lady of Progress statue in architectural arch — Bombay Blanc brand symbol"
           className="w-full h-full animate-heroScale"
-          style={{ objectFit: 'contain', objectPosition: 'right bottom' }}
+          style={{ objectFit: 'cover', objectPosition: 'center' }}
         />
-        {/* Gradient: fades stone wall into cream from left */}
+        {/* Left fade — wide, multi-stop for a feathered blend */}
         <div
           className="absolute inset-y-0 left-0 pointer-events-none"
           style={{
-            width: '45%',
+            width: '62%',
             zIndex: 2,
-            background: 'linear-gradient(to right, #EDE8DF 20%, rgba(237,232,223,0.7) 60%, transparent 100%)',
+            background: 'linear-gradient(to right, #EDE8DF 10%, rgba(237,232,223,0.88) 32%, rgba(237,232,223,0.55) 58%, rgba(237,232,223,0.15) 80%, transparent 100%)',
           }}
         />
-        {/* Gradient: seals top edge where image starts */}
+        {/* Top fade */}
         <div
           className="absolute top-0 left-0 right-0 pointer-events-none"
           style={{
-            height: '30%',
+            height: '28%',
             zIndex: 2,
-            background: 'linear-gradient(to bottom, #EDE8DF 0%, transparent 100%)',
+            background: 'linear-gradient(to bottom, #EDE8DF 0%, rgba(237,232,223,0.6) 60%, transparent 100%)',
+          }}
+        />
+        {/* Bottom fade */}
+        <div
+          className="absolute bottom-0 left-0 right-0 pointer-events-none"
+          style={{
+            height: '18%',
+            zIndex: 2,
+            background: 'linear-gradient(to top, #EDE8DF 0%, transparent 100%)',
           }}
         />
       </div>
