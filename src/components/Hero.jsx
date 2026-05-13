@@ -7,22 +7,27 @@ export default function Hero() {
       className="relative h-screen overflow-hidden"
       style={{ background: '#EDE8DF' }}
     >
-      {/* Grain texture — sits above statue, below content */}
-      <div className="hero-grain" aria-hidden="true" style={{ zIndex: 2 }} />
-
-      {/* Statue — fills full right half from very top */}
-      <div
-        className="hidden lg:block absolute right-0 top-0 w-1/2 h-full"
-        style={{ zIndex: 1, background: '#EDE8DF' }}
-      >
+      {/* Statue — spans full section, anchored right-bottom */}
+      <div className="hidden lg:block absolute inset-0" style={{ zIndex: 1 }}>
         <img
           src="/images/hero-statue.png"
           alt="Lady of Progress statue in architectural arch — Bombay Blanc brand symbol"
-          className="w-full h-full object-contain object-bottom animate-heroScale"
+          className="w-full h-full animate-heroScale"
+          style={{ objectFit: 'contain', objectPosition: 'right bottom' }}
+        />
+        {/* Gradient fade — blends stone wall into cream on the left */}
+        <div
+          className="absolute inset-y-0 left-0 w-3/5 pointer-events-none"
+          style={{
+            background: 'linear-gradient(to right, #EDE8DF 35%, rgba(237,232,223,0.6) 65%, transparent 100%)'
+          }}
         />
       </div>
 
-      {/* Left content — clears nav with padding-top */}
+      {/* Grain texture — over everything visual */}
+      <div className="hero-grain" aria-hidden="true" style={{ zIndex: 2 }} />
+
+      {/* Left content */}
       <div
         className="absolute top-0 left-0 h-full flex flex-col justify-center lg:w-1/2"
         style={{
