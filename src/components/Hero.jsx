@@ -19,7 +19,7 @@ export default function Hero() {
           src="/images/small-statue.png"
           alt="Lady of Progress statue in architectural arch — Bombay Blanc brand symbol"
           className="w-full h-full animate-heroScale"
-          style={{ objectFit: 'cover', objectPosition: 'center' }}
+          style={{ objectFit: 'cover', objectPosition: 'top' }}
         />
         {/* Left fade — wide, multi-stop for a feathered blend */}
         <div
@@ -50,15 +50,15 @@ export default function Hero() {
         />
       </div>
 
-      {/* ── DESKTOP ── Left content: absolute, centred vertically, left half */}
+      {/* ── DESKTOP ── Left content: absolute, top-aligned, left half */}
       <div
-        className="hidden lg:flex lg:flex-col lg:justify-center absolute top-0 left-0 h-full"
+        className="hidden lg:flex lg:flex-col lg:justify-start absolute top-0 left-0 h-full"
         style={{
           zIndex: 10,
           width: '50%',
           paddingLeft: 'clamp(24px, 5vw, 96px)',
           paddingRight: 'clamp(20px, 3vw, 56px)',
-          paddingTop: '100px',
+          paddingTop: 'clamp(110px, 14vh, 160px)',
         }}
       >
         <h1
