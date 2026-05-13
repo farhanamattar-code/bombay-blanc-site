@@ -64,6 +64,7 @@ export default function BriefSection() {
               src="/images/brief-process.jpg"
               alt="Black and white editorial production process photograph"
               className="w-full aspect-video object-cover grayscale contrast-[0.85] opacity-80"
+              style={{ outline: '1px solid rgba(255,255,255,0.25)', outlineOffset: '-1px' }}
             />
           </Reveal>
         </div>
