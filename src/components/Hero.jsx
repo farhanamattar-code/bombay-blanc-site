@@ -21,13 +21,22 @@ export default function Hero() {
           className="w-full h-full animate-heroScale"
           style={{ objectFit: 'contain', objectPosition: 'right bottom' }}
         />
-        {/* Gradient: fades stone wall into cream seamlessly */}
+        {/* Gradient: fades stone wall into cream from left */}
         <div
           className="absolute inset-y-0 left-0 pointer-events-none"
           style={{
             width: '45%',
             zIndex: 2,
             background: 'linear-gradient(to right, #EDE8DF 20%, rgba(237,232,223,0.7) 60%, transparent 100%)',
+          }}
+        />
+        {/* Gradient: seals top edge where image starts */}
+        <div
+          className="absolute top-0 left-0 right-0 pointer-events-none"
+          style={{
+            height: '30%',
+            zIndex: 2,
+            background: 'linear-gradient(to bottom, #EDE8DF 0%, transparent 100%)',
           }}
         />
       </div>
