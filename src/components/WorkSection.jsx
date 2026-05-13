@@ -11,9 +11,10 @@ function Reveal({ children, className = "" }) {
   );
 }
 
-function Pillar({ label, title, body, italic, image, alt }) {
+function Pillar({ label, title, body, italic, image, alt, padLeft, padRight }) {
   return (
-    <div className="group px-0 lg:px-8 first:lg:pl-0 last:lg:pr-0 transition-colors duration-400 hover:bg-bone/30">
+    <div className="group transition-colors duration-400 hover:bg-bone/30">
+      {/* Image bleeds full column width — no padding */}
       <div className="w-full overflow-hidden mb-6" style={{ aspectRatio: '1.95 / 1' }}>
         <img
           src={image}
@@ -21,18 +22,21 @@ function Pillar({ label, title, body, italic, image, alt }) {
           className="w-full h-full object-cover transition-transform duration-500 ease-film group-hover:scale-[1.02]"
         />
       </div>
-      <p className="font-mono text-xs uppercase tracking-wideMono text-indigo mb-4">
-        {label}
-      </p>
-      <h3 className="font-serif text-pillar font-normal text-indigo mb-4 whitespace-pre-line">
-        {title}
-      </h3>
-      <p className="font-sans text-[15px] leading-[1.58] text-indigo mb-4">
-        {body}
-      </p>
-      <p className="font-serif italic text-[17px] leading-[1.35] text-indigo">
-        {italic}
-      </p>
+      {/* Text gets padding per column position */}
+      <div style={{ paddingLeft: padLeft, paddingRight: padRight }}>
+        <p className="font-mono text-xs uppercase tracking-wideMono text-indigo mb-4">
+          {label}
+        </p>
+        <h3 className="font-serif text-pillar font-normal text-indigo mb-4 whitespace-pre-line">
+          {title}
+        </h3>
+        <p className="font-sans text-[15px] leading-[1.58] text-indigo mb-4">
+          {body}
+        </p>
+        <p className="font-serif italic text-[17px] leading-[1.35] text-indigo">
+          {italic}
+        </p>
+      </div>
     </div>
   );
 }
@@ -64,11 +68,11 @@ export default function WorkSection() {
         {/* Desktop: 3 columns with dividers */}
         <Reveal>
           <div className="hidden lg:grid grid-cols-[1fr_1px_1fr_1px_1fr]">
-            <Pillar {...workPillars[0]} />
+            <Pillar {...workPillars[0]} padLeft="0" padRight="32px" />
             <div className="bg-khadi self-stretch" />
-            <Pillar {...workPillars[1]} />
+            <Pillar {...workPillars[1]} padLeft="32px" padRight="32px" />
             <div className="bg-khadi self-stretch" />
-            <Pillar {...workPillars[2]} />
+            <Pillar {...workPillars[2]} padLeft="32px" padRight="0" />
           </div>
 
           {/* Mobile: stacked with horizontal rules */}
