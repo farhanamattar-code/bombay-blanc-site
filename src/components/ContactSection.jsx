@@ -37,13 +37,15 @@ export default function ContactSection() {
               </Reveal>
             </div>
 
-            {/* Small statue - hidden on mobile */}
-            <Reveal className="hidden lg:block mt-auto">
-              <img
-                src="/images/small-statue.png"
-                alt="Bombay Blanc decorative statue motif"
-                className="w-60 opacity-90"
-              />
+            {/* Small statue */}
+            <Reveal className="mt-10 lg:mt-auto">
+              <div className="overflow-hidden" style={{ aspectRatio: '3 / 4', maxWidth: '260px' }}>
+                <img
+                  src="/images/small-statue.png"
+                  alt="Bombay Blanc decorative statue motif"
+                  className="w-full h-full object-cover object-top opacity-90"
+                />
+              </div>
             </Reveal>
           </div>
 

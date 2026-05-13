@@ -14,11 +14,13 @@ function Reveal({ children, className = "" }) {
 function Pillar({ label, title, body, italic, image, alt }) {
   return (
     <div className="group px-0 lg:px-8 first:lg:pl-0 last:lg:pr-0 transition-colors duration-400 hover:bg-bone/30">
-      <img
-        src={image}
-        alt={alt}
-        className="w-full aspect-[1.95/1] object-cover mb-6 transition-transform duration-500 ease-film group-hover:scale-[1.02]"
-      />
+      <div className="w-full overflow-hidden mb-6" style={{ aspectRatio: '1.95 / 1' }}>
+        <img
+          src={image}
+          alt={alt}
+          className="w-full h-full object-cover transition-transform duration-500 ease-film group-hover:scale-[1.02]"
+        />
+      </div>
       <p className="font-mono text-xs uppercase tracking-wideMono text-indigo mb-4">
         {label}
       </p>
@@ -37,7 +39,7 @@ function Pillar({ label, title, body, italic, image, alt }) {
 
 export default function WorkSection() {
   return (
-    <section id="work" className="bg-cotton pt-[72px] pb-20">
+    <section id="work" className="pt-[72px] pb-20" style={{ background: '#F2EBDA' }}>
       <div className="section-container">
         <Reveal>
           <div className="vermilion-line mb-6" />

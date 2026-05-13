@@ -5,8 +5,8 @@
 @tailwind utilities;
 
 :root {
-  background: #F2EBDA;
-  color: #1B2D4A;
+  background: #EDE8DF;
+  color: #2E2820;
 }
 
 html {
@@ -15,8 +15,8 @@ html {
 
 body {
   margin: 0;
-  background: #F2EBDA;
-  color: #1B2D4A;
+  background: #EDE8DF;
+  color: #2E2820;
   font-family: Inter, sans-serif;
   -webkit-font-smoothing: antialiased;
   text-rendering: geometricPrecision;
@@ -39,6 +39,18 @@ body {
   width: 64px;
   height: 1px;
   background: #B83A2A;
+}
+
+/* Hero grain texture */
+.hero-grain {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20width%3D'400'%20height%3D'400'%3E%3Cfilter%20id%3D'f'%3E%3CfeTurbulence%20type%3D'fractalNoise'%20baseFrequency%3D'0.62%200.28'%20numOctaves%3D'4'%20stitchTiles%3D'stitch'%2F%3E%3CfeColorMatrix%20type%3D'saturate'%20values%3D'0'%2F%3E%3C%2Ffilter%3E%3Crect%20width%3D'400'%20height%3D'400'%20filter%3D'url(%23f)'%2F%3E%3C%2Fsvg%3E");
+  background-size: 400px 400px;
+  opacity: 0.14;
+  mix-blend-mode: multiply;
 }
 
 /* Scroll Reveal */

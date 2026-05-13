@@ -3,8 +3,11 @@ import TextLink from "./TextLink";
 
 export default function Hero() {
   return (
-    <section className="min-h-screen relative overflow-hidden bg-cotton pb-16">
-      <div className="section-container">
+    <section className="min-h-screen relative overflow-hidden pb-16" style={{ background: '#EDE8DF' }}>
+      {/* Plaster grain texture overlay */}
+      <div className="hero-grain" aria-hidden="true" />
+
+      <div className="section-container relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 min-h-[calc(100vh-100px)] items-center">
           {/* Left Content */}
           <div className="relative z-10 lg:pr-12 pt-8 lg:pt-0 order-2 lg:order-1">
@@ -16,7 +19,7 @@ export default function Hero() {
             </p>
 
             <h1
-              className="font-serif text-hero font-normal text-indigo mb-8 opacity-0 animate-fadeUp"
+              className="font-serif text-hero font-normal text-vermilion mb-8 opacity-0 animate-fadeUp"
               style={{ animationDelay: "0.2s" }}
             >
               Contained<br />heat.

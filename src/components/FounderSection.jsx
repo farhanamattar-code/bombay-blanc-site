@@ -15,7 +15,8 @@ export default function FounderSection() {
   return (
     <section
       id="founder"
-      className="bg-cotton grid grid-cols-1 lg:grid-cols-2 min-h-screen lg:items-stretch"
+      className="grid grid-cols-1 lg:grid-cols-2 min-h-screen lg:items-stretch"
+      style={{ background: '#F2EBDA' }}
     >
       {/* Left: Founder Letter */}
       <div className="flex flex-col justify-center px-6 lg:px-[clamp(24px,5vw,96px)] py-[72px] order-2 lg:order-1">
