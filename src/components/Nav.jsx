@@ -12,7 +12,7 @@ export default function Nav() {
 
   return (
     <>
-      <nav className="section-container flex items-start justify-between pt-8">
+      <nav className="absolute top-0 left-0 right-0 z-50 section-container flex items-start justify-between pt-8">
         {/* Logo */}
         <a href="#" className="block flex-shrink-0">
           <div className="font-serif text-4xl leading-[0.82] tracking-[-0.04em] uppercase text-indigo font-semibold">

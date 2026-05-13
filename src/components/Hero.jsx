@@ -3,12 +3,18 @@ import TextLink from "./TextLink";
 
 export default function Hero() {
   return (
-    <section className="relative h-screen overflow-hidden" style={{ background: '#EDE8DF' }}>
-      {/* Plaster grain texture overlay */}
-      <div className="hero-grain" aria-hidden="true" />
+    <section
+      className="relative h-screen overflow-hidden"
+      style={{ background: '#EDE8DF' }}
+    >
+      {/* Grain texture — sits above statue, below content */}
+      <div className="hero-grain" aria-hidden="true" style={{ zIndex: 2 }} />
 
-      {/* Full-height statue — right half, desktop */}
-      <div className="hidden lg:block absolute right-0 top-0 w-1/2 h-full z-0">
+      {/* Statue — fills full right half from very top */}
+      <div
+        className="hidden lg:block absolute right-0 top-0 w-1/2 h-full"
+        style={{ zIndex: 1, background: '#EDE8DF' }}
+      >
         <img
           src="/images/hero-statue.png"
           alt="Lady of Progress statue in architectural arch — Bombay Blanc brand symbol"
@@ -16,8 +22,16 @@ export default function Hero() {
         />
       </div>
 
-      {/* Left content */}
-      <div className="section-container relative z-10 h-full flex flex-col justify-center lg:w-1/2">
+      {/* Left content — clears nav with padding-top */}
+      <div
+        className="absolute top-0 left-0 h-full flex flex-col justify-center lg:w-1/2"
+        style={{
+          zIndex: 10,
+          paddingLeft: 'clamp(24px, 5vw, 96px)',
+          paddingRight: 'clamp(20px, 3vw, 64px)',
+          paddingTop: '100px',
+        }}
+      >
         <h1
           className="font-serif text-hero font-normal text-vermilion mb-8 opacity-0 animate-fadeUp"
           style={{ animationDelay: "0.2s" }}
@@ -61,7 +75,7 @@ export default function Hero() {
       </div>
 
       {/* Mobile image */}
-      <div className="lg:hidden absolute bottom-0 right-0 w-full h-[45vh] z-0">
+      <div className="lg:hidden absolute bottom-0 right-0 w-full h-[40vh]" style={{ zIndex: 1 }}>
         <img
           src="/images/hero-statue.png"
           alt="Lady of Progress statue in architectural arch — Bombay Blanc brand symbol"
