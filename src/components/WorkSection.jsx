@@ -11,7 +11,7 @@ function Reveal({ children, className = "" }) {
   );
 }
 
-function PillarCard({ label, title, body, italic, image, alt }) {
+function PillarCard({ label, title, body, italic, image, alt, imagePosition = "center" }) {
   return (
     <div className="group flex flex-col border border-khadi bg-bone/40 transition-shadow duration-400 hover:shadow-md">
       {/* Image — full width, no padding */}
@@ -20,6 +20,7 @@ function PillarCard({ label, title, body, italic, image, alt }) {
           src={image}
           alt={alt}
           className="w-full h-full object-cover transition-transform duration-500 ease-film group-hover:scale-[1.02]"
+          style={{ objectPosition: imagePosition }}
         />
       </div>
 

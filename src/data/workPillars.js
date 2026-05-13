@@ -6,6 +6,7 @@ const workPillars = [
     italic: "For brands that need to be remembered, not merely posted.",
     image: "/images/work-brand.jpg",
     alt: "Brand filmmaking production still",
+    imagePosition: "top",
   },
   {
     label: "Blanc · Stories",
@@ -14,6 +15,7 @@ const workPillars = [
     italic: "For stories built for the way audiences actually watch now.",
     image: "/images/work-stories.jpg",
     alt: "Vertical-first scripted narrative production",
+    imagePosition: "top",
   },
   {
     label: "Blanc · Table",
