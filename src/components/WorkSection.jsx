@@ -77,16 +77,20 @@ export default function WorkSection() {
           </div>
         </Reveal>
 
-        {/* Footer CTA */}
+        {/* Footer CTA — text centred in the rule */}
         <Reveal>
-          <div className="border-t border-khadi mt-14 pt-8 text-center text-[17px] text-indigo">
-            Not sure which format fits?{" "}
-            <a
-              href="#contact"
-              className="font-serif italic text-indigo underline underline-offset-4 decoration-vermilion/50 transition-colors duration-300 hover:decoration-vermilion"
-            >
-              Book a call.
-            </a>
+          <div className="flex items-center gap-6 mt-14">
+            <div className="flex-1 border-t border-khadi" />
+            <p className="text-[17px] text-indigo whitespace-nowrap">
+              Not sure which format fits?{" "}
+              <a
+                href="#contact"
+                className="font-serif italic text-indigo underline underline-offset-4 decoration-vermilion/50 transition-colors duration-300 hover:decoration-vermilion"
+              >
+                Book a call.
+              </a>
+            </p>
+            <div className="flex-1 border-t border-khadi" />
           </div>
         </Reveal>
 
