@@ -14,9 +14,9 @@ export default function ContactSection() {
   return (
     <section id="contact" className="min-h-screen bg-bone p-4 sm:p-6 lg:p-12">
       <div className="max-w-[1440px] mx-auto border border-khadi p-6 sm:p-8 lg:p-16 bg-bone">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-stretch">
           {/* Left */}
-          <div className="flex flex-col justify-between lg:min-h-[500px]">
+          <div className="flex flex-col justify-between lg:pb-48">
             <div>
               <SectionLabel>The Brief</SectionLabel>
 

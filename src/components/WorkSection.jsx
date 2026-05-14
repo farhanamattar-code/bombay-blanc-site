@@ -15,7 +15,7 @@ function PillarCard({ label, title, body, italic, image, alt, imagePosition = "c
   return (
     <div className="group flex flex-col border border-khadi bg-bone/40 transition-shadow duration-400 hover:shadow-md">
       {/* Image — full width, no padding */}
-      <div className="w-full overflow-hidden" style={{ aspectRatio: '1.6 / 1' }}>
+      <div className="w-full overflow-hidden" style={{ aspectRatio: '16 / 9' }}>
         <img
           src={image}
           alt={alt}
