@@ -14,12 +14,12 @@ function Reveal({ children, className = "" }) {
 function PillarCard({ label, title, body, italic, image, alt, imagePosition = "center" }) {
   return (
     <div className="group flex flex-col border border-khadi bg-bone/40 transition-shadow duration-400 hover:shadow-md">
-      {/* Image — full width, no padding */}
-      <div className="w-full overflow-hidden" style={{ aspectRatio: '16 / 9' }}>
+      {/* Image — full width, fixed 16:9 via padding-top trick (most reliable cross-browser) */}
+      <div className="w-full relative overflow-hidden" style={{ paddingTop: '56.25%' }}>
         <img
           src={image}
           alt={alt}
-          className="w-full h-full object-cover transition-transform duration-500 ease-film group-hover:scale-[1.02]"
+          className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 ease-film group-hover:scale-[1.02]"
           style={{ objectPosition: imagePosition }}
         />
       </div>

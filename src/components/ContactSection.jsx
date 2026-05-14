@@ -70,7 +70,7 @@ export default function ContactSection() {
                 src="/images/hero-statue-sm.jpg"
                 alt="Bombay Blanc decorative statue motif"
                 className="absolute inset-0 w-full h-full block"
-                style={{ objectFit: 'cover', objectPosition: 'center bottom' }}
+                style={{ objectFit: 'contain', objectPosition: 'center center' }}
               />
             </div>
 
@@ -167,6 +167,9 @@ export default function ContactSection() {
                     <option>Documentary / unscripted</option>
                     <option>Hospitality content</option>
                     <option>Founder film</option>
+                    <option>Digital marketing strategy</option>
+                    <option>Social campaign</option>
+                    <option>Communications design</option>
                     <option>Other</option>
                   </select>
                 </div>
