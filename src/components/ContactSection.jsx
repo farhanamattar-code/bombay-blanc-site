@@ -39,29 +39,29 @@ export default function ContactSection() {
 
             {/* Statue — fills remaining height, bottom aligns with Request A Call button */}
             <div className="flex-1 mt-8 lg:mt-10 relative overflow-hidden min-h-[180px]">
-              {/* Top fade */}
+              {/* Top fade — edge only */}
               <div
                 className="absolute top-0 left-0 right-0 pointer-events-none"
                 style={{
-                  height: '35%',
+                  height: '10%',
                   zIndex: 1,
                   background: 'linear-gradient(to bottom, #E5DBC4 0%, transparent 100%)',
                 }}
               />
-              {/* Left fade */}
+              {/* Left fade — edge only */}
               <div
                 className="absolute inset-y-0 left-0 pointer-events-none"
                 style={{
-                  width: '30%',
+                  width: '10%',
                   zIndex: 1,
                   background: 'linear-gradient(to right, #E5DBC4, transparent)',
                 }}
               />
-              {/* Right fade */}
+              {/* Right fade — edge only */}
               <div
                 className="absolute inset-y-0 right-0 pointer-events-none"
                 style={{
-                  width: '20%',
+                  width: '8%',
                   zIndex: 1,
                   background: 'linear-gradient(to left, #E5DBC4, transparent)',
                 }}

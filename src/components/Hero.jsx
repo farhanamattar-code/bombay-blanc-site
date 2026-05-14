@@ -21,31 +21,31 @@ export default function Hero() {
           className="w-full h-full animate-heroScale"
           style={{ objectFit: 'contain', objectPosition: 'center' }}
         />
-        {/* Left fade — wide, feathered blend into content */}
+        {/* Left fade — narrow blend at the seam only */}
         <div
           className="absolute inset-y-0 left-0 pointer-events-none"
           style={{
-            width: '72%',
+            width: '28%',
             zIndex: 2,
-            background: 'linear-gradient(to right, #EDE8DF 12%, rgba(237,232,223,0.92) 30%, rgba(237,232,223,0.70) 52%, rgba(237,232,223,0.30) 72%, rgba(237,232,223,0.08) 88%, transparent 100%)',
+            background: 'linear-gradient(to right, #EDE8DF 0%, rgba(237,232,223,0.85) 35%, rgba(237,232,223,0.40) 65%, transparent 100%)',
           }}
         />
-        {/* Top fade */}
+        {/* Top fade — edge only */}
         <div
           className="absolute top-0 left-0 right-0 pointer-events-none"
           style={{
-            height: '38%',
+            height: '14%',
             zIndex: 2,
-            background: 'linear-gradient(to bottom, #EDE8DF 0%, rgba(237,232,223,0.80) 40%, rgba(237,232,223,0.35) 72%, transparent 100%)',
+            background: 'linear-gradient(to bottom, #EDE8DF 0%, rgba(237,232,223,0.55) 55%, transparent 100%)',
           }}
         />
-        {/* Bottom fade */}
+        {/* Bottom fade — edge only */}
         <div
           className="absolute bottom-0 left-0 right-0 pointer-events-none"
           style={{
-            height: '28%',
+            height: '12%',
             zIndex: 2,
-            background: 'linear-gradient(to top, #EDE8DF 0%, rgba(237,232,223,0.75) 40%, transparent 100%)',
+            background: 'linear-gradient(to top, #EDE8DF 0%, rgba(237,232,223,0.55) 55%, transparent 100%)',
           }}
         />
       </div>
