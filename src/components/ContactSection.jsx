@@ -16,7 +16,7 @@ export default function ContactSection() {
       <div className="max-w-[1440px] mx-auto border border-khadi p-6 sm:p-8 lg:p-16 bg-bone">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-stretch">
           {/* Left */}
-          <div className="flex flex-col justify-between lg:pb-48">
+          <div className="flex flex-col">
             <div>
               <SectionLabel>The Brief</SectionLabel>
 
@@ -37,13 +37,13 @@ export default function ContactSection() {
               </Reveal>
             </div>
 
-            {/* Statue — blends into background with gradient fades */}
-            <Reveal className="mt-10 lg:mt-auto relative" style={{ maxWidth: '240px', maxHeight: '280px', overflow: 'hidden' }}>
+            {/* Statue — fills remaining height, bottom aligns with Request A Call button */}
+            <div className="flex-1 mt-8 lg:mt-10 relative overflow-hidden min-h-[180px]">
               {/* Top fade */}
               <div
                 className="absolute top-0 left-0 right-0 pointer-events-none"
                 style={{
-                  height: '40%',
+                  height: '35%',
                   zIndex: 1,
                   background: 'linear-gradient(to bottom, #E5DBC4 0%, transparent 100%)',
                 }}
@@ -69,10 +69,14 @@ export default function ContactSection() {
               <img
                 src="/images/hero-statue.png"
                 alt="Bombay Blanc decorative statue motif"
-                className="w-full h-full block"
-                style={{ objectFit: 'contain', objectPosition: 'bottom' }}
+                className="absolute inset-0 w-full h-full block"
+                style={{ objectFit: 'cover', objectPosition: 'center top' }}
               />
-            </Reveal>
+            </div>
+
+            {/* Spacer: matches height of below-button form content
+                (microcopy mt-5 + text + ornament my-5 + email + form pb-12 ≈ 184px) */}
+            <div className="hidden lg:block" style={{ height: '184px' }} />
           </div>
 
           {/* Right: Form */}

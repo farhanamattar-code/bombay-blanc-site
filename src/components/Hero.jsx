@@ -19,7 +19,7 @@ export default function Hero() {
           src="/images/small-statue.png"
           alt="Lady of Progress statue in architectural arch — Bombay Blanc brand symbol"
           className="w-full h-full animate-heroScale"
-          style={{ objectFit: 'contain', objectPosition: 'right top' }}
+          style={{ objectFit: 'contain', objectPosition: 'center' }}
         />
         {/* Left fade — wide, multi-stop for a feathered blend */}
         <div
