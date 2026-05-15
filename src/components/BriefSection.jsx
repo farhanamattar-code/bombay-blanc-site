@@ -62,7 +62,7 @@ export default function BriefSection() {
           <Reveal className="pt-0 lg:pt-12">
             <img
               src="/images/brief-process.jpg"
-              alt="Black and white editorial production process photograph"
+              alt="Behind-the-scenes production photograph — editorial filmmaking process at Bombay Blanc"
               className="w-full aspect-video object-cover grayscale contrast-[0.85] opacity-80"
               style={{ boxShadow: 'inset 0 0 0 1px rgba(255,255,255,0.55), 0 0 0 1px rgba(255,255,255,0.55)' }}
             />

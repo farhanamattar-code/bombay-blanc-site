@@ -80,7 +80,7 @@ export default function Hero() {
         >
           Bombay Blanc is a story-led creative production house
           for brands that need more than content. We bring world-class
-          craft from India and Southeast Asia, with the taste of a
+          craft from Singapore, India, and Southeast Asia, with the taste of a
           cinematic studio and the operating discipline of a
           producer-led business.
         </p>
@@ -112,7 +112,7 @@ export default function Hero() {
           <p className="font-sans text-base leading-[1.62] text-indigo mb-8">
             Bombay Blanc is a story-led creative production house
             for brands that need more than content. We bring world-class
-            craft from India and Southeast Asia, with the taste of a
+            craft from Singapore, India, and Southeast Asia, with the taste of a
             cinematic studio and the operating discipline of a
             producer-led business.
           </p>

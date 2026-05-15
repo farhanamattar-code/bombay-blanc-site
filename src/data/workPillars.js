@@ -2,10 +2,10 @@ const workPillars = [
   {
     label: "Blanc · Brand",
     title: "Brand films\nand campaigns.",
-    body: "Brand films, campaigns, hospitality content, founder films, luxury product stories, and regional launches.",
+    body: "Brand films, campaigns, hospitality content, founder films, luxury product stories, and regional launches across Southeast Asia.",
     italic: "For brands that need to be remembered, not merely posted.",
     image: "/images/work-brand.jpg",
-    alt: "Brand filmmaking production still",
+    alt: "Brand film production for campaigns across Singapore and Southeast Asia — Bombay Blanc",
     imagePosition: "center",
   },
   {
@@ -23,7 +23,7 @@ const workPillars = [
     body: "Food, travel, documentary, and unscripted formats with premium cultural texture.",
     italic: "For worlds that deserve to be entered slowly.",
     image: "/images/work-table.jpg",
-    alt: "Documentary and unscripted production still",
+    alt: "Documentary and unscripted production — food and travel storytelling across Southeast Asia",
   },
 ];
 

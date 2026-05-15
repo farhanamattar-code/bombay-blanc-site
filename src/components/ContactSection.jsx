@@ -68,7 +68,7 @@ export default function ContactSection() {
               />
               <img
                 src="/images/hero-statue-sm.jpg"
-                alt="Bombay Blanc decorative statue motif"
+                alt="Lady of Progress statue — symbol of Bombay Blanc creative production house, Singapore"
                 className="absolute inset-0 w-full h-full block"
                 style={{ objectFit: 'contain', objectPosition: 'center center' }}
               />
