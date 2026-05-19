@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { useReveal } from "../hooks/useReveal";
 import SectionLabel from "./SectionLabel";
 
@@ -11,6 +12,30 @@ function Reveal({ children, className = "" }) {
 }
 
 export default function ContactSection() {
+  const [status, setStatus] = useState("idle"); // idle | submitting | success | error
+
+  async function handleSubmit(e) {
+    e.preventDefault();
+    setStatus("submitting");
+    const form = e.target;
+    const data = new FormData(form);
+    try {
+      const res = await fetch("https://formspree.io/f/xqenjqzq", {
+        method: "POST",
+        body: data,
+        headers: { Accept: "application/json" },
+      });
+      if (res.ok) {
+        setStatus("success");
+        form.reset();
+      } else {
+        setStatus("error");
+      }
+    } catch {
+      setStatus("error");
+    }
+  }
+
   return (
     <section id="contact" className="min-h-screen bg-bone p-4 sm:p-6 lg:p-12">
       <div className="max-w-[1440px] mx-auto border border-khadi p-6 sm:p-8 lg:p-16 bg-bone">
@@ -82,7 +107,7 @@ export default function ContactSection() {
           {/* Right: Form */}
           <Reveal>
             <div className="border border-khadi p-6 sm:p-8 lg:p-12">
-              <form onSubmit={(e) => e.preventDefault()}>
+              <form onSubmit={handleSubmit}>
                 {/* Name + Email */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 mb-5">
                   <div>
@@ -239,11 +264,27 @@ export default function ContactSection() {
                 {/* Submit */}
                 <button
                   type="submit"
-                  className="group w-full h-14 flex items-center justify-center gap-4 bg-graphite text-cotton font-mono text-xs uppercase tracking-wideMono border-none cursor-pointer transition-colors duration-300 hover:bg-indigo"
+                  disabled={status === "submitting"}
+                  className="group w-full h-14 flex items-center justify-center gap-4 bg-graphite text-cotton font-mono text-xs uppercase tracking-wideMono border-none cursor-pointer transition-colors duration-300 hover:bg-indigo disabled:opacity-60 disabled:cursor-wait"
                 >
-                  <span>Request a call</span>
-                  <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
+                  <span>
+                    {status === "submitting" ? "Sending…" : "Request a call"}
+                  </span>
+                  {status !== "submitting" && (
+                    <span className="transition-transform duration-300 group-hover:translate-x-1">→</span>
+                  )}
                 </button>
+
+                {status === "success" && (
+                  <p className="text-center mt-4 font-mono text-[11px] tracking-[0.18em] uppercase text-indigo">
+                    Thank you — we'll be in touch soon.
+                  </p>
+                )}
+                {status === "error" && (
+                  <p className="text-center mt-4 font-mono text-[11px] tracking-[0.18em] uppercase text-vermilion">
+                    Something went wrong. Please try again or email us directly.
+                  </p>
+                )}
               </form>
 
               {/* Microcopy */}
