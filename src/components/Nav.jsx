@@ -12,41 +12,43 @@ export default function Nav() {
 
   return (
     <>
-      <nav className="absolute top-0 left-0 right-0 z-50 section-container flex items-start justify-between pt-8">
-        {/* Logo */}
-        <a href="#" className="block flex-shrink-0">
-          <div className="font-serif text-4xl leading-[0.82] tracking-[-0.04em] uppercase text-indigo font-semibold">
-            Bombay<br />Blanc
-          </div>
-          <div className="font-mono text-[9px] tracking-[0.12em] uppercase text-ash mt-2 whitespace-nowrap">
-            A creative production house · Singapore · Bombay
-          </div>
-        </a>
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-[#EDE8DF]">
+        <div className="section-container flex items-start justify-between pt-8 pb-6">
+          {/* Logo */}
+          <a href="#" className="block flex-shrink-0">
+            <div className="font-serif text-4xl leading-[0.82] tracking-[-0.04em] uppercase text-indigo font-semibold">
+              Bombay<br />Blanc
+            </div>
+            <div className="font-mono text-[9px] tracking-[0.12em] uppercase text-ash mt-2 whitespace-nowrap">
+              A creative production house · Singapore · Bombay
+            </div>
+          </a>
 
-        {/* Desktop Nav */}
-        <ul className="hidden lg:flex gap-12 pt-2 list-none">
-          {NAV_LINKS.map(({ label, href }) => (
-            <li key={label}>
-              <a
-                href={href}
-                className="font-mono text-[13px] tracking-wideMono uppercase text-indigo no-underline transition-colors duration-300 hover:text-ash"
-              >
-                {label}
-              </a>
-            </li>
-          ))}
-        </ul>
+          {/* Desktop Nav */}
+          <ul className="hidden lg:flex gap-12 pt-2 list-none">
+            {NAV_LINKS.map(({ label, href }) => (
+              <li key={label}>
+                <a
+                  href={href}
+                  className="font-mono text-[13px] tracking-wideMono uppercase text-indigo no-underline transition-colors duration-300 hover:text-ash"
+                >
+                  {label}
+                </a>
+              </li>
+            ))}
+          </ul>
 
-        {/* Hamburger */}
-        <button
-          className="lg:hidden p-2 bg-transparent border-none cursor-pointer"
-          onClick={() => setMobileOpen(true)}
-          aria-label="Open navigation menu"
-        >
-          <span className="block w-6 h-px bg-indigo mb-1.5" />
-          <span className="block w-6 h-px bg-indigo mb-1.5" />
-          <span className="block w-6 h-px bg-indigo" />
-        </button>
+          {/* Hamburger */}
+          <button
+            className="lg:hidden p-2 bg-transparent border-none cursor-pointer"
+            onClick={() => setMobileOpen(true)}
+            aria-label="Open navigation menu"
+          >
+            <span className="block w-6 h-px bg-indigo mb-1.5" />
+            <span className="block w-6 h-px bg-indigo mb-1.5" />
+            <span className="block w-6 h-px bg-indigo" />
+          </button>
+        </div>
       </nav>
 
       {/* Mobile Overlay */}

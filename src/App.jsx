@@ -8,11 +8,9 @@ import ContactSection from "./components/ContactSection";
 export default function App() {
   return (
     <>
-      {/* Nav overlays Hero so statue fills full viewport height */}
-      <div className="relative">
-        <Nav />
-        <Hero />
-      </div>
+      {/* Nav is fixed; Hero fills full viewport height beneath it */}
+      <Nav />
+      <Hero />
       <main>
         <BriefSection />
         <WorkSection />
