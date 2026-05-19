@@ -58,7 +58,7 @@ export default function Hero() {
           width: '50%',
           paddingLeft: 'clamp(24px, 5vw, 96px)',
           paddingRight: 'clamp(20px, 3vw, 56px)',
-          paddingTop: 'clamp(110px, 14vh, 160px)',
+          paddingTop: 'clamp(148px, 14vh, 160px)',
         }}
       >
         <h1
@@ -93,7 +93,7 @@ export default function Hero() {
       {/* ── MOBILE ── Stacked layout: content then statue below */}
       <div
         className="lg:hidden flex flex-col"
-        style={{ zIndex: 10, paddingTop: '110px' }}
+        style={{ zIndex: 10, paddingTop: '148px' }}
       >
         <div
           style={{
