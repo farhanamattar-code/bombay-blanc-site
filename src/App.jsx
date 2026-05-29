@@ -1,25 +1,20 @@
+import { Routes, Route } from "react-router-dom";
 import Nav from "./components/Nav";
-import Hero from "./components/Hero";
-import BriefSection from "./components/BriefSection";
-import WorkSection from "./components/WorkSection";
-import ClientStrip from "./components/ClientStrip";
-import FounderSection from "./components/FounderSection";
-import ContactSection from "./components/ContactSection";
+import HomePage from "./pages/HomePage";
+import JournalPage from "./pages/JournalPage";
+import JournalPostPage from "./pages/JournalPostPage";
+import ScrollToTop from "./components/ScrollToTop";
 
 export default function App() {
   return (
     <>
-      {/* Nav is fixed; Hero fills full viewport height beneath it */}
+      <ScrollToTop />
       <Nav />
-      <Hero />
-      <main>
-        <BriefSection />
-        <WorkSection />
-        <ClientStrip />
-        <ContactSection />
-        <FounderSection />
-      </main>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/journal" element={<JournalPage />} />
+        <Route path="/journal/:slug" element={<JournalPostPage />} />
+      </Routes>
     </>
   );
-
 }
