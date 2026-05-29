@@ -34,18 +34,27 @@ export default function Hero() {
         <div
           className="absolute top-0 left-0 right-0 pointer-events-none"
           style={{
-            height: '20%',
+            height: '14%',
             zIndex: 2,
-            background: 'linear-gradient(to bottom, #EDE8DF 0%, rgba(237,232,223,0.65) 50%, transparent 100%)',
+            background: 'linear-gradient(to bottom, #EDE8DF 0%, rgba(237,232,223,0.45) 40%, transparent 100%)',
           }}
         />
         {/* Bottom fade */}
         <div
           className="absolute bottom-0 left-0 right-0 pointer-events-none"
           style={{
-            height: '18%',
+            height: '14%',
             zIndex: 2,
-            background: 'linear-gradient(to top, #EDE8DF 0%, rgba(237,232,223,0.65) 50%, transparent 100%)',
+            background: 'linear-gradient(to top, #EDE8DF 0%, rgba(237,232,223,0.45) 40%, transparent 100%)',
+          }}
+        />
+        {/* Right fade */}
+        <div
+          className="absolute inset-y-0 right-0 pointer-events-none"
+          style={{
+            width: '18%',
+            zIndex: 2,
+            background: 'linear-gradient(to left, #EDE8DF 0%, rgba(237,232,223,0.50) 30%, rgba(237,232,223,0.12) 65%, transparent 100%)',
           }}
         />
       </div>
