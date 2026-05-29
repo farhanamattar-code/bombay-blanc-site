@@ -94,8 +94,8 @@ export default function Hero() {
           producer-led business.
         </p>
         <div className="flex flex-col gap-5 items-start opacity-0 animate-fadeUp" style={{ animationDelay: "0.5s" }}>
-          <Button href="#contact">Book a call</Button>
-          <TextLink href="#founder">Read the founder note</TextLink>
+          <Button href="#work">See the work</Button>
+          <TextLink href="#contact">Book a call</TextLink>
         </div>
       </div>
 
@@ -126,8 +126,8 @@ export default function Hero() {
             producer-led business.
           </p>
           <div className="flex flex-col gap-5 items-start">
-            <Button href="#contact">Book a call</Button>
-            <TextLink href="#founder">Read the founder note</TextLink>
+            <Button href="#work">See the work</Button>
+            <TextLink href="#contact">Book a call</TextLink>
           </div>
         </div>
 
