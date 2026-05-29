@@ -30,22 +30,22 @@ export default function Hero() {
             background: 'linear-gradient(to right, #EDE8DF 0%, rgba(237,232,223,0.88) 30%, rgba(237,232,223,0.50) 60%, rgba(237,232,223,0.12) 85%, transparent 100%)',
           }}
         />
-        {/* Top fade */}
+        {/* Top fade — minimal, nav bg handles most of the blend */}
         <div
           className="absolute top-0 left-0 right-0 pointer-events-none"
           style={{
-            height: '14%',
+            height: '6%',
             zIndex: 2,
-            background: 'linear-gradient(to bottom, #EDE8DF 0%, rgba(237,232,223,0.45) 40%, transparent 100%)',
+            background: 'linear-gradient(to bottom, #EDE8DF 0%, transparent 100%)',
           }}
         />
         {/* Bottom fade */}
         <div
           className="absolute bottom-0 left-0 right-0 pointer-events-none"
           style={{
-            height: '14%',
+            height: '6%',
             zIndex: 2,
-            background: 'linear-gradient(to top, #EDE8DF 0%, rgba(237,232,223,0.45) 40%, transparent 100%)',
+            background: 'linear-gradient(to top, #EDE8DF 0%, transparent 100%)',
           }}
         />
         {/* Right fade */}
