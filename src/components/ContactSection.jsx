@@ -199,50 +199,27 @@ export default function ContactSection() {
                   </select>
                 </div>
 
-                {/* Budget + Timeline */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 mb-5">
-                  <div>
-                    <label
-                      htmlFor="budget"
-                      className="block font-mono text-[11px] tracking-wideMono uppercase text-indigo mb-2"
-                    >
-                      Budget range
-                    </label>
-                    <select
-                      id="budget"
-                      name="budget"
-                      defaultValue=""
-                      className="h-12 w-full appearance-none border border-khadi bg-transparent px-4 font-serif text-[15px] text-ash outline-none transition-colors focus:border-graphite focus:ring-1 focus:ring-vermilion/50 bg-[url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2212%22%20height%3D%228%22%3E%3Cpath%20d%3D%22M1%201l5%205%205-5%22%20stroke%3D%22%237A7669%22%20fill%3D%22none%22%20stroke-width%3D%221.5%22%2F%3E%3C%2Fsvg%3E')] bg-no-repeat bg-[right_16px_center]"
-                    >
-                      <option value="" disabled>Choose an option</option>
-                      <option>Under $25K</option>
-                      <option>$25K – $50K</option>
-                      <option>$50K – $100K</option>
-                      <option>$100K – $250K</option>
-                      <option>$250K+</option>
-                    </select>
-                  </div>
-                  <div>
-                    <label
-                      htmlFor="timeline"
-                      className="block font-mono text-[11px] tracking-wideMono uppercase text-indigo mb-2"
-                    >
-                      Timeline
-                    </label>
-                    <select
-                      id="timeline"
-                      name="timeline"
-                      defaultValue=""
-                      className="h-12 w-full appearance-none border border-khadi bg-transparent px-4 font-serif text-[15px] text-ash outline-none transition-colors focus:border-graphite focus:ring-1 focus:ring-vermilion/50 bg-[url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2212%22%20height%3D%228%22%3E%3Cpath%20d%3D%22M1%201l5%205%205-5%22%20stroke%3D%22%237A7669%22%20fill%3D%22none%22%20stroke-width%3D%221.5%22%2F%3E%3C%2Fsvg%3E')] bg-no-repeat bg-[right_16px_center]"
-                    >
-                      <option value="" disabled>Choose an option</option>
-                      <option>Within 1 month</option>
-                      <option>1 – 3 months</option>
-                      <option>3 – 6 months</option>
-                      <option>6+ months</option>
-                      <option>Flexible</option>
-                    </select>
-                  </div>
+                {/* Timeline */}
+                <div className="mb-5">
+                  <label
+                    htmlFor="timeline"
+                    className="block font-mono text-[11px] tracking-wideMono uppercase text-indigo mb-2"
+                  >
+                    Timeline
+                  </label>
+                  <select
+                    id="timeline"
+                    name="timeline"
+                    defaultValue=""
+                    className="h-12 w-full appearance-none border border-khadi bg-transparent px-4 font-serif text-[15px] text-ash outline-none transition-colors focus:border-graphite focus:ring-1 focus:ring-vermilion/50 bg-[url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2212%22%20height%3D%228%22%3E%3Cpath%20d%3D%22M1%201l5%205%205-5%22%20stroke%3D%22%237A7669%22%20fill%3D%22none%22%20stroke-width%3D%221.5%22%2F%3E%3C%2Fsvg%3E')] bg-no-repeat bg-[right_16px_center]"
+                  >
+                    <option value="" disabled>Choose an option</option>
+                    <option>Within 1 month</option>
+                    <option>1 – 3 months</option>
+                    <option>3 – 6 months</option>
+                    <option>6+ months</option>
+                    <option>Flexible</option>
+                  </select>
                 </div>
 
                 {/* Message */}
