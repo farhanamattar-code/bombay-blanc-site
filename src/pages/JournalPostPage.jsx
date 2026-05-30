@@ -77,27 +77,10 @@ export default function JournalPostPage() {
   const lede = ledeIndex >= 0 ? post.body[ledeIndex] : null;
   const remaining = post.body.filter((_, i) => i !== ledeIndex);
 
-  // Group remaining body into sections split by headings
-  const sections = [];
-  let currentSection = { heading: null, blocks: [] };
-  remaining.forEach((block) => {
-    if (block.type === "heading") {
-      if (currentSection.heading || currentSection.blocks.length) {
-        sections.push(currentSection);
-      }
-      currentSection = { heading: block.content, blocks: [] };
-    } else {
-      currentSection.blocks.push(block);
-    }
-  });
-  if (currentSection.heading || currentSection.blocks.length) {
-    sections.push(currentSection);
-  }
-
   return (
     <article className="pt-[148px] pb-24" style={{ background: "#F2EBDA" }}>
-      {/* ── Header ── */}
-      <div className="section-container" style={{ maxWidth: '1200px' }}>
+      {/* ── Header — centered, narrow ── */}
+      <div className="section-container" style={{ maxWidth: '780px' }}>
         <Reveal>
           <Link
             to="/journal"
@@ -121,13 +104,13 @@ export default function JournalPostPage() {
 
         <Reveal>
           <h1 className="font-serif font-normal text-indigo mb-4"
-            style={{ fontSize: 'clamp(40px, 5vw, 72px)', lineHeight: '1.0', letterSpacing: '-0.04em' }}
+            style={{ fontSize: 'clamp(36px, 4.5vw, 56px)', lineHeight: '1.05', letterSpacing: '-0.035em' }}
           >
             {post.title}
           </h1>
           {post.subtitle && (
             <p className="font-serif text-indigo/50 mb-8"
-              style={{ fontSize: 'clamp(18px, 2vw, 24px)', lineHeight: '1.35', fontStyle: 'italic' }}
+              style={{ fontSize: 'clamp(17px, 1.8vw, 22px)', lineHeight: '1.35', fontStyle: 'italic' }}
             >
               {post.subtitle}
             </p>
@@ -135,7 +118,7 @@ export default function JournalPostPage() {
         </Reveal>
 
         <Reveal>
-          <div className="flex items-center gap-6 mb-10">
+          <div className="flex items-center gap-6 mb-12">
             <div className="vermilion-line" style={{ width: '48px' }} />
             <p className="font-mono text-[11px] uppercase tracking-wideMono text-ash">
               By Hana Mattar · Founder, Bombay Blanc
@@ -147,105 +130,126 @@ export default function JournalPostPage() {
       {/* ── Hero image — full-bleed with brand treatment ── */}
       {post.articleImage && (
         <Reveal>
-          <div className="relative overflow-hidden mb-16" style={{ maxHeight: '520px' }}>
-            <img
-              src={post.articleImage}
-              alt={post.articleImageAlt || post.heroAlt}
-              className="w-full h-full"
-              style={{
-                objectFit: 'cover',
-                objectPosition: 'center 40%',
-                filter: 'saturate(0.35) sepia(0.25) contrast(0.92) brightness(1.05)',
-              }}
-            />
-            {/* Grain overlay */}
-            <div className="hero-grain" aria-hidden="true" style={{ zIndex: 2, opacity: 0.18 }} />
-            {/* Top blend */}
-            <div className="absolute top-0 left-0 right-0 pointer-events-none"
-              style={{ height: '20%', background: 'linear-gradient(to bottom, #F2EBDA, transparent)' }}
-            />
-            {/* Bottom blend */}
-            <div className="absolute bottom-0 left-0 right-0 pointer-events-none"
-              style={{ height: '30%', background: 'linear-gradient(to top, #F2EBDA, transparent)' }}
-            />
-            {/* Caption */}
+          <div className="section-container mb-14" style={{ maxWidth: '1100px' }}>
+            <div className="relative overflow-hidden" style={{ maxHeight: '480px' }}>
+              <img
+                src={post.articleImage}
+                alt={post.articleImageAlt || post.heroAlt}
+                className="w-full h-full"
+                style={{
+                  objectFit: 'cover',
+                  objectPosition: 'center 40%',
+                  filter: 'saturate(0.35) sepia(0.25) contrast(0.92) brightness(1.05)',
+                }}
+              />
+              {/* Grain overlay */}
+              <div className="hero-grain" aria-hidden="true" style={{ zIndex: 2, opacity: 0.18 }} />
+              {/* Bottom blend */}
+              <div className="absolute bottom-0 left-0 right-0 pointer-events-none"
+                style={{ height: '25%', background: 'linear-gradient(to top, #F2EBDA, transparent)' }}
+              />
+            </div>
             {post.articleImageCaption && (
-              <div className="absolute bottom-4 right-6" style={{ zIndex: 3 }}>
-                <span className="font-mono text-[10px] uppercase tracking-wideMono text-indigo/40">
-                  {post.articleImageCaption}
-                </span>
-              </div>
+              <p className="font-mono text-[10px] uppercase tracking-wideMono text-ash mt-3 text-right">
+                {post.articleImageCaption}
+              </p>
             )}
           </div>
         </Reveal>
       )}
 
-      {/* ── Lede paragraph — drop cap, larger text ── */}
-      <div className="section-container" style={{ maxWidth: '1200px' }}>
+      {/* ── Lede — drop cap, larger serif ── */}
+      <div className="section-container" style={{ maxWidth: '780px' }}>
         {lede && (
           <Reveal>
-            <div className="mb-14 lg:mb-16" style={{ maxWidth: '780px' }}>
-              <p
-                className="font-serif text-indigo leading-[1.55]"
+            <p
+              className="font-serif text-indigo mb-12"
+              style={{ fontSize: 'clamp(18px, 1.5vw, 21px)', lineHeight: '1.65' }}
+            >
+              <span
+                className="float-left font-serif text-vermilion"
                 style={{
-                  fontSize: 'clamp(19px, 1.6vw, 23px)',
-                  textIndent: '0',
+                  fontSize: '72px',
+                  lineHeight: '0.8',
+                  paddingTop: '4px',
+                  paddingRight: '12px',
+                  paddingBottom: '4px',
                 }}
               >
-                <span
-                  className="float-left font-serif text-vermilion mr-3"
-                  style={{
-                    fontSize: 'clamp(64px, 6vw, 96px)',
-                    lineHeight: '0.78',
-                    paddingTop: '6px',
-                    fontWeight: 'normal',
-                  }}
-                  aria-hidden="true"
-                >
-                  {lede.content.charAt(0)}
-                </span>
-                {lede.content.slice(1)}
-              </p>
-            </div>
+                {lede.content.charAt(0)}
+              </span>
+              {lede.content.slice(1)}
+            </p>
           </Reveal>
         )}
+      </div>
 
-        {/* ── Body — two-column editorial layout on desktop ── */}
-        <div className="lg:columns-2 lg:gap-12" style={{ columnRule: '1px solid #D8CFBC' }}>
-          {sections.map((section, si) => (
-            <Reveal key={si}>
-              <div style={{ breakInside: 'avoid', marginBottom: si < sections.length - 1 ? '2rem' : '0' }}>
-                {section.heading && (
+      {/* ── Body — two-column grid on desktop ── */}
+      <div className="section-container" style={{ maxWidth: '960px' }}>
+        <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-14">
+          {/* Split remaining blocks roughly in half across two columns */}
+          {(() => {
+            // Flatten into renderable blocks
+            const allBlocks = remaining.map((block, i) => ({ ...block, key: i }));
+            const midpoint = Math.ceil(allBlocks.length / 2);
+            const leftCol = allBlocks.slice(0, midpoint);
+            const rightCol = allBlocks.slice(midpoint);
+
+            function renderBlock(block, isFirst) {
+              if (block.type === "heading") {
+                return (
                   <h2
-                    className="font-serif font-normal text-indigo mb-4"
-                    style={{
-                      fontSize: 'clamp(24px, 2.2vw, 32px)',
-                      lineHeight: '1.1',
-                      letterSpacing: '-0.02em',
-                    }}
-                  >
-                    {section.heading}
-                  </h2>
-                )}
-                {section.blocks.map((block, bi) => (
-                  <p
-                    key={bi}
-                    className="font-sans text-indigo mb-5"
-                    style={{
-                      fontSize: '16px',
-                      lineHeight: '1.72',
-                      textIndent: bi > 0 ? '2em' : '0',
-                    }}
+                    key={`h-${block.key}`}
+                    className="font-serif font-normal text-indigo mt-8 mb-3"
+                    style={{ fontSize: 'clamp(22px, 2vw, 28px)', lineHeight: '1.12', letterSpacing: '-0.02em' }}
                   >
                     {block.content}
-                  </p>
-                ))}
-              </div>
-            </Reveal>
-          ))}
-        </div>
+                  </h2>
+                );
+              }
+              return (
+                <p
+                  key={`p-${block.key}`}
+                  className="font-sans text-indigo mb-5"
+                  style={{
+                    fontSize: '15.5px',
+                    lineHeight: '1.75',
+                    textIndent: !isFirst ? '1.5em' : '0',
+                  }}
+                >
+                  {block.content}
+                </p>
+              );
+            }
 
-        {/* ── CTA ── */}
+            return (
+              <>
+                <Reveal>
+                  <div className="lg:border-r lg:border-khadi lg:pr-14">
+                    {leftCol.map((block, i) => {
+                      const prevIsHeading = i > 0 && leftCol[i - 1].type === "heading";
+                      const isFirstAfterHeading = block.type === "text" && (i === 0 || prevIsHeading);
+                      return renderBlock(block, isFirstAfterHeading);
+                    })}
+                  </div>
+                </Reveal>
+                <Reveal>
+                  <div>
+                    {rightCol.map((block, i) => {
+                      const prevIsHeading = i > 0 && rightCol[i - 1].type === "heading";
+                      const isFirstAfterHeading = block.type === "text" && (i === 0 || prevIsHeading);
+                      return renderBlock(block, isFirstAfterHeading);
+                    })}
+                  </div>
+                </Reveal>
+              </>
+            );
+          })()}
+        </div>
+      </div>
+
+      {/* ── CTA ── */}
+      <div className="section-container" style={{ maxWidth: '780px' }}>
         {post.cta && (
           <Reveal>
             <div className="border-t border-khadi mt-16 pt-12 text-center">
