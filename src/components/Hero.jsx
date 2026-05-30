@@ -30,15 +30,6 @@ export default function Hero() {
             background: 'linear-gradient(to right, #EDE8DF 0%, rgba(237,232,223,0.88) 30%, rgba(237,232,223,0.50) 60%, rgba(237,232,223,0.12) 85%, transparent 100%)',
           }}
         />
-        {/* Top fade — gentle blend below nav zone */}
-        <div
-          className="absolute top-0 left-0 right-0 pointer-events-none"
-          style={{
-            height: '14%',
-            zIndex: 2,
-            background: 'linear-gradient(to bottom, #EDE8DF 0%, rgba(237,232,223,0.6) 40%, transparent 100%)',
-          }}
-        />
         {/* Bottom fade */}
         <div
           className="absolute bottom-0 left-0 right-0 pointer-events-none"
@@ -66,7 +57,7 @@ export default function Hero() {
       >
       <div
         className="section-container flex flex-col justify-start"
-        style={{ paddingTop: 'clamp(148px, 14vh, 160px)', paddingBottom: '64px' }}
+        style={{ paddingTop: 'clamp(132px, 13vh, 148px)', paddingBottom: '40px' }}
       >
       <div style={{ maxWidth: '50%' }}>
         <h1
@@ -83,7 +74,7 @@ export default function Hero() {
         </p>
         <div className="vermilion-line mb-6 opacity-0 animate-fadeUp" style={{ animationDelay: "0.3s" }} />
         <p
-          className="font-sans text-base leading-[1.62] tracking-[-0.01em] text-indigo max-w-[460px] mb-10 opacity-0 animate-fadeUp"
+          className="font-sans text-base leading-[1.62] tracking-[-0.01em] text-indigo max-w-[460px] mb-8 opacity-0 animate-fadeUp"
           style={{ animationDelay: "0.4s" }}
         >
           Bombay Blanc is a 9:16-native production house for luxury
