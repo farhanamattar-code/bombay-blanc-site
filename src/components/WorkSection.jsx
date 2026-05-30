@@ -1,6 +1,8 @@
+import { Link } from "react-router-dom";
 import { useReveal } from "../hooks/useReveal";
 import SectionLabel from "./SectionLabel";
 import workPillars from "../data/workPillars";
+import caseStudies from "../data/caseStudies";
 
 function Reveal({ children, className = "" }) {
   const ref = useReveal();
@@ -77,6 +79,58 @@ export default function WorkSection() {
             ))}
           </div>
         </Reveal>
+
+        {/* Featured case study */}
+        {caseStudies.length > 0 && (
+          <Reveal>
+            <div className="mt-14 mb-14">
+              <p className="font-mono text-[10px] uppercase tracking-wideMono text-ash mb-6">
+                Featured Work
+              </p>
+              {caseStudies.map((cs) => (
+                <Link
+                  key={cs.slug}
+                  to={`/work/${cs.slug}`}
+                  className="group block border border-khadi bg-bone/40 no-underline transition-shadow duration-400 hover:shadow-md"
+                >
+                  <div className="grid grid-cols-1 lg:grid-cols-12">
+                    <div
+                      className="lg:col-span-5 relative overflow-hidden"
+                      style={{ minHeight: "240px" }}
+                    >
+                      <img
+                        src={cs.heroImage}
+                        alt={cs.heroAlt}
+                        className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 ease-film group-hover:scale-[1.02]"
+                      />
+                    </div>
+                    <div className="lg:col-span-7 flex flex-col justify-center p-6 lg:p-10">
+                      <p className="font-mono text-[10px] uppercase tracking-wideMono text-vermilion mb-3">
+                        {cs.pillar} · {cs.metadata.client}
+                      </p>
+                      <h3
+                        className="font-serif font-normal text-indigo mb-3 whitespace-pre-line"
+                        style={{
+                          fontSize: "clamp(28px, 2.5vw, 36px)",
+                          lineHeight: "1.1",
+                          letterSpacing: "-0.03em",
+                        }}
+                      >
+                        {cs.title}
+                      </h3>
+                      <p className="font-sans text-[14px] leading-[1.55] text-ash max-w-[420px] mb-4">
+                        {cs.metadata.format} · {cs.metadata.episodes} episodes · {cs.metadata.year}
+                      </p>
+                      <span className="font-mono text-[10px] uppercase tracking-wideMono text-indigo group-hover:text-vermilion transition-colors">
+                        View case study →
+                      </span>
+                    </div>
+                  </div>
+                </Link>
+              ))}
+            </div>
+          </Reveal>
+        )}
 
         {/* Footer CTA — text centred in the rule */}
         <Reveal>
