@@ -74,11 +74,15 @@ const journalPosts = [
       },
       {
         type: "heading",
-        content: "The Bombay Blanc take"
+        content: "The bridge is a person"
       },
       {
         type: "text",
-        content: "If you are a director or producer sitting in Europe, Australia, or Scandinavia wondering what it would look like to shoot in India or Southeast Asia — I am your person on the ground. I have been on both sides of that conversation for twenty years. I know where the talent is. I know what it costs. I know what can go wrong and how to keep it from going wrong."
+        content: "A corridor is only as useful as the person standing in it. Someone who has sat in both rooms — the production meeting in Andheri and the grade review in Singapore — and can hold the standard across both."
+      },
+      {
+        type: "text",
+        content: "I have been that person for twenty years. Not because I planned it, but because I kept ending up on sets in cities that do not usually share a production pipeline. Oslo. Mumbai. Sydney. Singapore. After enough crossings, the bridge is not a strategy. It is a biography."
       },
       {
         type: "text",
