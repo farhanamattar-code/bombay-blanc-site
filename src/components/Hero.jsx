@@ -4,11 +4,11 @@ import TextLink from "./TextLink";
 export default function Hero() {
   return (
     <section
-      className="relative overflow-hidden min-h-screen lg:h-screen"
+      className="relative overflow-hidden min-h-screen"
       style={{ background: '#EDE8DF' }}
     >
-      {/* Grain — over everything visual */}
-      <div className="hero-grain" aria-hidden="true" style={{ zIndex: 3 }} />
+      {/* Grain — starts below nav to avoid seam */}
+      <div className="hero-grain" aria-hidden="true" style={{ zIndex: 3, top: '100px' }} />
 
       {/* ── DESKTOP ── Statue: right 65%, full height, multi-edge gradient fades */}
       <div
@@ -61,12 +61,12 @@ export default function Hero() {
 
       {/* ── DESKTOP ── Left content: section-container aligned with nav */}
       <div
-        className="hidden lg:block absolute top-0 left-0 right-0 h-full"
+        className="hidden lg:block absolute top-0 left-0 right-0"
         style={{ zIndex: 10 }}
       >
       <div
-        className="section-container h-full flex flex-col justify-start"
-        style={{ paddingTop: 'clamp(148px, 14vh, 160px)' }}
+        className="section-container flex flex-col justify-start"
+        style={{ paddingTop: 'clamp(148px, 14vh, 160px)', paddingBottom: '64px' }}
       >
       <div style={{ maxWidth: '50%' }}>
         <h1
