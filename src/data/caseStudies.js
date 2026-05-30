@@ -33,8 +33,8 @@ const caseStudies = [
       },
       {
         src: "/images/work/american-honey-vhs.jpg",
-        alt: "Subject laughing in VHS-textured frame with American Honey title card — American Honey",
-        caption: "VHS texture · Title card · 9:16",
+        alt: "Subject laughing against California hills — American Honey",
+        caption: "On location · California · 9:16",
       },
       {
         src: "/images/work/american-honey-hilltop.jpg",
