@@ -1,5 +1,54 @@
 const caseStudies = [
   {
+    slug: "american-honey",
+    pillar: "Stories",
+    title: "Four Years.\nOne Hive.",
+    subtitle: "American Honey. A vertical docuseries for Tubi, directed by Angel Garcia.",
+    heroImage: "/images/work/american-honey-hero.jpg",
+    heroAlt: "Aerial view of beekeepers working among hive boxes on a sun-drenched California orchard road — American Honey, Tubi",
+    isVertical: true,
+    overview:
+      "American Honey is a vertical docuseries following commercial beekeepers across the American heartland — the people who keep the country's food supply alive, one hive at a time. Four years in the making, the series was conceived and directed by Angel Garcia for Tubi, shot entirely in 9:16 to meet audiences where they already watch: on their phones, in portrait, without compromise.",
+    approach:
+      "Angel Garcia embedded with working beekeepers across California and beyond, building trust over years rather than days. The result is access that feels earned, not staged. Every frame was composed for vertical — not adapted from horizontal footage, but conceived in 9:16 from the first shot. The visual language borrows from VHS texture and documentary grain, grounding the series in a warmth that matches its subject. Bombay Blanc provided production oversight and post-production, bringing the same editorial discipline to vertical storytelling that the studio applies to any format.",
+    pullQuote: "The best stories don't ask you to turn your phone. They meet you where you are.",
+    metadata: {
+      client: "Tubi",
+      platform: "Tubi",
+      format: "9:16 vertical docuseries",
+      director: "Angel Garcia",
+      role: "Production & Post-Production",
+      year: "2026",
+    },
+    stills: [
+      {
+        src: "/images/work/american-honey-aerial.jpg",
+        alt: "Aerial view of beekeepers and hive boxes along orchard road — American Honey",
+        caption: "On location · California · 9:16 vertical",
+      },
+      {
+        src: "/images/work/american-honey-beekeeper.jpg",
+        alt: "Beekeeper in white suit reaching toward camera with bee on glove — American Honey",
+        caption: "Directed by Angel Garcia · Tubi",
+      },
+      {
+        src: "/images/work/american-honey-vhs.jpg",
+        alt: "Subject laughing in VHS-textured frame with American Honey title card — American Honey",
+        caption: "VHS texture · Title card · 9:16",
+      },
+      {
+        src: "/images/work/american-honey-hilltop.jpg",
+        alt: "Two people by vintage red truck overlooking valley landscape — American Honey",
+        caption: "American Honey · Ashley Figgins · Tubi",
+      },
+    ],
+    seoTitle: "American Honey — Tubi Vertical Docuseries | Bombay Blanc",
+    seoDescription:
+      "American Honey is a 9:16 vertical docuseries for Tubi, directed by Angel Garcia. Four years in the making, following commercial beekeepers across America. Produced by Bombay Blanc.",
+    seoKeywords:
+      "american honey, tubi docuseries, vertical video, 9:16 documentary, angel garcia director, beekeeping documentary, bombay blanc, vertical storytelling, tubi original",
+  },
+  {
     slug: "vanishing-trades",
     pillar: "Stories",
     title: "A Trade Measured\nin Seasons",

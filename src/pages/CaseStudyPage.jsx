@@ -81,12 +81,12 @@ export default function CaseStudyPage() {
   const meta = study.metadata;
   const metaEntries = [
     ["Client", meta.client],
-    ["Network", meta.network],
+    meta.network ? ["Network", meta.network] : meta.platform ? ["Platform", meta.platform] : null,
     ["Format", meta.format],
-    ["Episodes", meta.episodes],
+    meta.episodes ? ["Episodes", meta.episodes] : meta.director ? ["Director", meta.director] : null,
     ["Role", meta.role],
     ["Year", meta.year],
-  ];
+  ].filter(Boolean);
 
   return (
     <article className="pt-[120px] pb-32" style={{ background: "#F2EBDA" }}>
@@ -198,8 +198,35 @@ export default function CaseStudyPage() {
         </Reveal>
       </div>
 
-      {/* ── First still — full width ── */}
-      {study.stills[0] && (
+      {/* ── First still(s) ── */}
+      {study.isVertical && study.stills.length >= 2 ? (
+        <Reveal>
+          <div
+            className="section-container mb-20"
+            style={{ maxWidth: "1200px" }}
+          >
+            <div className="grid grid-cols-2 gap-4">
+              {study.stills.slice(0, 2).map((still, i) => (
+                <div key={i}>
+                  <div className="border border-khadi overflow-hidden">
+                    <img
+                      src={still.src}
+                      alt={still.alt}
+                      className="w-full block"
+                      style={{ aspectRatio: "9 / 16", objectFit: "cover" }}
+                    />
+                  </div>
+                  {still.caption && (
+                    <p className="font-mono text-[10px] uppercase tracking-wideMono text-ash mt-3 text-right">
+                      {still.caption}
+                    </p>
+                  )}
+                </div>
+              ))}
+            </div>
+          </div>
+        </Reveal>
+      ) : study.stills[0] && (
         <Reveal>
           <div
             className="section-container mb-20"
@@ -276,29 +303,68 @@ export default function CaseStudyPage() {
         </Reveal>
       </div>
 
-      {/* ── Remaining stills — alternating layout ── */}
-      {study.stills.slice(1).map((still, i) => (
-        <Reveal key={i}>
-          <div
-            className="section-container mb-20"
-            style={{ maxWidth: "1200px" }}
-          >
-            <div className="border border-khadi overflow-hidden">
-              <img
-                src={still.src}
-                alt={still.alt}
-                className="w-full block"
-                style={{ aspectRatio: "16 / 9", objectFit: "cover" }}
-              />
+      {/* ── Remaining stills ── */}
+      {study.isVertical ? (
+        /* Vertical stills: display in pairs */
+        (() => {
+          const remaining = study.stills.slice(2);
+          const pairs = [];
+          for (let i = 0; i < remaining.length; i += 2) {
+            pairs.push(remaining.slice(i, i + 2));
+          }
+          return pairs.map((pair, pi) => (
+            <Reveal key={pi}>
+              <div
+                className="section-container mb-20"
+                style={{ maxWidth: "1200px" }}
+              >
+                <div className={`grid gap-4 ${pair.length === 2 ? 'grid-cols-2' : 'grid-cols-2'}`}>
+                  {pair.map((still, si) => (
+                    <div key={si} className={pair.length === 1 ? 'col-start-1' : ''}>
+                      <div className="border border-khadi overflow-hidden">
+                        <img
+                          src={still.src}
+                          alt={still.alt}
+                          className="w-full block"
+                          style={{ aspectRatio: "9 / 16", objectFit: "cover" }}
+                        />
+                      </div>
+                      {still.caption && (
+                        <p className="font-mono text-[10px] uppercase tracking-wideMono text-ash mt-3 text-right">
+                          {still.caption}
+                        </p>
+                      )}
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </Reveal>
+          ));
+        })()
+      ) : (
+        study.stills.slice(1).map((still, i) => (
+          <Reveal key={i}>
+            <div
+              className="section-container mb-20"
+              style={{ maxWidth: "1200px" }}
+            >
+              <div className="border border-khadi overflow-hidden">
+                <img
+                  src={still.src}
+                  alt={still.alt}
+                  className="w-full block"
+                  style={{ aspectRatio: "16 / 9", objectFit: "cover" }}
+                />
+              </div>
+              {still.caption && (
+                <p className="font-mono text-[10px] uppercase tracking-wideMono text-ash mt-3 text-right">
+                  {still.caption}
+                </p>
+              )}
             </div>
-            {still.caption && (
-              <p className="font-mono text-[10px] uppercase tracking-wideMono text-ash mt-3 text-right">
-                {still.caption}
-              </p>
-            )}
-          </div>
-        </Reveal>
-      ))}
+          </Reveal>
+        ))
+      )}
 
       {/* ── CTA ── */}
       <div className="section-container" style={{ maxWidth: "1200px" }}>
