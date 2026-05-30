@@ -7,12 +7,12 @@ export default function Hero() {
       className="relative overflow-hidden min-h-screen"
       style={{ background: '#EDE8DF' }}
     >
-      {/* Grain — starts below nav to avoid seam */}
-      <div className="hero-grain" aria-hidden="true" style={{ zIndex: 3, top: '100px' }} />
+      {/* Grain — full-bleed; nav's solid bg + z-50 covers it naturally */}
+      <div className="hero-grain" aria-hidden="true" style={{ zIndex: 3 }} />
 
       {/* ── DESKTOP ── Statue: right 65%, full height, multi-edge gradient fades */}
       <div
-        className="hidden lg:block absolute right-0 top-0 h-full"
+        className="hidden lg:block absolute right-0 top-0 h-full overflow-hidden"
         style={{ zIndex: 1, width: '65%', background: '#EDE8DF', paddingTop: '90px', paddingBottom: '24px', boxSizing: 'border-box' }}
       >
         <img
