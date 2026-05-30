@@ -41,7 +41,7 @@ body {
   background: #B83A2A;
 }
 
-/* Hero grain texture */
+/* Hero grain texture — fades in from top so nav edge is seamless */
 .hero-grain {
   position: absolute;
   inset: 0;
@@ -51,6 +51,8 @@ body {
   background-size: 400px 400px;
   opacity: 0.14;
   mix-blend-mode: multiply;
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0px, black 220px);
+  mask-image: linear-gradient(to bottom, transparent 0px, black 220px);
 }
 
 /* Scroll Reveal */
