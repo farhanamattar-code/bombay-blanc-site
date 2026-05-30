@@ -10,6 +10,9 @@ const journalPosts = [
     seoKeywords: "film production India, production house Singapore, APAC production, India post-production, creative production Southeast Asia, Mumbai film set",
     heroImage: "/images/hero-statue.jpg",
     heroAlt: "Hana Mattar on a Mumbai studio set build — Bombay Blanc production in India",
+    articleImage: "/images/journal-india-sea-bridge.jpg",
+    articleImageAlt: "Mumbai film set crew and Singapore post-production suite — the India-Singapore production corridor",
+    articleImageCaption: "Mumbai · Singapore · The corridor between",
     hook: "I walked onto a set in Mumbai at 4pm. The entire set was finished by the next morning. That turnaround does not exist anywhere else I have worked.",
     body: [
       {
