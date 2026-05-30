@@ -30,15 +30,7 @@ export default function Hero() {
             background: 'linear-gradient(to right, #EDE8DF 0%, rgba(237,232,223,0.88) 30%, rgba(237,232,223,0.50) 60%, rgba(237,232,223,0.12) 85%, transparent 100%)',
           }}
         />
-        {/* Top fade — minimal, nav bg handles most of the blend */}
-        <div
-          className="absolute top-0 left-0 right-0 pointer-events-none"
-          style={{
-            height: '6%',
-            zIndex: 2,
-            background: 'linear-gradient(to bottom, #EDE8DF 0%, transparent 100%)',
-          }}
-        />
+        {/* Top fade removed — nav solid bg covers this zone */}
         {/* Bottom fade */}
         <div
           className="absolute bottom-0 left-0 right-0 pointer-events-none"
@@ -59,17 +51,16 @@ export default function Hero() {
         />
       </div>
 
-      {/* ── DESKTOP ── Left content: absolute, top-aligned, left half */}
+      {/* ── DESKTOP ── Left content: section-container aligned with nav */}
       <div
-        className="hidden lg:flex lg:flex-col lg:justify-start absolute top-0 left-0 h-full"
-        style={{
-          zIndex: 10,
-          width: '50%',
-          paddingLeft: 'clamp(24px, 5vw, 96px)',
-          paddingRight: 'clamp(20px, 3vw, 56px)',
-          paddingTop: 'clamp(148px, 14vh, 160px)',
-        }}
+        className="hidden lg:block absolute top-0 left-0 right-0 h-full"
+        style={{ zIndex: 10 }}
       >
+      <div
+        className="section-container h-full flex flex-col justify-start"
+        style={{ paddingTop: 'clamp(148px, 14vh, 160px)' }}
+      >
+      <div style={{ maxWidth: '50%' }}>
         <h1
           className="font-serif text-hero font-normal text-vermilion mb-8 opacity-0 animate-fadeUp"
           style={{ animationDelay: "0.2s" }}
@@ -97,6 +88,8 @@ export default function Hero() {
           <Button href="#work">See the work</Button>
           <TextLink href="#contact">Book a call</TextLink>
         </div>
+      </div>
+      </div>
       </div>
 
       {/* ── MOBILE ── Stacked layout: content then statue below */}
