@@ -26,6 +26,11 @@ const caseStudies = [
         caption: "Archival · 16mm · Japan · c. 1960s",
       },
       {
+        src: "/images/work/vanishing-trades-farmer-cart.jpg",
+        alt: "Farmer pulling cart through rural path — archival footage, Vanishing Trades",
+        caption: "Archival · 16mm · Japan · c. 1960s",
+      },
+      {
         src: "/images/work/vanishing-trades-seedlings.jpg",
         alt: "Close-up of rice seedlings being planted in water — Vanishing Trades",
         caption: "Archival · 16mm · Japan · c. 1960s",
@@ -39,6 +44,21 @@ const caseStudies = [
         src: "/images/work/vanishing-trades-farmhouse.jpg",
         alt: "Child before thatched farmhouse in rural Japan — Vanishing Trades",
         caption: "Archival · 16mm · Japan · c. 1960s",
+      },
+      {
+        src: "/images/work/vanishing-trades-projector.jpg",
+        alt: "Film projector light — Vanishing Trades opening sequence",
+        caption: "16mm projector · Discovery Channel · 2015",
+      },
+      {
+        src: "/images/work/vanishing-trades-title-card.jpg",
+        alt: "Vanishing Trades title card — Discovery Channel series",
+        caption: "Title card · Discovery Channel · 2015",
+      },
+      {
+        src: "/images/work/vanishing-trades-discovery-logo.jpg",
+        alt: "Discovery Channel logo — Explore Your World, Vanishing Trades end card",
+        caption: "Discovery Channel · Explore Your World",
       },
     ],
     seoTitle: "Vanishing Trades — Discovery Channel | Bombay Blanc",
