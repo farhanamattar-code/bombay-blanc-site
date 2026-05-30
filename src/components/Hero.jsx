@@ -30,7 +30,15 @@ export default function Hero() {
             background: 'linear-gradient(to right, #EDE8DF 0%, rgba(237,232,223,0.88) 30%, rgba(237,232,223,0.50) 60%, rgba(237,232,223,0.12) 85%, transparent 100%)',
           }}
         />
-        {/* Top fade removed — nav solid bg covers this zone */}
+        {/* Top fade — gentle blend below nav zone */}
+        <div
+          className="absolute top-0 left-0 right-0 pointer-events-none"
+          style={{
+            height: '14%',
+            zIndex: 2,
+            background: 'linear-gradient(to bottom, #EDE8DF 0%, rgba(237,232,223,0.6) 40%, transparent 100%)',
+          }}
+        />
         {/* Bottom fade */}
         <div
           className="absolute bottom-0 left-0 right-0 pointer-events-none"

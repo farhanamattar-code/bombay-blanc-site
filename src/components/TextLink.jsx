@@ -3,16 +3,17 @@ export default function TextLink({ children, href, className = "" }) {
     <a
       href={href}
       className={`
-        group inline-flex items-center gap-3
+        group inline-flex h-14 items-center justify-between
+        border border-indigo/30 px-8
         font-mono text-xs uppercase tracking-wideMono
-        text-ash
-        transition-colors duration-300
-        hover:text-indigo
+        text-indigo
+        transition-all duration-300 ease-film
+        hover:border-indigo hover:bg-indigo/5
         ${className}
       `}
     >
-      {children}
-      <span className="transition-transform duration-300 group-hover:translate-x-1">
+      <span>{children}</span>
+      <span className="ml-8 transition-transform duration-300 ease-film group-hover:translate-x-1">
         →
       </span>
     </a>
