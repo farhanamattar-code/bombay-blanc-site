@@ -13,7 +13,7 @@ export default function Hero() {
       {/* ── DESKTOP ── Statue: right 65%, full height, multi-edge gradient fades */}
       <div
         className="hidden lg:block absolute right-0 top-0 h-full"
-        style={{ zIndex: 1, width: '65%', background: '#EDE8DF' }}
+        style={{ zIndex: 1, width: '65%', background: '#EDE8DF', paddingTop: '90px', paddingBottom: '24px', boxSizing: 'border-box' }}
       >
         <img
           src="/images/hero-statue.jpg"
