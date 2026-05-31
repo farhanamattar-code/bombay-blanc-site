@@ -10,21 +10,30 @@ export default function Hero() {
       {/* ── DESKTOP ── Statue: right 65%, full height, multi-edge gradient fades */}
       <div
         className="hidden lg:block absolute right-0 top-0 h-full overflow-hidden"
-        style={{ zIndex: 1, width: '65%', background: '#EDE8DF', paddingTop: '90px', paddingBottom: '24px', boxSizing: 'border-box' }}
+        style={{ zIndex: 1, width: '65%' }}
       >
         <img
           src="/images/hero-statue.jpg"
           alt="Lady of Progress statue in architectural arch — Bombay Blanc brand symbol"
           className="w-full h-full animate-heroScale"
-          style={{ objectFit: 'contain', objectPosition: 'center' }}
+          style={{ objectFit: 'contain', objectPosition: 'center top' }}
         />
-        {/* Left fade */}
+        {/* Top fade — arch emerges from nav edge naturally */}
+        <div
+          className="absolute top-0 left-0 right-0 pointer-events-none"
+          style={{
+            height: '130px',
+            zIndex: 2,
+            background: 'linear-gradient(to bottom, #EDE8DF 0%, rgba(237,232,223,0.80) 40%, rgba(237,232,223,0.30) 75%, transparent 100%)',
+          }}
+        />
+        {/* Left fade — wider dissolve to cleanly absorb the headline overlap zone */}
         <div
           className="absolute inset-y-0 left-0 pointer-events-none"
           style={{
-            width: '36%',
+            width: '44%',
             zIndex: 2,
-            background: 'linear-gradient(to right, #EDE8DF 0%, rgba(237,232,223,0.88) 30%, rgba(237,232,223,0.50) 60%, rgba(237,232,223,0.12) 85%, transparent 100%)',
+            background: 'linear-gradient(to right, #EDE8DF 0%, rgba(237,232,223,0.92) 25%, rgba(237,232,223,0.55) 55%, rgba(237,232,223,0.15) 80%, transparent 100%)',
           }}
         />
         {/* Bottom fade */}
@@ -56,7 +65,7 @@ export default function Hero() {
           className="section-container flex flex-col justify-start"
           style={{ paddingTop: 'clamp(148px, 14vh, 160px)', paddingBottom: '64px' }}
         >
-          <div style={{ maxWidth: '50%' }}>
+          <div style={{ maxWidth: '56%' }}>
             <h1
               className="font-serif text-hero font-normal text-vermilion mb-8 opacity-0 animate-fadeUp"
               style={{ animationDelay: "0.2s" }}
