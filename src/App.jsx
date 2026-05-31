@@ -9,6 +9,7 @@ import ScrollToTop from "./components/ScrollToTop";
 export default function App() {
   return (
     <>
+      <div className="global-grain" aria-hidden="true" />
       <ScrollToTop />
       <Nav />
       <Routes>
