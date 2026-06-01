@@ -8,26 +8,19 @@ export default function Hero() {
       style={{ background: '#EDE8DF' }}
     >
       {/* ── DESKTOP ── Statue: right 65%, full height, multi-edge gradient fades */}
+      {/* paddingTop: 90px pushes the image below the fixed nav; objectPosition center */}
+      {/* gives the arch natural breathing room without any gradient covering it */}
       <div
         className="hidden lg:block absolute right-0 top-0 h-full overflow-hidden"
-        style={{ zIndex: 1, width: '65%' }}
+        style={{ zIndex: 1, width: '65%', background: '#EDE8DF', paddingTop: '90px', paddingBottom: '24px', boxSizing: 'border-box' }}
       >
         <img
           src="/images/hero-statue.jpg"
           alt="Lady of Progress statue in architectural arch — Bombay Blanc brand symbol"
           className="w-full h-full animate-heroScale"
-          style={{ objectFit: 'contain', objectPosition: 'center top' }}
+          style={{ objectFit: 'contain', objectPosition: 'center' }}
         />
-        {/* Top fade — arch emerges from nav edge naturally */}
-        <div
-          className="absolute top-0 left-0 right-0 pointer-events-none"
-          style={{
-            height: '130px',
-            zIndex: 2,
-            background: 'linear-gradient(to bottom, #EDE8DF 0%, rgba(237,232,223,0.80) 40%, rgba(237,232,223,0.30) 75%, transparent 100%)',
-          }}
-        />
-        {/* Left fade — wider dissolve to cleanly absorb the headline overlap zone */}
+        {/* Left fade — 44% width absorbs the wider 56% text column overlap zone */}
         <div
           className="absolute inset-y-0 left-0 pointer-events-none"
           style={{
