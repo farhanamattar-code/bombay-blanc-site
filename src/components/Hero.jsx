@@ -12,7 +12,7 @@ export default function Hero() {
       {/* gives the arch natural breathing room without any gradient covering it */}
       <div
         className="hidden lg:block absolute right-0 top-0 h-full overflow-hidden"
-        style={{ zIndex: 1, width: '65%', background: '#EDE8DF', paddingTop: '90px', paddingBottom: '24px', boxSizing: 'border-box' }}
+        style={{ zIndex: 1, width: '65%', background: '#EDE8DF', paddingTop: 'clamp(148px, 14vh, 160px)', paddingBottom: '24px', boxSizing: 'border-box' }}
       >
         <img
           src="/images/hero-statue.jpg"
@@ -58,7 +58,7 @@ export default function Hero() {
           className="section-container flex flex-col justify-start"
           style={{ paddingTop: 'clamp(148px, 14vh, 160px)', paddingBottom: '64px' }}
         >
-          <div style={{ maxWidth: '56%' }}>
+          <div style={{ maxWidth: '56%', background: '#EDE8DF' }}>
             <h1
               className="font-serif text-hero font-normal text-vermilion mb-8 opacity-0 animate-fadeUp"
               style={{ animationDelay: "0.2s" }}
