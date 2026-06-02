@@ -1,105 +1,104 @@
 import Button from "./Button";
 import TextLink from "./TextLink";
 
+const BG = '#EDE8DF';
+
 export default function Hero() {
   return (
     <section
-      className="relative overflow-hidden min-h-screen"
-      style={{ background: '#EDE8DF' }}
+      className="relative overflow-hidden"
+      style={{ background: BG, minHeight: '100vh' }}
     >
-      {/* ── DESKTOP ── Statue: full-bleed behind entire hero */}
-      {/* objectFit contain + right top: full image visible, arch at top, no cropping */}
-      {/* Left gradient fades the image out at the "d" of Contained */}
-      <div
-        className="hidden lg:block absolute inset-0 overflow-hidden"
-        style={{ zIndex: 1, background: '#EDE8DF' }}
-      >
-        <img
-          src="/images/hero-statue.jpg"
-          alt="Lady of Progress statue in architectural arch — Bombay Blanc brand symbol"
-          className="w-full h-full animate-heroScale"
-          style={{ objectFit: 'contain', objectPosition: 'right top' }}
-        />
-        {/* Top fade — arch emerges softly from nav bottom edge */}
-        <div
-          className="absolute top-0 left-0 right-0 pointer-events-none"
-          style={{
-            height: '180px',
-            zIndex: 2,
-            background: 'linear-gradient(to bottom, #EDE8DF 0%, #EDE8DF 44%, rgba(237,232,223,0.65) 72%, transparent 100%)',
-          }}
-        />
-        {/* Left fade — 65vw wide; solid through 79% puts the dissolve at the "d" (~51% viewport) */}
-        <div
-          className="absolute inset-y-0 left-0 pointer-events-none"
-          style={{
-            width: '65%',
-            zIndex: 2,
-            background: 'linear-gradient(to right, #EDE8DF 0%, #EDE8DF 79%, rgba(237,232,223,0.55) 89%, rgba(237,232,223,0) 100%)',
-          }}
-        />
-        {/* Bottom fade */}
-        <div
-          className="absolute bottom-0 left-0 right-0 pointer-events-none"
-          style={{
-            height: '7%',
-            zIndex: 2,
-            background: 'linear-gradient(to top, #EDE8DF 0%, transparent 100%)',
-          }}
-        />
-        {/* Right fade */}
-        <div
-          className="absolute inset-y-0 right-0 pointer-events-none"
-          style={{
-            width: '12%',
-            zIndex: 2,
-            background: 'linear-gradient(to left, #EDE8DF 0%, transparent 100%)',
-          }}
-        />
-      </div>
 
-      {/* ── DESKTOP ── Left content: in-flow so section grows to fit */}
+      {/* ── DESKTOP ── Two-column: content left, statue right */}
       <div
-        className="hidden lg:block relative"
-        style={{ zIndex: 10 }}
+        className="hidden lg:flex"
+        style={{ minHeight: '100vh' }}
       >
+        {/* Left: content */}
         <div
-          className="section-container flex flex-col justify-start"
-          style={{ paddingTop: 'clamp(148px, 14vh, 160px)', paddingBottom: '64px' }}
+          className="flex flex-col justify-center"
+          style={{
+            width: '54%',
+            flexShrink: 0,
+            paddingTop: 'clamp(148px, 16vh, 180px)',
+            paddingBottom: '80px',
+            paddingLeft: 'clamp(48px, 5vw, 96px)',
+            paddingRight: '56px',
+            background: BG,
+            zIndex: 10,
+          }}
         >
-          <div style={{ maxWidth: '56%', background: '#EDE8DF' }}>
-            <h1
-              className="font-serif text-hero font-normal text-vermilion mb-8 opacity-0 animate-fadeUp"
-              style={{ animationDelay: "0.2s" }}
-            >
-              Contained<br />heat.
-            </h1>
-            <p
-              className="font-serif text-subhead font-normal text-indigo mb-6 opacity-0 animate-fadeUp"
-              style={{ animationDelay: "0.3s" }}
-            >
-              Vertical-first films, campaigns, and stories<br />with world-class restraint.
-            </p>
-            <div className="vermilion-line mb-6 opacity-0 animate-fadeUp" style={{ animationDelay: "0.3s" }} />
-            <p
-              className="font-sans text-base leading-[1.62] tracking-[-0.01em] text-indigo max-w-[460px] mb-10 opacity-0 animate-fadeUp"
-              style={{ animationDelay: "0.4s" }}
-            >
-              Bombay Blanc is a 9:16-native production house for luxury
-              hotels and FMCG brands making the next-stage expand into Southeast Asia.
-              We bring world-class craft from Singapore and India, with the
-              taste of a cinematic studio and the operating discipline of a
-              producer-led business.
-            </p>
-            <div className="flex flex-col gap-5 items-start opacity-0 animate-fadeUp" style={{ animationDelay: "0.5s" }}>
-              <Button href="#work">See the work</Button>
-              <TextLink href="#contact">Book a call</TextLink>
-            </div>
+          <h1
+            className="font-serif text-hero font-normal text-vermilion mb-8 opacity-0 animate-fadeUp"
+            style={{ animationDelay: '0.2s' }}
+          >
+            Contained<br />heat.
+          </h1>
+
+          <p
+            className="font-serif text-subhead font-normal text-indigo mb-6 opacity-0 animate-fadeUp"
+            style={{ animationDelay: '0.3s' }}
+          >
+            Vertical-first films, campaigns, and stories<br />with world-class restraint.
+          </p>
+
+          <div
+            className="vermilion-line mb-6 opacity-0 animate-fadeUp"
+            style={{ animationDelay: '0.3s' }}
+          />
+
+          <p
+            className="font-sans text-base leading-[1.62] tracking-[-0.01em] text-indigo max-w-[460px] mb-10 opacity-0 animate-fadeUp"
+            style={{ animationDelay: '0.4s' }}
+          >
+            Bombay Blanc is a 9:16-native production house for luxury
+            hotels and FMCG brands making the next-stage expand into Southeast Asia.
+            We bring world-class craft from Singapore and India, with the
+            taste of a cinematic studio and the operating discipline of a
+            producer-led business.
+          </p>
+
+          <div
+            className="flex flex-col gap-5 items-start opacity-0 animate-fadeUp"
+            style={{ animationDelay: '0.5s' }}
+          >
+            <Button href="#work">See the work</Button>
+            <TextLink href="#contact">Book a call</TextLink>
           </div>
+        </div>
+
+        {/* Right: statue panel — clean, minimal fade */}
+        <div
+          className="relative overflow-hidden animate-heroScale"
+          style={{ flex: 1 }}
+        >
+          <img
+            src="/images/hero-statue.jpg"
+            alt="Lady of Progress statue in architectural arch — Bombay Blanc brand symbol"
+            className="w-full h-full"
+            style={{ objectFit: 'contain', objectPosition: 'center bottom' }}
+          />
+          {/* Soft top fade — aligns with nav */}
+          <div
+            className="absolute top-0 left-0 right-0 pointer-events-none"
+            style={{
+              height: '160px',
+              background: `linear-gradient(to bottom, ${BG} 0%, ${BG} 18%, rgba(237,232,223,0) 100%)`,
+            }}
+          />
+          {/* Soft bottom fade */}
+          <div
+            className="absolute bottom-0 left-0 right-0 pointer-events-none"
+            style={{
+              height: '60px',
+              background: `linear-gradient(to top, ${BG} 0%, transparent 100%)`,
+            }}
+          />
         </div>
       </div>
 
-      {/* ── MOBILE ── Stacked layout: content then statue below */}
+      {/* ── MOBILE ── Stacked: content then statue */}
       <div
         className="lg:hidden flex flex-col"
         style={{ zIndex: 10, paddingTop: '148px' }}
@@ -131,8 +130,8 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Mobile statue — below content, in flow */}
-        <div style={{ height: '50vw', minHeight: '240px', position: 'relative', zIndex: 1 }}>
+        {/* Mobile statue */}
+        <div style={{ height: '55vw', minHeight: '260px', position: 'relative' }}>
           <img
             src="/images/hero-statue.jpg"
             alt="Lady of Progress statue in architectural arch — Bombay Blanc brand symbol"
@@ -141,6 +140,7 @@ export default function Hero() {
           />
         </div>
       </div>
+
     </section>
   );
 }
