@@ -52,7 +52,7 @@ export default function Hero() {
           zIndex: 10,
           width: '50%',
           minHeight: '100vh',
-          paddingTop: '80px',
+          paddingTop: CONTENT_TOP,
           paddingBottom: '80px',
           paddingLeft: 'clamp(48px, 5vw, 96px)',
           paddingRight: '56px',
