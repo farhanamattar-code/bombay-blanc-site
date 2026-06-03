@@ -14,12 +14,13 @@ export default function Hero() {
     >
 
       {/* ── DESKTOP ──
-           RULE: archway top + base engravings must ALWAYS be visible.
-           Full-bleed image so texture shows behind text; statue anchored right.
-           object-fit:cover + object-position:right center keeps statue on the
-           right while the image's grain texture extends behind the left column. */}
+           NON-NEGOTIABLE: archway top + base engravings must ALWAYS be visible.
+           object-fit:contain guarantees the image is NEVER cropped.
+           object-position:right center anchors the statue to the right.
+           The image's beige background seamlessly blends with the section BG
+           so the texture extends behind the text naturally. */}
 
-      {/* Full-bleed hero image — texture spans the whole section */}
+      {/* Full-bleed hero image — contain = never cropped, anchored right */}
       <div
         className="hidden lg:block absolute inset-0 overflow-hidden"
         style={{ zIndex: 1 }}
@@ -28,10 +29,10 @@ export default function Hero() {
           src="/images/hero-statue.jpg"
           alt="Lady of Progress statue in architectural arch — Bombay Blanc brand symbol"
           className="w-full h-full animate-heroScale"
-          style={{ objectFit: 'cover', objectPosition: 'right center' }}
+          style={{ objectFit: 'contain', objectPosition: 'right center' }}
         />
 
-        {/* Left veil — keeps text readable over the image texture */}
+        {/* Left veil — keeps text readable where image texture shows */}
         <div
           className="absolute inset-y-0 left-0 pointer-events-none"
           style={{
