@@ -10,17 +10,22 @@ export default function Hero() {
   return (
     <section
       className="relative overflow-hidden"
-      style={{ background: BG, minHeight: '100vh' }}
+      style={{
+        background: BG,
+        /* 56.3vw = image height/width (941/1672). This ensures the section
+           is always at least as tall as the image's natural proportions,
+           so object-fit:cover NEVER crops vertically — arch + engravings safe. */
+        minHeight: 'max(100vh, 56.3vw)',
+      }}
     >
 
       {/* ── DESKTOP ──
            NON-NEGOTIABLE: archway top + base engravings must ALWAYS be visible.
-           object-fit:contain guarantees the image is NEVER cropped.
-           object-position:right center anchors the statue to the right.
-           The image's beige background seamlessly blends with the section BG
-           so the texture extends behind the text naturally. */}
+           object-fit:cover fills the section with the image's grain texture.
+           object-position:right center anchors the statue to the right side.
+           minHeight:56.3vw prevents vertical cropping on any viewport. */}
 
-      {/* Full-bleed hero image — contain = never cropped, anchored right */}
+      {/* Full-bleed hero image — texture fills entire section */}
       <div
         className="hidden lg:block absolute inset-0 overflow-hidden"
         style={{ zIndex: 1 }}
@@ -29,10 +34,10 @@ export default function Hero() {
           src="/images/hero-statue.jpg"
           alt="Lady of Progress statue in architectural arch — Bombay Blanc brand symbol"
           className="w-full h-full animate-heroScale"
-          style={{ objectFit: 'contain', objectPosition: 'right center' }}
+          style={{ objectFit: 'cover', objectPosition: 'right center' }}
         />
 
-        {/* Left veil — keeps text readable where image texture shows */}
+        {/* Left veil — keeps text readable over the image texture */}
         <div
           className="absolute inset-y-0 left-0 pointer-events-none"
           style={{
@@ -52,7 +57,7 @@ export default function Hero() {
           position: 'relative',
           zIndex: 10,
           width: '50%',
-          minHeight: '100vh',
+          minHeight: 'max(100vh, 56.3vw)',
           paddingTop: '80px',
           paddingBottom: '80px',
           paddingLeft: 'clamp(48px, 5vw, 96px)',
