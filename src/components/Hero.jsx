@@ -72,20 +72,23 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Right image column — full statue, never cropped */}
+        {/* Right image column — statue fills the column height.
+            object-fit:cover scales to fill height; only left/right beige
+            background is cropped, never the arch or engravings (the column
+            is always taller-than-wide relative to the 1.78:1 image). */}
         <div
-          className="flex items-center"
           style={{
             width: '50%',
             paddingTop: '100px',
             paddingBottom: '40px',
+            overflow: 'hidden',
           }}
         >
           <img
             src="/images/hero-statue.jpg"
             alt="Lady of Progress statue in architectural arch — Bombay Blanc brand symbol"
             className="w-full h-full animate-heroScale"
-            style={{ objectFit: 'contain', objectPosition: 'center center' }}
+            style={{ objectFit: 'cover', objectPosition: 'center center' }}
           />
         </div>
       </div>
