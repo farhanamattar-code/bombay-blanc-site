@@ -68,7 +68,7 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Right: statue panel — clean, minimal fade */}
+        {/* Right: statue panel */}
         <div
           className="relative overflow-hidden animate-heroScale"
           style={{ flex: 1 }}
@@ -77,17 +77,17 @@ export default function Hero() {
             src="/images/hero-statue.jpg"
             alt="Lady of Progress statue in architectural arch — Bombay Blanc brand symbol"
             className="w-full h-full"
-            style={{ objectFit: 'contain', objectPosition: 'center bottom' }}
+            style={{ objectFit: 'cover', objectPosition: 'center top' }}
           />
-          {/* Soft top fade — aligns with nav */}
+          {/* Top fade — 135px matches nav height; arch visible right below nav */}
           <div
             className="absolute top-0 left-0 right-0 pointer-events-none"
             style={{
-              height: '160px',
-              background: `linear-gradient(to bottom, ${BG} 0%, ${BG} 18%, rgba(237,232,223,0) 100%)`,
+              height: '135px',
+              background: `linear-gradient(to bottom, ${BG} 0%, ${BG} 85%, transparent 100%)`,
             }}
           />
-          {/* Soft bottom fade */}
+          {/* Bottom fade */}
           <div
             className="absolute bottom-0 left-0 right-0 pointer-events-none"
             style={{
