@@ -13,53 +13,21 @@ export default function Hero() {
       style={{ background: BG }}
     >
 
-      {/* ── DESKTOP ──
+      {/* ── DESKTOP ── flex: text left, statue right
            NON-NEGOTIABLE: archway top + base engravings must ALWAYS be visible.
-
-           The image is IN FLOW (not absolute) with width:100% and no fixed
-           height, so it renders at its native aspect ratio — full width,
-           proportional height. This means it is NEVER cropped vertically.
-           The text overlays on top via absolute positioning.
-           minHeight:100vh on the wrapper ensures full-screen on narrow screens;
-           on wide screens the image's proportional height takes over. */}
-
-      {/* Desktop wrapper */}
-      <div className="hidden lg:block relative" style={{ minHeight: '100vh' }}>
-
-        {/* Hero image — in flow, width:100%, natural aspect ratio.
-            On wide viewports the image is taller than 100vh (good — no crop).
-            On narrow viewports minHeight:100vh + object-fit:cover fills the gap. */}
-        <img
-          src="/images/hero-statue.jpg"
-          alt="Lady of Progress statue in architectural arch — Bombay Blanc brand symbol"
-          className="w-full block animate-heroScale"
-          style={{
-            minHeight: '100vh',
-            objectFit: 'cover',
-            objectPosition: 'right center',
-          }}
-        />
-
-        {/* Left veil — keeps text readable over the image texture */}
+           object-fit:contain guarantees the image is NEVER cropped.
+           Padding on the image column provides breathing room above arch
+           and below engravings, matching the layout guide. */}
+      <div
+        className="hidden lg:flex"
+        style={{ minHeight: '100vh' }}
+      >
+        {/* Left content column — vertically centred */}
         <div
-          className="absolute inset-y-0 left-0 pointer-events-none"
+          className="flex flex-col justify-center"
           style={{
-            width: '52%',
-            zIndex: 5,
-            background: `linear-gradient(to right,
-              rgba(237,232,223,0.45) 0%,
-              rgba(237,232,223,0.25) 60%,
-              transparent 100%)`,
-          }}
-        />
-
-        {/* Left content column — absolute overlay, vertically centred */}
-        <div
-          className="absolute inset-y-0 left-0 flex flex-col justify-center"
-          style={{
-            zIndex: 10,
             width: '50%',
-            paddingTop: '80px',
+            paddingTop: '120px',
             paddingBottom: '80px',
             paddingLeft: 'clamp(48px, 5vw, 96px)',
             paddingRight: '56px',
@@ -102,6 +70,23 @@ export default function Hero() {
             <Button href="#work">See the work</Button>
             <TextLink href="#contact">Book a call</TextLink>
           </div>
+        </div>
+
+        {/* Right image column — full statue, never cropped */}
+        <div
+          className="flex items-center"
+          style={{
+            width: '50%',
+            paddingTop: '100px',
+            paddingBottom: '40px',
+          }}
+        >
+          <img
+            src="/images/hero-statue.jpg"
+            alt="Lady of Progress statue in architectural arch — Bombay Blanc brand symbol"
+            className="w-full h-full animate-heroScale"
+            style={{ objectFit: 'contain', objectPosition: 'center center' }}
+          />
         </div>
       </div>
 
