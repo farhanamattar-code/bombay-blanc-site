@@ -37,7 +37,7 @@ export default function ContactSection() {
   }
 
   return (
-    <section id="contact" className="min-h-screen bg-bone p-4 sm:p-6 lg:p-12">
+    <section id="contact" className="min-h-screen bg-bone p-4 sm:p-6 lg:p-12 scroll-mt-[148px]">
       <div className="max-w-[1440px] mx-auto border border-khadi p-6 sm:p-8 lg:p-16 bg-bone">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-stretch">
           {/* Left */}

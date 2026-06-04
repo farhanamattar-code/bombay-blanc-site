@@ -8,11 +8,11 @@ const journalPosts = [
     seoTitle: "The Fifth Wall — Bombay Blanc Journal",
     seoDescription: "There is a new wall in content. The fourth wall separates performer from audience. The fifth wall separates their world from yours. When it breaks, the brand moves into your life.",
     seoKeywords: "fifth wall, the fifth wall, content creator audience, brand storytelling, fourth wall, Marc Jacobs content strategy, creator economy, audience theory, film production philosophy, brand film, Bombay Blanc",
-    heroImage: "/images/hana-mattar-the-fifth-wall-flag-plant-bombay-blanc-linkedin.jpg",
-    heroAlt: "Hana Mattar — The Fifth Wall, Post I: The Flag Plant. A Mughal archway opens onto a domestic kitchen, the vermilion flame on the stove echoing the Lady of Progress torch. A new content framework from Bombay Blanc, a creative production house in Singapore and Bombay.",
+    heroImage: "/images/hana-mattar-the-fifth-wall-geography-of-intimacy-bombay-blanc-linkedin.jpg",
+    heroAlt: "Hana Mattar — The Fifth Wall, Post I: The Geography of Intimacy. A Mughal archway opens onto a domestic kitchen — the cultural specificity of intimacy that breaks the wall between content and life. A new content framework from Bombay Blanc, a creative production house in Singapore and Bombay.",
     articleImage: "/images/fifth-wall-flag-plant-source.jpeg",
     articleImageAlt: "A Mughal archway opens onto a quiet domestic kitchen at dawn — a black cast-iron pan on a stove, copper kettle, indigo cabinets, morning light through a paned window. The Fifth Wall by Hana Mattar, Bombay Blanc.",
-    articleImageCaption: "Fifth Wall Fridays · I · The Flag Plant",
+    articleImageCaption: "Fifth Wall Fridays · I · The Geography of Intimacy",
     hook: "A woman in her kitchen. The light from the window is the colour of butter. She opens the oven and a wave of heat lifts the loose hair at her temple. I was watching content. And somewhere in the warmth of the pan, a brand had walked into my life.",
     body: [
       {
@@ -101,7 +101,7 @@ const journalPosts = [
       },
       {
         type: "text",
-        content: "It changes who the audience trusts. It changes how a brand earns its way into a life. It changes what a brief looks like — because you can no longer write make a film that feels real without writing, also, and make the film disappear inside the real."
+        content: "It changes who the audience trusts. It changes how a brand earns its way into a life. It changes what a brief looks like — because you can no longer make a film that feels real without making the film disappear inside the real."
       },
       {
         type: "text",

@@ -15,7 +15,7 @@ export default function FounderSection() {
   return (
     <section
       id="founder"
-      className="grid grid-cols-1 lg:grid-cols-2 min-h-screen lg:items-stretch"
+      className="grid grid-cols-1 lg:grid-cols-2 min-h-screen lg:items-stretch scroll-mt-[148px]"
       style={{ background: '#F2EBDA' }}
     >
       {/* Left: Founder Letter */}

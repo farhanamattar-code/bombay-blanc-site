@@ -48,7 +48,7 @@ function PillarCard({ label, title, body, italic, image, alt, imagePosition = "c
 
 export default function WorkSection() {
   return (
-    <section id="work" className="pt-[72px] pb-20" style={{ background: '#F2EBDA' }}>
+    <section id="work" className="pt-[72px] pb-20 scroll-mt-[148px]" style={{ background: '#F2EBDA' }}>
       <div className="section-container">
 
         {/* Header: label + 2-col heading / description */}
