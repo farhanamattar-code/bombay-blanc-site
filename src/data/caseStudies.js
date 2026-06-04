@@ -1,5 +1,57 @@
 const caseStudies = [
   {
+    slug: "reebok",
+    pillar: "Brand",
+    title: "Every Street\nA Starting Line.",
+    subtitle: "Reebok. A 60-second brand film for Southeast Asia, directed by Michael Wong.",
+    heroImage: "/images/work/reebok-hero.jpg",
+    heroAlt: "Boxer alone at ringside in a dark gymnasium, sepia-toned — Reebok brand film directed by Michael Wong",
+    overview:
+      "Shot across Southeast Asia in a warm super-8 grain that looks less like advertising and more like memory, this brand film for Reebok built its argument on one claim: the best athletes don't live in arenas. They live in these streets, these neighbourhoods, against these walls. Michael Wong cast real people rather than polished archetypes — a boxer alone at ringside before anyone else arrives, a woman at the wheel of a yellow van who smiles like she's been driving that road her whole life, a kid in a Reebok polo sitting in the shadow of a colonial building. The film didn't sell a shoe. It sold belonging.",
+    approach:
+      "Michael Wong shot on film and embraced the limits of the medium — the grain, the warmth, the motion blur, the double exposures that let two cities live inside the same frame. Bombay Blanc brought the Southeast Asian locations and cultural texture to life, working at street level rather than on set. Each shot was composed to hold still long enough for you to notice the person inside it. The Reebok wordmark arrived at the end like a signature, not a headline.",
+    pullQuote: "The best athletes don't live in arenas. They live in these streets.",
+    metadata: {
+      client: "Reebok",
+      format: "60-second brand film",
+      director: "Michael Wong",
+      role: "Production",
+      year: "2015",
+    },
+    stills: [
+      {
+        src: "/images/work/reebok-van.jpg",
+        alt: "Woman in baseball cap smiling at the wheel of a yellow van — Reebok brand film, Southeast Asia",
+        caption: "On location · Southeast Asia · Super-8",
+      },
+      {
+        src: "/images/work/reebok-train.jpg",
+        alt: "Young man double-exposed against a passing train, wind in hair — Reebok brand film",
+        caption: "Double exposure · Directed by Michael Wong",
+      },
+      {
+        src: "/images/work/reebok-bw.jpg",
+        alt: "Young woman in black-and-white double exposure against stacked crates — Reebok brand film",
+        caption: "On location · Super-8 · Black and white",
+      },
+      {
+        src: "/images/work/reebok-bicycle.jpg",
+        alt: "Man in shirt and tie beside a bicycle against a pink wall — Reebok brand film, South Asia",
+        caption: "On location · Street cast · Southeast Asia",
+      },
+      {
+        src: "/images/work/reebok-polo.jpg",
+        alt: "Young man in Reebok colour-block polo leaning against a colonial column — Reebok brand film",
+        caption: "Reebok · Directed by Michael Wong · 2015",
+      },
+    ],
+    seoTitle: "Reebok Brand Film — Southeast Asia | Bombay Blanc",
+    seoDescription:
+      "A 60-second brand film for Reebok, directed by Michael Wong. Shot across Southeast Asia in super-8 grain, celebrating real people in real streets. Produced by Bombay Blanc.",
+    seoKeywords:
+      "reebok brand film, michael wong director, southeast asia commercial, super-8 advertising, bombay blanc, brand film production, reebok campaign, analog film advertising",
+  },
+  {
     slug: "american-honey",
     pillar: "Stories",
     title: "Four Years.\nOne Hive.",

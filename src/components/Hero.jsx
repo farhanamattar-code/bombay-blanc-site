@@ -12,6 +12,11 @@ export default function Hero() {
       className="relative overflow-hidden"
       style={{ background: BG, minHeight: '100vh' }}
     >
+      {/* SEO: keyword-rich H1 for crawlers — visually hidden, screen-reader accessible.
+          The visible "Contained heat." tagline below is a <p> styled identically. */}
+      <h1 className="sr-only">
+        Creative Production House Singapore — Brand Films, Campaigns &amp; Vertical Storytelling for Southeast Asia
+      </h1>
 
       {/* ── DESKTOP ──
            RULE: archway top + base engravings must ALWAYS be visible.
@@ -58,12 +63,12 @@ export default function Hero() {
           paddingRight: '56px',
         }}
       >
-        <h1
+        <p
           className="font-serif text-hero font-normal text-vermilion mb-8 opacity-0 animate-fadeUp"
           style={{ animationDelay: '0.2s' }}
         >
           Contained<br />heat.
-        </h1>
+        </p>
 
         <p
           className="font-serif text-subhead font-normal text-indigo mb-6 opacity-0 animate-fadeUp"
@@ -106,9 +111,9 @@ export default function Hero() {
             paddingBottom: '32px',
           }}
         >
-          <h1 className="font-serif text-hero font-normal text-vermilion mb-6">
+          <p className="font-serif text-hero font-normal text-vermilion mb-6">
             Contained<br />heat.
-          </h1>
+          </p>
           <p className="font-serif text-subhead font-normal text-indigo mb-5">
             Vertical-first films, campaigns, and stories<br />with world-class restraint.
           </p>
