@@ -21,8 +21,8 @@ export default function Hero() {
 
       {/* Full-bleed hero image — texture spans the whole section */}
       <div
-        className="hidden lg:block absolute inset-0 overflow-hidden"
-        style={{ zIndex: 1 }}
+        className="hidden lg:block absolute overflow-hidden"
+        style={{ zIndex: 1, top: '60px', left: 0, right: 0, bottom: 0 }}
       >
         <img
           src="/images/hero-statue.jpg"
