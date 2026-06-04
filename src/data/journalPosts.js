@@ -1,5 +1,129 @@
 const journalPosts = [
   {
+    slug: "the-fifth-wall",
+    title: "The Fifth Wall",
+    subtitle: "The most produced content in the world right now is the content that looks the least produced.",
+    date: "2026-06-05",
+    category: "Fifth Wall Fridays",
+    seoTitle: "The Fifth Wall — Bombay Blanc Journal",
+    seoDescription: "There is a new wall in content. The fourth wall separates performer from audience. The fifth wall separates their world from yours. When it breaks, the brand moves into your life.",
+    seoKeywords: "fifth wall, the fifth wall, content creator audience, brand storytelling, fourth wall, Marc Jacobs content strategy, creator economy, audience theory, film production philosophy, brand film, Bombay Blanc",
+    heroImage: "/images/hero-statue.jpg",
+    heroAlt: "Hana Mattar on the Fifth Wall — a new framework for understanding how content collapses the boundary between performer and audience",
+    hook: "A woman in her kitchen. The light from the window is the colour of butter. She opens the oven and a wave of heat lifts the loose hair at her temple. I was watching content. And somewhere in the warmth of the pan, a brand had walked into my life.",
+    body: [
+      {
+        type: "text",
+        content: "A woman in her kitchen, somewhere I have never been. The light from the window is the colour of butter. She opens the oven and a wave of heat lifts the loose hair at her temple. She pulls out a pan — cast iron, blackened, beautiful — and sets it on the stovetop. The camera does not move. It does not need to. I am already there."
+      },
+      {
+        type: "text",
+        content: "Then I noticed. There was no logo. There was no music. There was a brand somewhere, but I had to look for it. And by the time I found it — Marc Jacobs — I had already let the woman into my life."
+      },
+      {
+        type: "heading",
+        content: "Not the fourth wall"
+      },
+      {
+        type: "text",
+        content: "The fourth wall is a theatre device. The actor turns, looks at you, acknowledges you exist. You are still in your seat. You are still the audience. The wink is the contract: we both know this is a performance. We are complicit in it."
+      },
+      {
+        type: "text",
+        content: "What I had just watched was not a wink. It was a doorway."
+      },
+      {
+        type: "text",
+        content: "The woman in the kitchen never looked at the camera. She did not need to. She was not asking for my attention. She had walked into my morning, my muscle memory of cooking, my own version of that pan on that stove — and she had brought a brand in with her."
+      },
+      {
+        type: "text",
+        content: "I called it the fifth wall. I do not know if anyone else has used the term. I did not look. I needed to name it before I lost it."
+      },
+      {
+        type: "heading",
+        content: "What it is, instead"
+      },
+      {
+        type: "text",
+        content: "The fourth wall separates performer from audience. The fifth wall separates their world from yours."
+      },
+      {
+        type: "text",
+        content: "When it breaks, you are no longer watching content. You are inside it. Or — and this is the part that interests me — it is inside your life. The brand is not a thing you saw on a screen. It is a thing you saw on a Tuesday. In your kitchen. While you were doing the dishes. The line between watching and living dissolves, and the brand moves into the space where it dissolved."
+      },
+      {
+        type: "text",
+        content: "This is more intimate than advertising has ever been. Which is to say, more powerful, and more dangerous, and more interesting."
+      },
+      {
+        type: "heading",
+        content: "The craft of disappearing"
+      },
+      {
+        type: "text",
+        content: "I have spent twenty years building sets. Lighting rooms. Calling the frame. I know exactly what a constructed image looks like — the gobo, the bounce card, the colour temperature that betrays a lamp pretending to be a window. I have called for those things. I have asked for the light to be moved a quarter-inch to the left because the catchlight was wrong."
+      },
+      {
+        type: "text",
+        content: "So when I watch a video that pretends to be unproduced and I cannot find the seams — that is when I lean forward."
+      },
+      {
+        type: "text",
+        content: "A pan that is actually warm. A window with light that is actually morning. A counter that has actually been cooked on. A woman who has actually been in this kitchen. None of these are accidents. They are decisions. They are decisions made by someone who knew, the way only a producer knows, what to leave out so the room could be felt."
+      },
+      {
+        type: "text",
+        content: "The fifth wall is not the absence of craft. It is craft asked to disappear."
+      },
+      {
+        type: "heading",
+        content: "A confession from the production floor"
+      },
+      {
+        type: "text",
+        content: "This is uncomfortable for me. I am being honest about that."
+      },
+      {
+        type: "text",
+        content: "I built a career on visible craftsmanship. The grade you can read. The set you can recognise. The frame that earns its frame. The fifth wall is asking us to do the most skilled work of our lives — and then make it look like we did nothing at all. The director who calls the shot. The DP who lit the room three days before we shot in it. The colourist who took thirty hours to make the morning look like morning. None of it survives if you can see it."
+      },
+      {
+        type: "text",
+        content: "I am not sure how I feel about that. I am sure it is the direction."
+      },
+      {
+        type: "heading",
+        content: "Why it changes everything"
+      },
+      {
+        type: "text",
+        content: "It changes who the audience trusts. It changes how a brand earns its way into a life. It changes what a brief looks like — because you can no longer write make a film that feels real without writing, also, and make the film disappear inside the real."
+      },
+      {
+        type: "text",
+        content: "It changes the relationship between creator and brand. The creator owns the doorway into the audience's morning. The brand is a guest in that morning. Not the host. Not the headliner. A guest, allowed in because of the trust the creator has built one Tuesday at a time."
+      },
+      {
+        type: "text",
+        content: "And it changes what we — producers, directors, the people who hold the camera and light the room — are being asked to do. We were trained to build a frame. The fifth wall is asking us to build a kitchen."
+      },
+      {
+        type: "text",
+        content: "I do not have the answer yet. I am thinking out loud. This is the beginning of something I want to keep pulling on — every Friday — until I have walked the whole length of it."
+      },
+      {
+        type: "text",
+        content: "More next week. I will be in the kitchen."
+      },
+    ],
+    cta: {
+      text: "Building a brand for the fifth wall era?",
+      link: "/#contact",
+      linkText: "Let's talk.",
+    },
+  },
+  {
     slug: "india-sea-bridge",
     title: "The India-Singapore Production Bridge",
     subtitle: "Why this corridor is the best-kept secret in Asian content.",
