@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Bombay Blanc is a story-led creative production house based in Singapore, serving brands across Southeast Asia and beyond. Brand films, campaigns, and stories with world-class restraint." />
+    <meta name="description" content="Singapore creative production house. Brand films, campaigns, and vertical storytelling for Southeast Asia. World-class craft from India." />
     <title>Bombay Blanc — Contained Heat.</title>
 
     <!-- Canonical -->
@@ -53,7 +53,42 @@
     <link rel="stylesheet" href="https://use.typekit.net/dqu1tog.css" />
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <!-- Pre-rendered fallback for search engine crawlers.
+           React replaces this content on mount — real users never see it.
+           Fixes: H1 missing, low word count, page has no outgoing links. -->
+      <div style="font-family:Georgia,serif;background:#F2EBDA;min-height:100vh;padding:120px 48px 72px;max-width:1200px;margin:0 auto;box-sizing:border-box">
+        <div style="margin-bottom:48px">
+          <a href="/" style="text-decoration:none;color:#1B2D4A">
+            <div style="font-size:32px;font-weight:600;line-height:0.9;letter-spacing:-0.04em;text-transform:uppercase;color:#1B2D4A">Bombay<br>Blanc</div>
+            <div style="font-size:9px;letter-spacing:0.12em;text-transform:uppercase;color:#7A7669;margin-top:8px;font-family:monospace">A creative production house · Singapore · Bombay</div>
+          </a>
+        </div>
+        <nav style="margin-bottom:48px">
+          <a href="/journal" style="font-family:monospace;font-size:12px;text-transform:uppercase;letter-spacing:0.1em;color:#1B2D4A;text-decoration:none;margin-right:32px">Journal</a>
+          <a href="/#work" style="font-family:monospace;font-size:12px;text-transform:uppercase;letter-spacing:0.1em;color:#1B2D4A;text-decoration:none;margin-right:32px">Work</a>
+          <a href="/#contact" style="font-family:monospace;font-size:12px;text-transform:uppercase;letter-spacing:0.1em;color:#1B2D4A;text-decoration:none">Contact</a>
+        </nav>
+        <h1 style="font-size:clamp(64px,9vw,128px);font-weight:400;color:#9B2920;line-height:0.88;letter-spacing:-0.04em;margin:0 0 32px">Contained<br>heat.</h1>
+        <p style="font-size:22px;color:#1B2D4A;margin:0 0 20px;line-height:1.35;max-width:640px">Vertical-first films, campaigns, and stories with world-class restraint.</p>
+        <p style="font-size:16px;color:#1B2D4A;max-width:560px;line-height:1.68;margin:0 0 48px">
+          Bombay Blanc is a 9:16-native creative production house for luxury hotels and FMCG brands expanding into Southeast Asia.
+          Singapore-headquartered and India-engined — we bring world-class craft, sharper economics, and stories that travel across markets without losing their soul.
+          Brand films, campaigns, scripted shorts, documentary formats, and hospitality content.
+        </p>
+        <div style="margin-bottom:48px">
+          <p style="font-family:monospace;font-size:10px;text-transform:uppercase;letter-spacing:0.15em;color:#7A7669;margin:0 0 16px">Featured Work</p>
+          <a href="/work/american-honey" style="display:block;color:#1B2D4A;text-decoration:none;font-size:20px;margin-bottom:12px;line-height:1.2">American Honey — Vertical Docuseries for Tubi</a>
+          <a href="/work/vanishing-trades" style="display:block;color:#1B2D4A;text-decoration:none;font-size:20px;margin-bottom:24px;line-height:1.2">Vanishing Trades — 20-Part Series for Discovery Channel</a>
+          <a href="/journal/india-sea-bridge" style="display:block;color:#1B2D4A;text-decoration:none;font-size:16px;line-height:1.4">Journal: The India-Singapore Production Bridge</a>
+        </div>
+        <p style="font-size:16px;color:#1B2D4A;max-width:560px;line-height:1.68;margin:0 0 32px">
+          Most ambitious brands are not short on assets. They are short on taste, continuity, and a production partner who can hold the line from idea to final cut.
+          Bombay Blanc protects the charge — one visual world before one hundred assets, one brand-led point of view before another vendor list.
+        </p>
+        <a href="/#contact" style="display:inline-block;background:#1B2D4A;color:#F2EBDA;padding:0 32px;height:56px;line-height:56px;font-family:monospace;font-size:11px;text-transform:uppercase;letter-spacing:0.12em;text-decoration:none">Book a call →</a>
+      </div>
+    </div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
