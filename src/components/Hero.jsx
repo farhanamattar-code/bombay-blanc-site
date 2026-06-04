@@ -131,13 +131,14 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Mobile statue */}
-        <div style={{ height: '55vw', minHeight: '260px', position: 'relative' }}>
+        {/* Mobile statue — original (non-extended) portrait statue image.
+            The extended hero-statue.jpg (3300x941) is for desktop full-bleed only;
+            on mobile portrait it scales the statue to a tiny corner element. */}
+        <div style={{ position: 'relative' }}>
           <img
-            src="/images/hero-statue.jpg"
-            alt="Lady of Progress statue in architectural arch — Bombay Blanc brand symbol"
-            className="w-full h-full"
-            style={{ objectFit: 'contain', objectPosition: 'center bottom' }}
+            src="/images/small-statue.png"
+            alt="Lady of Progress statue beneath the Chhatrapati Shivaji Maharaj Terminus archway — Bombay Blanc brand symbol"
+            style={{ width: '100%', height: 'auto', display: 'block' }}
           />
         </div>
       </div>
