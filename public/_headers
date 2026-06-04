@@ -1,0 +1,20 @@
+# Canonical Link headers — one per route.
+# Cloudflare Pages applies these headers based on the requested URL path,
+# before the _redirects rewrite serves index.html. Search engines (Google,
+# Bing) and Ahrefs all support canonical via HTTP Link header.
+# Add a new entry whenever a new journal post or case study is published.
+
+/
+  Link: <https://www.bombayblanc.com/>; rel="canonical"
+
+/journal
+  Link: <https://www.bombayblanc.com/journal>; rel="canonical"
+
+/journal/india-sea-bridge
+  Link: <https://www.bombayblanc.com/journal/india-sea-bridge>; rel="canonical"
+
+/work/american-honey
+  Link: <https://www.bombayblanc.com/work/american-honey>; rel="canonical"
+
+/work/vanishing-trades
+  Link: <https://www.bombayblanc.com/work/vanishing-trades>; rel="canonical"
