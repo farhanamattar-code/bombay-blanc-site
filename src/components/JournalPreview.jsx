@@ -80,9 +80,11 @@ export default function JournalPreview() {
                 </p>
               </div>
 
-              {/* Right — pull quote / editorial accent */}
+              {/* Right — pull quote / editorial accent (desktop only —
+                  on mobile it stacks beneath the Fifth Wall card and reads
+                  like part of that post, which is confusing) */}
               <div
-                className="lg:col-span-7 p-8 lg:p-12 flex items-center"
+                className="hidden lg:flex lg:col-span-7 p-8 lg:p-12 items-center"
                 style={{ background: 'rgba(242,235,218,0.03)' }}
               >
                 <blockquote className="font-serif text-subhead font-normal text-cotton/40 leading-[1.2] tracking-heading" style={{ fontStyle: 'italic' }}>

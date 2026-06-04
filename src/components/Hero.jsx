@@ -131,13 +131,17 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Mobile statue — original (non-extended) portrait statue image.
-            The extended hero-statue.jpg (3300x941) is for desktop full-bleed only;
-            on mobile portrait it scales the statue to a tiny corner element. */}
+        {/* Mobile statue — same 1:1 hero used on the LinkedIn company page.
+            Square format sits cleanly under the text block; engraving at the
+            base ("The Lady of Progress / Chhatrapati Shivaji Maharaj Terminus")
+            stays visible, archway top stays visible — both non-negotiables. */}
         <div style={{ position: 'relative' }}>
           <img
-            src="/images/small-statue.png"
-            alt="Lady of Progress statue beneath the Chhatrapati Shivaji Maharaj Terminus archway — Bombay Blanc brand symbol"
+            src="/images/bombay-blanc-contained-heat-production-house-singapore-bombay-bridge.jpg"
+            alt="The Lady of Progress statue at Chhatrapati Shivaji Maharaj Terminus, Mumbai — Bombay Blanc creative production house brand symbol, Singapore and Bombay"
+            width="1200"
+            height="1200"
+            loading="eager"
             style={{ width: '100%', height: 'auto', display: 'block' }}
           />
         </div>
