@@ -83,7 +83,7 @@ export default function WorkSection() {
         {/* Featured case study */}
         {caseStudies.length > 0 && (
           <Reveal>
-            <div className="mt-14 mb-14">
+            <div id="featured-work" className="mt-14 mb-14 scroll-mt-[148px]">
               <p className="font-mono text-[10px] uppercase tracking-wideMono text-ash mb-6">
                 Featured Work
               </p>

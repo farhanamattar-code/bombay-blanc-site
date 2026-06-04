@@ -5,7 +5,7 @@ const NAV_LINKS = [
   { label: "Lady of Progress", href: "/" },
   { label: "Work", href: "/#work" },
   { label: "Journal", href: "/journal" },
-  { label: "Studio", href: "/#work" },
+  { label: "Studio", href: "/#featured-work" },
   { label: "Founder", href: "/#founder" },
   { label: "Contact", href: "/#contact" },
 ];
