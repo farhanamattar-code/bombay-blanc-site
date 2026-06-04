@@ -74,10 +74,21 @@ function PostCard({ slug, title, subtitle, date, category, hook }) {
   );
 }
 
+function setOgUrl(url) {
+  let el = document.querySelector('meta[property="og:url"]');
+  if (!el) {
+    el = document.createElement("meta");
+    el.setAttribute("property", "og:url");
+    document.head.appendChild(el);
+  }
+  el.setAttribute("content", url);
+}
+
 export default function JournalPage() {
   useEffect(() => {
     document.title = "The Journal — Bombay Blanc";
     setCanonical("https://www.bombayblanc.com/journal");
+    setOgUrl("https://www.bombayblanc.com/journal");
   }, []);
 
   return (

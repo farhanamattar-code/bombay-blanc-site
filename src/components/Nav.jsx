@@ -13,10 +13,18 @@ const NAV_LINKS = [
 function NavLink({ label, href, onClick }) {
   const isRoute = !href.includes("#");
   if (isRoute) {
+    // For root-route links (Lady of Progress → "/"), always scroll to top —
+    // even when the user is already on the homepage and pathname doesn't change.
+    const handleClick = (e) => {
+      if (href === "/") {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+      if (onClick) onClick(e);
+    };
     return (
       <Link
         to={href}
-        onClick={onClick}
+        onClick={handleClick}
         className="font-mono text-[13px] tracking-wideMono uppercase text-indigo no-underline transition-colors duration-300 hover:text-ash"
       >
         {label}

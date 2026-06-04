@@ -17,10 +17,21 @@ function setCanonical(url) {
   link.setAttribute("href", url);
 }
 
+function setOgUrl(url) {
+  let el = document.querySelector('meta[property="og:url"]');
+  if (!el) {
+    el = document.createElement("meta");
+    el.setAttribute("property", "og:url");
+    document.head.appendChild(el);
+  }
+  el.setAttribute("content", url);
+}
+
 export default function HomePage() {
   useEffect(() => {
     document.title = "Bombay Blanc — Contained Heat.";
     setCanonical("https://www.bombayblanc.com/");
+    setOgUrl("https://www.bombayblanc.com/");
   }, []);
 
   return (

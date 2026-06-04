@@ -8,8 +8,11 @@ const journalPosts = [
     seoTitle: "The Fifth Wall — Bombay Blanc Journal",
     seoDescription: "There is a new wall in content. The fourth wall separates performer from audience. The fifth wall separates their world from yours. When it breaks, the brand moves into your life.",
     seoKeywords: "fifth wall, the fifth wall, content creator audience, brand storytelling, fourth wall, Marc Jacobs content strategy, creator economy, audience theory, film production philosophy, brand film, Bombay Blanc",
-    heroImage: "/images/hero-statue.jpg",
-    heroAlt: "Hana Mattar on the Fifth Wall — a new framework for understanding how content collapses the boundary between performer and audience",
+    heroImage: "/images/hana-mattar-the-fifth-wall-flag-plant-bombay-blanc-linkedin.jpg",
+    heroAlt: "Hana Mattar — The Fifth Wall, Post I: The Flag Plant. A Mughal archway opens onto a domestic kitchen, the vermilion flame on the stove echoing the Lady of Progress torch. A new content framework from Bombay Blanc, a creative production house in Singapore and Bombay.",
+    articleImage: "/images/fifth-wall-flag-plant-source.jpeg",
+    articleImageAlt: "A Mughal archway opens onto a quiet domestic kitchen at dawn — a black cast-iron pan on a stove, copper kettle, indigo cabinets, morning light through a paned window. The Fifth Wall by Hana Mattar, Bombay Blanc.",
+    articleImageCaption: "Fifth Wall Fridays · I · The Flag Plant",
     hook: "A woman in her kitchen. The light from the window is the colour of butter. She opens the oven and a wave of heat lifts the loose hair at her temple. I was watching content. And somewhere in the warmth of the pan, a brand had walked into my life.",
     body: [
       {
