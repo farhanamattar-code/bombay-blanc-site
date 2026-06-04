@@ -41,6 +41,15 @@ export default function JournalPostPage() {
     setMeta("og:url", `https://www.bombayblanc.com/journal/${post.slug}`);
     if (post.heroImage) setMeta("og:image", `https://www.bombayblanc.com${post.heroImage}`);
 
+    // Canonical
+    let canonical = document.querySelector('link[rel="canonical"]');
+    if (!canonical) {
+      canonical = document.createElement("link");
+      canonical.setAttribute("rel", "canonical");
+      document.head.appendChild(canonical);
+    }
+    canonical.setAttribute("href", `https://www.bombayblanc.com/journal/${post.slug}`);
+
     let script = document.querySelector("#article-schema");
     if (!script) {
       script = document.createElement("script");

@@ -1,7 +1,18 @@
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useReveal } from "../hooks/useReveal";
 import SectionLabel from "../components/SectionLabel";
 import journalPosts from "../data/journalPosts";
+
+function setCanonical(url) {
+  let link = document.querySelector('link[rel="canonical"]');
+  if (!link) {
+    link = document.createElement("link");
+    link.setAttribute("rel", "canonical");
+    document.head.appendChild(link);
+  }
+  link.setAttribute("href", url);
+}
 
 function Reveal({ children, className = "" }) {
   const ref = useReveal();
@@ -64,6 +75,11 @@ function PostCard({ slug, title, subtitle, date, category, hook }) {
 }
 
 export default function JournalPage() {
+  useEffect(() => {
+    document.title = "The Journal — Bombay Blanc";
+    setCanonical("https://www.bombayblanc.com/journal");
+  }, []);
+
   return (
     <section className="pt-[148px] pb-24" style={{ background: "#F2EBDA" }}>
       <div className="section-container">

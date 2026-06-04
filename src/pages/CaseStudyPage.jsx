@@ -45,6 +45,15 @@ export default function CaseStudyPage() {
         `https://www.bombayblanc.com${study.heroImage}`
       );
 
+    // Canonical
+    let canonical = document.querySelector('link[rel="canonical"]');
+    if (!canonical) {
+      canonical = document.createElement("link");
+      canonical.setAttribute("rel", "canonical");
+      document.head.appendChild(canonical);
+    }
+    canonical.setAttribute("href", `https://www.bombayblanc.com/work/${study.slug}`);
+
     let script = document.querySelector("#casestudy-schema");
     if (!script) {
       script = document.createElement("script");
