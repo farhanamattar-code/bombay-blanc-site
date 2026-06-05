@@ -119,7 +119,7 @@ export default function WorkSection() {
                         {cs.title}
                       </h3>
                       <p className="font-sans text-[14px] leading-[1.55] text-ash max-w-[420px] mb-4">
-                        {cs.metadata.format}{cs.metadata.episodes ? ` · ${cs.metadata.episodes} episodes` : ''}{cs.metadata.director ? ` · Dir. ${cs.metadata.director}` : ''} · {cs.metadata.year}
+                        {cs.metadata.format}{cs.metadata.episodes ? ` · ${cs.metadata.episodes} episodes` : ''}{cs.metadata.director ? ` · Dir. ${cs.metadata.director}` : ''}
                       </p>
                       <span className="font-mono text-[10px] uppercase tracking-wideMono text-indigo group-hover:text-vermilion transition-colors">
                         View case study →
