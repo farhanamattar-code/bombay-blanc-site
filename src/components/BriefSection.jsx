@@ -12,7 +12,7 @@ function Reveal({ children, className = "", delay = "" }) {
 
 export default function BriefSection() {
   return (
-    <section id="studio" className="bg-dusk">
+    <section id="studio" className="bg-dusk scroll-mt-[148px]">
       <div className="section-container pt-20 pb-24">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
           {/* Left: Copy */}

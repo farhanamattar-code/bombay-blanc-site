@@ -3,9 +3,9 @@ import { Link, useLocation } from "react-router-dom";
 
 const NAV_LINKS = [
   { label: "Lady of Progress", href: "/" },
-  { label: "Work", href: "/#work" },
+  { label: "The Work", href: "/#featured-work" },
   { label: "Journal", href: "/journal" },
-  { label: "Studio", href: "/#featured-work" },
+  { label: "Studio", href: "/#studio" },
   { label: "Founder", href: "/#founder" },
   { label: "Contact", href: "/#contact" },
 ];
