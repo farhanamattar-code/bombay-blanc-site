@@ -13,16 +13,16 @@ const journalPosts = [
     articleImage: "/images/fifth-wall-flag-plant-source.jpeg",
     articleImageAlt: "A Mughal archway opens onto a quiet domestic kitchen at dawn — a black cast-iron pan on a stove, copper kettle, indigo cabinets, morning light through a paned window. The Fifth Wall by Hana Mattar, Bombay Blanc.",
     articleImageCaption: "Fifth Wall Fridays · I · The Geography of Intimacy",
-    hook: "A woman in her kitchen. The light from the window is the colour of butter. She opens the oven and a wave of heat lifts the loose hair at her temple. I was watching content. And somewhere in the warmth of the pan, a brand had walked into my life.",
+    hook: "A woman in her kitchen, dressed to the nines. Every strand of hair tucked into shape. The camera does not move. By the time I found the brand, she was already in my kitchen, and I was in hers.",
     pullQuote: "The fourth wall separates performer from audience. The fifth wall separates their world from yours.",
     body: [
       {
         type: "text",
-        content: "A woman in her kitchen, somewhere I have never been. The light from the window is the colour of butter. She opens the oven and a wave of heat lifts the loose hair at her temple. She pulls out a pan — cast iron, blackened, beautiful — and sets it on the stovetop. The camera does not move. It does not need to. I am already there."
+        content: "A woman in her kitchen, dressed to the nines. Every strand of hair tucked into shape. The camera does not move. It does not need to. I am already there."
       },
       {
         type: "text",
-        content: "Then I noticed. There was no logo. There was no music. There was a brand somewhere, but I had to look for it. And by the time I found it — Marc Jacobs — I had already let the woman into my life."
+        content: "Then I noticed. There was no logo. There was no music. There was a brand somewhere, but I had to look for it. By the time I found it — Marc Jacobs — she was already in my kitchen, and I was in hers."
       },
       {
         type: "heading",
