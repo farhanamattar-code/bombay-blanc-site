@@ -14,6 +14,7 @@ const journalPosts = [
     articleImageAlt: "A Mughal archway opens onto a quiet domestic kitchen at dawn — a black cast-iron pan on a stove, copper kettle, indigo cabinets, morning light through a paned window. The Fifth Wall by Hana Mattar, Bombay Blanc.",
     articleImageCaption: "Fifth Wall Fridays · I · The Geography of Intimacy",
     hook: "A woman in her kitchen. The light from the window is the colour of butter. She opens the oven and a wave of heat lifts the loose hair at her temple. I was watching content. And somewhere in the warmth of the pan, a brand had walked into my life.",
+    pullQuote: "The fourth wall separates performer from audience. The fifth wall separates their world from yours.",
     body: [
       {
         type: "text",
@@ -141,6 +142,7 @@ const journalPosts = [
     articleImageAlt: "Mumbai film set crew and Singapore post-production suite — the India-Singapore production corridor",
     articleImageCaption: "Mumbai · Singapore · The corridor between",
     hook: "I walked onto a set in Mumbai at 4pm. The entire set was finished by the next morning. That turnaround does not exist anywhere else I have worked.",
+    pullQuote: "I walked onto a set in Mumbai at 4pm. The entire set was finished by the next morning.",
     body: [
       {
         type: "text",

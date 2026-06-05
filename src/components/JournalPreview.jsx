@@ -80,17 +80,20 @@ export default function JournalPreview() {
                 </p>
               </div>
 
-              {/* Right — pull quote / editorial accent (desktop only —
-                  on mobile it stacks beneath the Fifth Wall card and reads
-                  like part of that post, which is confusing) */}
-              <div
-                className="hidden lg:flex lg:col-span-7 p-8 lg:p-12 items-center"
-                style={{ background: 'rgba(242,235,218,0.03)' }}
-              >
-                <blockquote className="font-serif text-subhead font-normal text-cotton/40 leading-[1.2] tracking-heading" style={{ fontStyle: 'italic' }}>
-                  "I walked onto a set in Mumbai at 4pm. The entire set was finished by the next morning."
-                </blockquote>
-              </div>
+              {/* Right — pull quote from THE FEATURED POST itself.
+                  Desktop only; on mobile this stacks beneath the card and
+                  reads like part of the wrong post. Falls back gracefully
+                  if a post has no pullQuote field. */}
+              {featured.pullQuote && (
+                <div
+                  className="hidden lg:flex lg:col-span-7 p-8 lg:p-12 items-center"
+                  style={{ background: 'rgba(242,235,218,0.03)' }}
+                >
+                  <blockquote className="font-serif text-subhead font-normal text-cotton/40 leading-[1.2] tracking-heading" style={{ fontStyle: 'italic' }}>
+                    "{featured.pullQuote}"
+                  </blockquote>
+                </div>
+              )}
             </div>
           </Link>
         </Reveal>
