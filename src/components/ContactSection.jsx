@@ -187,14 +187,11 @@ export default function ContactSection() {
                     className="h-12 w-full appearance-none border border-khadi bg-transparent px-4 font-serif text-[15px] text-ash outline-none transition-colors focus:border-graphite focus:ring-1 focus:ring-vermilion/50 bg-[url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2212%22%20height%3D%228%22%3E%3Cpath%20d%3D%22M1%201l5%205%205-5%22%20stroke%3D%22%237A7669%22%20fill%3D%22none%22%20stroke-width%3D%221.5%22%2F%3E%3C%2Fsvg%3E')] bg-no-repeat bg-[right_16px_center]"
                   >
                     <option value="" disabled>Choose an option</option>
-                    <option>Brand film / campaign</option>
-                    <option>Scripted short / series</option>
-                    <option>Documentary / unscripted</option>
-                    <option>Hospitality content</option>
-                    <option>Founder film</option>
-                    <option>Digital marketing strategy</option>
-                    <option>Social campaign</option>
-                    <option>Communications design</option>
+                    <option>Brand film / campaign film</option>
+                    <option>Content marketing / social production</option>
+                    <option>Brand strategy / positioning</option>
+                    <option>Vertical content / 9:16</option>
+                    <option>Multiple services</option>
                     <option>Other</option>
                   </select>
                 </div>
