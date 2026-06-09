@@ -12,6 +12,17 @@ const SITE = "https://www.bombayblanc.com";
 const AUTHOR = "Hana Mattar";
 
 const ROUTE_META = {
+  "/journal/the-foreign-kitchen": {
+    title: "The Foreign Kitchen — Bombay Blanc Journal",
+    description:
+      "A Mumbai kitchen in an ad had a copper pendant lamp nobody in Bombay would buy. The Foreign Kitchen on cultural specificity, the briefs that haven't done the homework, and why the Fifth Wall gets bigger when the kitchen is imported.",
+    image: `${SITE}/images/hana-mattar-the-foreign-kitchen-bombay-blanc-og.jpg`,
+    type: "article",
+    author: AUTHOR,
+    published: "2026-06-25",
+    section: "Fifth Wall Fridays",
+    tags: ["the foreign kitchen", "fifth wall", "cultural intimacy", "brand storytelling", "shoot in India", "creative production house"],
+  },
   "/journal/the-fifth-wall": {
     title: "The Fifth Wall — Bombay Blanc Journal",
     description:
