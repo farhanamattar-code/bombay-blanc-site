@@ -26,7 +26,7 @@ const ROUTE_META = {
   "/journal/the-fifth-wall": {
     title: "The Fifth Wall — Bombay Blanc Journal",
     description:
-      "There is a new wall in content. The fourth wall separates performer from audience. The fifth wall separates their world from yours. When it breaks, the brand moves into your life.",
+      "The fourth wall separates performer from audience. The fifth wall separates their world from yours. When it breaks, the brand enters your life.",
     image: `${SITE}/images/hana-mattar-the-fifth-wall-geography-of-intimacy-bombay-blanc-og.jpg`,
     type: "article",
     author: AUTHOR,
@@ -45,10 +45,38 @@ const ROUTE_META = {
     section: "APAC Bridge",
     tags: ["film production India", "production house Singapore", "APAC production", "post production India"],
   },
+  "/work/reebok": {
+    title: "Reebok Brand Film — Southeast Asia | Bombay Blanc",
+    description:
+      "A 60-second brand film for Reebok, directed by Michael Wong. Shot across Southeast Asia in super-8 grain, celebrating real people in real streets. Produced by Bombay Blanc.",
+    image: `${SITE}/images/work/reebok-hero.jpg`,
+    type: "website",
+  },
+  "/work/american-honey": {
+    title: "American Honey — Tubi Vertical Docuseries | Bombay Blanc",
+    description:
+      "American Honey is a 9:16 vertical docuseries for Tubi, directed by Angel Garcia. Four years in the making, following commercial beekeepers across America. Produced by Bombay Blanc.",
+    image: `${SITE}/images/work/american-honey-hero.jpg`,
+    type: "website",
+  },
+  "/work/vanishing-trades": {
+    title: "Vanishing Trades — Discovery Channel | Bombay Blanc",
+    description:
+      "A 20-part series of 60-second cinematic vignettes for Discovery Channel, documenting vanishing trades across South East Asia. Produced by Hana Mattar.",
+    image: `${SITE}/images/work/vanishing-trades-hero.jpg`,
+    type: "website",
+  },
+  "/services": {
+    title: "Services — Bombay Blanc",
+    description:
+      "Brand films, content and social, brand strategy, and vertical-first production. Singapore-headquartered, India-engined creative production.",
+    image: `${SITE}/images/og-image.jpg`,
+    type: "website",
+  },
   "/journal": {
     title: "The Journal — Bombay Blanc",
     description:
-      "Observations from the production floor. Craft, process, and the India-Singapore bridge — from a founder who has been on both sides of the conversation for twenty years.",
+      "Observations from the production floor. Craft, process, and the India-Singapore bridge — from a founder on both sides of the conversation.",
     image: `${SITE}/images/og-image.jpg`,
     type: "website",
   },

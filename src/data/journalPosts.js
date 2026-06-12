@@ -113,7 +113,7 @@ const journalPosts = [
     date: "2026-06-05",
     category: "Fifth Wall Fridays",
     seoTitle: "The Fifth Wall — Bombay Blanc Journal",
-    seoDescription: "There is a new wall in content. The fourth wall separates performer from audience. The fifth wall separates their world from yours. When it breaks, the brand moves into your life.",
+    seoDescription: "The fourth wall separates performer from audience. The fifth wall separates their world from yours. When it breaks, the brand enters your life.",
     seoKeywords: "fifth wall, the fifth wall, content creator audience, brand storytelling, fourth wall, Marc Jacobs content strategy, creator economy, audience theory, film production philosophy, brand film, Bombay Blanc",
     heroImage: "/images/hana-mattar-the-fifth-wall-geography-of-intimacy-bombay-blanc-linkedin.jpg",
     heroAlt: "Hana Mattar — The Fifth Wall, Post I: The Geography of Intimacy. A Mughal archway opens onto a domestic kitchen — the cultural specificity of intimacy that breaks the wall between content and life. A new content framework from Bombay Blanc, a creative production house in Singapore and Bombay.",
