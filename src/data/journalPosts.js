@@ -17,7 +17,11 @@ const journalPosts = [
     body: [
       {
         type: "text",
-        content: "A Mumbai kitchen in an ad I watched last month had a copper pendant lamp over the breakfast counter. Nobody in Bombay would buy that lamp. It cost two hundred dollars at a design store in Toronto, and it was hanging in a flat that was supposed to belong to a young woman who lived with her parents in a three-bedroom in Bandra."
+        content: "A Home Appliances Mother’s Day film says it wants to question who owns housework inside Indian homes. But pause on the kitchen. The question is not only who is doing the work. It is whether the room itself knows whose home it is."
+      },
+      {
+        type: "text",
+        content: "The kitchen in that film had a copper pendant lamp over the breakfast counter. Nobody in Bombay would buy that lamp. It cost two hundred dollars at a design store in Toronto, and it was hanging in a flat that was supposed to belong to a young woman who lived with her parents in a three-bedroom in Bandra."
       },
       {
         type: "text",
