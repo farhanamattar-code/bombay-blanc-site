@@ -64,7 +64,7 @@ export default function BriefSection() {
               src="/images/brief-process.jpg"
               alt="Behind-the-scenes production photograph — editorial filmmaking process at Bombay Blanc"
               className="w-full aspect-video object-cover grayscale"
-              style={{ boxShadow: 'inset 0 0 0 1px rgba(255,255,255,0.55), 0 0 0 1px rgba(255,255,255,0.55)' }}
+              style={{ boxShadow: '0 0 0 2px rgba(255,255,255,0.6)' }}
             />
           </Reveal>
         </div>

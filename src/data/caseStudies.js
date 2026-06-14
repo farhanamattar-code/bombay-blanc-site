@@ -189,7 +189,7 @@ const caseStudies = [
       "The colonial courtyard and fountain of Raffles Hotel, Singapore — evoking the Singapore Tourism Board “Celeb-ru, Singapore” campaign starring Manami Konishi, produced by Bombay Blanc",
     isVertical: true,
     overview:
-      "In 2004, the Singapore Tourism Board set out to sell Singapore to Japan not as a stopover but as a state of mind — “Celeb-ru, Singapore,” an invitation to spend a few days living like the most fortunate version of yourself. Manami Konishi was the face of it: unhurried, luminous, at home in a city that was not hers. Bombay Blanc was the production partner on the ground — the studio that turned a Japanese creative vision into Singapore days that ran on time.",
+      "The Singapore Tourism Board set out to sell Singapore to Japan not as a stopover but as a state of mind — “Celeb-ru, Singapore,” an invitation to spend a few days living like the most fortunate version of yourself. Manami Konishi was the face of it: unhurried, luminous, at home in a city that was not hers. Bombay Blanc was the production partner on the ground — the studio that turned a Japanese creative vision into Singapore days that ran on time.",
     approach:
       "The shoot moved through the city's most composed addresses — high tea at Raffles Hotel, the green hush of Spa Botanica, the skyline from The Ritz-Carlton Millenia, the open light of Sentosa. Bombay Blanc handled the work that never reaches the screen: permits and locations, crew and call sheets, the quiet choreography that lets a visiting team shoot as though they had always known the place. The privilege was watching the Japanese crew light a set — patient, exact, unwilling to settle for a frame that was merely good. The image that stays is the simplest one: a pool filled, surface to edge, with rose petals. Someone's idea of luxury, made real for a camera.",
     pullQuote: "A visiting crew shoots best in a city that has already said yes.",
@@ -197,13 +197,12 @@ const caseStudies = [
       client: "Singapore Tourism Board",
       format: "Destination campaign · Japan market",
       role: "Production Services · Singapore",
-      year: "2004",
     },
     stills: [
       {
         src: "/images/work/celeb-ru-singapore-rose-petal-pool-spa-bath.jpg",
-        alt: "A spa bath filled surface to edge with red rose petals in a tropical garden — the signature image of the Singapore Tourism Board “Celeb-ru, Singapore” campaign, produced by Bombay Blanc",
-        caption: "The signature image · Rose-petal pool",
+        alt: "A spa bath filled surface to edge with red rose petals at Spa Botanica, Singapore — the signature image of the Singapore Tourism Board “Celeb-ru, Singapore” campaign, produced by Bombay Blanc",
+        caption: "The signature image · Spa Botanica",
         aspectRatio: "3 / 4",
       },
       {

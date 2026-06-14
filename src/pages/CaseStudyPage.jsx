@@ -132,7 +132,7 @@ export default function CaseStudyPage() {
     ["Format", meta.format],
     meta.episodes ? ["Episodes", meta.episodes] : meta.director ? ["Director", meta.director] : null,
     ["Role", meta.role],
-    ["Year", meta.year],
+    meta.year ? ["Year", meta.year] : null,
   ].filter(Boolean);
 
   return (
