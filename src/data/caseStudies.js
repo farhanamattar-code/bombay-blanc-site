@@ -107,6 +107,16 @@ const caseStudies = [
     subtitle: "Vanishing Trades. Episode: Rice Farmer, Japan. A 60-second vignette for Discovery Channel.",
     heroImage: "/images/work/vanishing-trades-hero.jpg",
     heroAlt: "Hands on film equipment — Vanishing Trades opening frame, Discovery Channel series produced by Bombay Blanc",
+    // ── Film embed ──
+    // After uploading to Vimeo, paste the numeric video ID below (e.g. "123456789").
+    // Until an id is set, the page falls back to the hero image above — nothing breaks.
+    video: {
+      provider: "vimeo",            // "vimeo" or "youtube"
+      id: "1201117111",             // Vimeo — vimeo.com/1201117111
+      start: 1,                     // begin playback at 1s to skip the opening black frame
+      aspectRatio: "4 / 3",         // native ratio of the 720×540 master — keeps the frame uncropped
+      title: "Vanishing Trades: Rice Farmer, Japan — Discovery Channel",
+    },
     overview:
       "In 2015, Bombay Blanc produced Vanishing Trades for Discovery Channel — a 20-part series of 60-second cinematic vignettes documenting trades disappearing across South East Asia and beyond. Each film was a portrait, not a profile. This episode follows the Japanese rice farmer through archival black-and-white footage: hands in wet earth, thatched roofs against winter light, tools shaped by centuries of repetition.",
     approach:

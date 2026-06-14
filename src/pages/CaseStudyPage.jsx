@@ -79,9 +79,47 @@ export default function CaseStudyPage() {
       mainEntityOfPage: `https://www.bombayblanc.com/work/${study.slug}`,
     });
 
+    // ── VideoObject schema (only when a film is embedded) ──
+    let videoScript = document.querySelector("#casestudy-video-schema");
+    if (study.video && study.video.id) {
+      if (!videoScript) {
+        videoScript = document.createElement("script");
+        videoScript.id = "casestudy-video-schema";
+        videoScript.type = "application/ld+json";
+        document.head.appendChild(videoScript);
+      }
+      const embedUrl =
+        study.video.provider === "youtube"
+          ? `https://www.youtube.com/embed/${study.video.id}`
+          : `https://player.vimeo.com/video/${study.video.id}`;
+      videoScript.textContent = JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "VideoObject",
+        name: study.video.title || study.title.replace(/\n/g, " "),
+        description: study.seoDescription,
+        thumbnailUrl: study.heroImage
+          ? `https://www.bombayblanc.com${study.heroImage}`
+          : undefined,
+        uploadDate: study.metadata.year
+          ? `${study.metadata.year}-01-01`
+          : undefined,
+        embedUrl,
+        director: { "@type": "Person", name: "Hana Mattar" },
+        productionCompany: {
+          "@type": "Organization",
+          name: "Bombay Blanc",
+          url: "https://www.bombayblanc.com",
+        },
+      });
+    } else if (videoScript) {
+      videoScript.remove();
+    }
+
     return () => {
       document.title = "Bombay Blanc — Contained Heat.";
       if (script) script.remove();
+      const vs = document.querySelector("#casestudy-video-schema");
+      if (vs) vs.remove();
     };
   }, [study]);
 
@@ -111,24 +149,59 @@ export default function CaseStudyPage() {
         </Reveal>
       </div>
 
-      {/* ── Hero image — cinematic crop ── */}
-      <Reveal>
-        <div
-          className="section-container mb-16"
-          style={{ maxWidth: "1200px" }}
-        >
-          <div
-            className="relative overflow-hidden border border-khadi"
-            style={{ aspectRatio: "2.39 / 1" }}
-          >
-            <img
-              src={study.heroImage}
-              alt={study.heroAlt}
-              className="absolute inset-0 w-full h-full object-cover"
-            />
+      {/* ── Hero — film embed (if uploaded) or cinematic image crop ── */}
+      {study.video && study.video.id ? (
+        <Reveal>
+          <div className="section-container mb-16" style={{ maxWidth: "1200px" }}>
+            {/* Narrow the frame for tall/4:3 films so they read editorial, not overwhelming */}
+            <div
+              className="mx-auto"
+              style={{
+                maxWidth:
+                  /^(4|3|1)\s*\//.test(study.video.aspectRatio || "16 / 9")
+                    ? "880px"
+                    : "1200px",
+              }}
+            >
+              <div
+                className="relative overflow-hidden border border-khadi bg-dusk"
+                style={{ aspectRatio: study.video.aspectRatio || "16 / 9" }}
+              >
+                <iframe
+                  src={
+                    study.video.provider === "youtube"
+                      ? `https://www.youtube-nocookie.com/embed/${study.video.id}?rel=0&modestbranding=1${study.video.start ? `&start=${study.video.start}` : ""}`
+                      : `https://player.vimeo.com/video/${study.video.id}?title=0&byline=0&portrait=0&color=B5352A&dnt=1${study.video.start ? `#t=${study.video.start}s` : ""}`
+                  }
+                  title={study.video.title || study.title.replace(/\n/g, " ")}
+                  className="absolute inset-0 w-full h-full"
+                  frameBorder="0"
+                  allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+                  allowFullScreen
+                />
+              </div>
+            </div>
           </div>
-        </div>
-      </Reveal>
+        </Reveal>
+      ) : (
+        <Reveal>
+          <div
+            className="section-container mb-16"
+            style={{ maxWidth: "1200px" }}
+          >
+            <div
+              className="relative overflow-hidden border border-khadi"
+              style={{ aspectRatio: "2.39 / 1" }}
+            >
+              <img
+                src={study.heroImage}
+                alt={study.heroAlt}
+                className="absolute inset-0 w-full h-full object-cover"
+              />
+            </div>
+          </div>
+        </Reveal>
+      )}
 
       {/* ── Metadata + Title — two-column split ── */}
       <div className="section-container" style={{ maxWidth: "1200px" }}>
