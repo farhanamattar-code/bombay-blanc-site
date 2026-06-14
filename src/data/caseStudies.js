@@ -110,14 +110,14 @@ const caseStudies = [
     overview:
       "In 2015, Bombay Blanc produced Vanishing Trades for Discovery Channel — a 20-part series of 60-second cinematic vignettes documenting trades disappearing across South East Asia and beyond. Each film was a portrait, not a profile. This episode follows the Japanese rice farmer through archival black-and-white footage: hands in wet earth, thatched roofs against winter light, tools shaped by centuries of repetition.",
     approach:
-      "Hana Mattar researched, wrote, directed, and produced the entire series. The footage was sourced globally — archival film of rice paddies, cherry blossom festivals, farmhouses, and the quiet choreography of manual harvest. The directorial approach was observational, not explanatory: no narration that competed with the image, no score that told the viewer what to feel. Sixty seconds. One trade. The frame did the remembering.",
+      "Hana Mattar produced the entire 20-part series — and wrote, directed, and researched this episode herself. The footage was sourced globally — archival film of rice paddies, cherry blossom festivals, farmhouses, and the quiet choreography of manual harvest. The directorial approach was observational, not explanatory: no narration that competed with the image, no score that told the viewer what to feel. Sixty seconds. One trade. The frame did the remembering.",
     pullQuote: "Some trades do not vanish. They are simply no longer watched.",
     metadata: {
       client: "Discovery Channel",
       network: "Discovery",
       format: "60-second cinematic vignettes",
       episodes: "20",
-      role: "Writer, Director, Producer, Researcher",
+      role: "Producer (series) · Writer & Director (this episode)",
       year: "2015",
     },
     stills: [
@@ -164,7 +164,7 @@ const caseStudies = [
     ],
     seoTitle: "Vanishing Trades — Discovery Channel | Bombay Blanc",
     seoDescription:
-      "A 20-part series of 60-second cinematic vignettes for Discovery Channel, documenting vanishing trades across South East Asia. Written, directed, and produced by Hana Mattar.",
+      "A 20-part series of 60-second cinematic vignettes for Discovery Channel, documenting vanishing trades across South East Asia. Produced by Hana Mattar across the full 20-part series, who also wrote and directed this episode.",
     seoKeywords:
       "vanishing trades, discovery channel, documentary vignettes, cinematic short film, rice farmer japan, bombay blanc, hana mattar, branded content production",
   },
@@ -208,4 +208,16 @@ const caseStudies = [
   },
 ];
 
-export default caseStudies;
+// Display order: STB → Discovery → American Honey (vertical) → Reebok
+const displayOrder = [
+  "celeb-ru-singapore",
+  "vanishing-trades",
+  "american-honey",
+  "reebok",
+];
+
+const orderedCaseStudies = displayOrder
+  .map((slug) => caseStudies.find((cs) => cs.slug === slug))
+  .filter(Boolean);
+
+export default orderedCaseStudies;

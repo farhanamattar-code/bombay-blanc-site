@@ -56,7 +56,13 @@ export default function Nav() {
   return (
     <>
       <nav className="fixed top-0 left-0 right-0 z-50 bg-[#EDE8DF]">
-        <div className="section-container flex items-start justify-between pt-8 pb-6">
+        <div
+          className="flex items-start justify-between pt-8 pb-6"
+          style={{
+            paddingLeft: "clamp(24px, 5vw, 96px)",
+            paddingRight: "clamp(24px, 5vw, 96px)",
+          }}
+        >
           <Link to="/" className="block flex-shrink-0 no-underline">
             <div className="font-serif text-4xl leading-[0.82] tracking-[-0.04em] uppercase text-indigo font-semibold">
               Bombay<br />Blanc

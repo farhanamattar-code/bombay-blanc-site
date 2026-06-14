@@ -10,9 +10,9 @@ function Reveal({ children, className = "" }) {
 }
 
 const CLIENTS = [
-  { name: "IHCL", tracking: "0.18em" },
+  { name: "STB", tracking: "0.18em" },
   { name: "Danone", tracking: "0.14em" },
-  { name: "Whisper", tracking: "0.14em" },
+  { name: "P&G", tracking: "0.14em" },
   { name: "Storm Studios", tracking: "0.14em" },
 ];
 
@@ -22,7 +22,7 @@ export default function ClientStrip() {
       <div className="section-container py-14">
         <Reveal>
           <p className="text-center font-mono text-[10px] tracking-[0.18em] uppercase text-ash mb-8">
-            Trusted by teams at IHCL, and premium brands across SEA
+            Trusted by premium teams across Asia
           </p>
         </Reveal>
         <Reveal>
