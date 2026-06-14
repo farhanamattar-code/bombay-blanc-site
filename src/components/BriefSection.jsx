@@ -32,7 +32,7 @@ export default function BriefSection() {
             </Reveal>
 
             <Reveal>
-              <p className="font-sans text-base leading-[1.68] text-bone/75 mb-7">
+              <p className="font-sans text-base leading-[1.68] text-bone/90 mb-7">
                 Most ambitious brands are not short on assets. They are short on
                 taste, continuity, and a production partner who can hold the line
                 from idea to final cut.
@@ -40,7 +40,7 @@ export default function BriefSection() {
             </Reveal>
 
             <Reveal>
-              <p className="font-sans text-base leading-[1.68] text-bone/75 mb-7">
+              <p className="font-sans text-base leading-[1.68] text-bone/90 mb-7">
                 You have the hotel. The product. The founder story. The wedding world.
                 The cultural signal. But somewhere between the deck, the shoot,
                 the edit, the agency thread, and the eleventh round of feedback,
@@ -49,7 +49,7 @@ export default function BriefSection() {
             </Reveal>
 
             <Reveal>
-              <div className="font-sans text-base leading-[1.72] text-bone/65 space-y-1">
+              <div className="font-sans text-base leading-[1.72] text-bone/85 space-y-1">
                 <p className="pl-6 -indent-6">— One visual world before one hundred assets.</p>
                 <p className="pl-6 -indent-6">— One brand-led point of view before another vendor list.</p>
                 <p className="pl-6 -indent-6">— One production partner who understands craft, budget, and cultural nuance.</p>
@@ -63,7 +63,7 @@ export default function BriefSection() {
             <img
               src="/images/brief-process.jpg"
               alt="Behind-the-scenes production photograph — editorial filmmaking process at Bombay Blanc"
-              className="w-full aspect-video object-cover grayscale contrast-[0.85] opacity-80"
+              className="w-full aspect-video object-cover grayscale"
               style={{ boxShadow: 'inset 0 0 0 1px rgba(255,255,255,0.55), 0 0 0 1px rgba(255,255,255,0.55)' }}
             />
           </Reveal>

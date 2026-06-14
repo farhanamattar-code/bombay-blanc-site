@@ -295,7 +295,7 @@ export default function CaseStudyPage() {
                       src={still.src}
                       alt={still.alt}
                       className="w-full block"
-                      style={{ aspectRatio: "9 / 16", objectFit: "cover" }}
+                      style={{ aspectRatio: still.aspectRatio || "9 / 16", objectFit: "cover" }}
                     />
                   </div>
                   {still.caption && (
@@ -408,7 +408,7 @@ export default function CaseStudyPage() {
                           src={still.src}
                           alt={still.alt}
                           className="w-full block"
-                          style={{ aspectRatio: "9 / 16", objectFit: "cover" }}
+                          style={{ aspectRatio: still.aspectRatio || "9 / 16", objectFit: "cover" }}
                         />
                       </div>
                       {still.caption && (
