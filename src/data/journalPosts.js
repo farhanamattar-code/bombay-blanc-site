@@ -25,10 +25,6 @@ const journalPosts = [
       },
       {
         type: "text",
-        content: "Hook: the lamp."
-      },
-      {
-        type: "text",
         content: "This is the thing I keep coming back to. A globally-positioned brand wanted to feel intimate in India, the production was excellent, and the wall they had wanted to dissolve became visible — because of one detail nobody fact-checked."
       },
       {
