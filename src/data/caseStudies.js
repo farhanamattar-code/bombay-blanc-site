@@ -32,7 +32,7 @@ const caseStudies = [
       {
         src: "/images/work/reebok-bw.jpg",
         alt: "Young woman in black-and-white double exposure against stacked crates — Reebok brand film",
-        caption: "On location · Super-8 · Black and white",
+        caption: "On location · Super-8",
       },
       {
         src: "/images/work/reebok-bicycle.jpg",
@@ -42,7 +42,7 @@ const caseStudies = [
       {
         src: "/images/work/reebok-polo.jpg",
         alt: "Young man in Reebok colour-block polo leaning against a colonial column — Reebok brand film",
-        caption: "Reebok · Directed by Michael Wong · 2015",
+        caption: "Reebok · Directed by Michael Wong",
       },
     ],
     seoTitle: "Reebok Brand Film — Southeast Asia | Bombay Blanc",
@@ -218,7 +218,7 @@ const caseStudies = [
   },
 ];
 
-// Display order: STB → Discovery → American Honey (vertical) → Reebok
+// Display order: Singapore Tourism Board → Discovery → American Honey (vertical) → Reebok
 const displayOrder = [
   "celeb-ru-singapore",
   "vanishing-trades",

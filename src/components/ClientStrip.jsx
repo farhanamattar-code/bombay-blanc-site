@@ -10,7 +10,7 @@ function Reveal({ children, className = "" }) {
 }
 
 const CLIENTS = [
-  { name: "STB", tracking: "0.18em" },
+  { name: "Singapore Tourism Board", tracking: "0.12em" },
   { name: "Danone", tracking: "0.14em" },
   { name: "P&G", tracking: "0.14em" },
   { name: "Storm Studios", tracking: "0.14em" },
