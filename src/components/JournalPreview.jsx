@@ -52,9 +52,11 @@ export default function JournalPreview() {
             className="group block no-underline"
           >
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-0 border border-khadi/20">
-              {/* Left — pull quote accent */}
+              {/* Left — pull quote accent.
+                  Spans the full 12 cols when the featured post has no pullQuote,
+                  so the card never leaves an empty black panel on the right. */}
               <div
-                className="lg:col-span-5 p-8 lg:p-10 flex flex-col justify-between"
+                className={`${featured.pullQuote ? 'lg:col-span-5' : 'lg:col-span-12'} p-8 lg:p-10 flex flex-col justify-between`}
                 style={{ background: 'rgba(242,235,218,0.06)' }}
               >
                 <div>

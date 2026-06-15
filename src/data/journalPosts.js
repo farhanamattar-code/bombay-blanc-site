@@ -6,14 +6,15 @@ const journalPosts = [
     date: "2026-06-25",
     category: "Fifth Wall Fridays",
     seoTitle: "The Foreign Kitchen — Bombay Blanc Journal",
-    seoDescription: "A Mumbai kitchen in an ad had a copper pendant lamp nobody in Bombay would buy. The Foreign Kitchen on cultural specificity, the briefs that haven't done the homework, and why the Fifth Wall gets bigger when the kitchen is imported.",
+    seoDescription: "A Home Appliances Mother's Day film set out to question who owns housework in Indian homes — but its kitchen had a copper pendant lamp nobody in Bombay would buy. The Foreign Kitchen on cultural specificity, the briefs that haven't done the homework, and why the Fifth Wall gets bigger when the kitchen is imported.",
     seoKeywords: "the foreign kitchen, fifth wall, cultural intimacy, brand storytelling India, cultural specificity advertising, Bombay kitchen, brand films Asia, shoot in India, production house Singapore, Bombay Blanc",
     heroImage: "/images/hana-mattar-the-foreign-kitchen-bombay-blanc-og.jpg",
     heroAlt: "Hana Mattar on The Foreign Kitchen — what happens when brands import intimacy across cultures. The Fifth Wall, Post IV. A creative production house in Singapore and Bombay.",
     articleImage: "/images/hana-mattar-the-foreign-kitchen-bombay-kitchen-bombay-blanc.jpg",
     articleImageAlt: "A real Mumbai middle-class kitchen at morning — indigo cabinets, white laminate counter, a steel masala dabba, a blue Pigeon kettle on the stove, tubelight on the ceiling, a clothesline visible through the window. Hana Mattar on The Foreign Kitchen, Bombay Blanc.",
     articleImageCaption: "Fifth Wall Fridays · IV · The Foreign Kitchen",
-    hook: "A Mumbai kitchen in an ad I watched last month had a copper pendant lamp over the breakfast counter. Nobody in Bombay would buy that lamp.",
+    hook: "A Home Appliances Mother's Day film wanted to ask who owns the housework in Indian homes. But the kitchen gave it away — a copper pendant lamp nobody in Bombay would buy.",
+    pullQuote: "There is no universal kitchen. Every kitchen belongs somewhere.",
     body: [
       {
         type: "text",
