@@ -64,9 +64,11 @@ export default function WorkSection() {
               Three forms.<br />One taste.
             </h2>
             <p className="font-sans text-[17px] leading-[1.62] text-indigo max-w-[480px]">
-              Bombay Blanc works across brand, scripted, and unscripted formats —
-              not as separate businesses, but as one studio language applied to
-              different kinds of stories.
+              Brand, scripted, unscripted — one studio language, one signature,
+              three kinds of story. The craft engine runs from India: a generation
+              of post and story talent working at a standard the region doesn&rsquo;t
+              expect. The discipline is a producer&rsquo;s. You see the work — we keep
+              the spreadsheet.
             </p>
           </div>
         </Reveal>
