@@ -74,7 +74,7 @@ export default function Hero() {
           className="font-serif text-subhead font-normal text-indigo mb-6 opacity-0 animate-fadeUp"
           style={{ animationDelay: '0.3s' }}
         >
-          Vertical-first films, campaigns, and stories<br />with world-class restraint.
+          Brand films, scripted and<br />unscripted worlds.
         </p>
 
         <div
@@ -86,10 +86,10 @@ export default function Hero() {
           className="font-sans text-base leading-[1.62] tracking-[-0.01em] text-indigo max-w-[460px] mb-10 opacity-0 animate-fadeUp"
           style={{ animationDelay: '0.4s' }}
         >
-          Bombay Blanc is a 9:16-native production house for luxury
-          hotels and FMCG brands making the next-stage expand into Southeast Asia.
-          We bring world-class craft from Singapore and India, with the
-          taste of a cinematic studio and the operating discipline of a
+          Bombay Blanc is a Singapore creative production house for premium
+          brands expanding across Southeast Asia. The craft engine runs from
+          India — a generation of talent working at world standard — held to
+          the taste of a cinematic studio and the operating discipline of a
           producer-led business.
         </p>
 
@@ -115,14 +115,14 @@ export default function Hero() {
             Contained<br />heat.
           </p>
           <p className="font-serif text-subhead font-normal text-indigo mb-5">
-            Vertical-first films, campaigns, and stories<br />with world-class restraint.
+            Brand films, scripted and<br />unscripted worlds.
           </p>
           <div className="vermilion-line mb-5" />
           <p className="font-sans text-base leading-[1.62] text-indigo mb-8">
-            Bombay Blanc is a 9:16-native production house for luxury
-            hotels and FMCG brands making the next-stage expand into Southeast Asia.
-            We bring world-class craft from Singapore and India, with the
-            taste of a cinematic studio and the operating discipline of a
+            Bombay Blanc is a Singapore creative production house for premium
+            brands expanding across Southeast Asia. The craft engine runs from
+            India — a generation of talent working at world standard — held to
+            the taste of a cinematic studio and the operating discipline of a
             producer-led business.
           </p>
           <div className="flex flex-col gap-5 items-start">
