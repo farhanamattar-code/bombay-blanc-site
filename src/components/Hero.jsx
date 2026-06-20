@@ -74,7 +74,7 @@ export default function Hero() {
           className="font-serif text-subhead font-normal text-indigo mb-6 opacity-0 animate-fadeUp"
           style={{ animationDelay: '0.3s' }}
         >
-          Brand films, scripted and<br />unscripted worlds.
+          Brand films, scripted and unscripted worlds,<br />with tailored restraint.
         </p>
 
         <div
@@ -115,7 +115,7 @@ export default function Hero() {
             Contained<br />heat.
           </p>
           <p className="font-serif text-subhead font-normal text-indigo mb-5">
-            Brand films, scripted and<br />unscripted worlds.
+            Brand films, scripted and unscripted worlds,<br />with tailored restraint.
           </p>
           <div className="vermilion-line mb-5" />
           <p className="font-sans text-base leading-[1.62] text-indigo mb-8">

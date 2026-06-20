@@ -2,7 +2,7 @@ const workPillars = [
   {
     label: "Blanc · Brand",
     title: "Brand films\nand campaigns.",
-    body: "Brand films, campaign films, hospitality and founder stories, and regional launches across Southeast Asia — built for landscape and vertical, cut once for every frame an audience actually holds. The craft engine runs from India; the margin shows up there, never in the pitch.",
+    body: "Brand films, campaign films, hospitality and founder stories, and regional launches across Southeast Asia — built for landscape and vertical, cut once for every frame an audience actually holds. The craft comes from India, from people who could take it anywhere.",
     italic: "For brands that need to be remembered, not merely posted.",
     image: "/images/work-brand.jpg",
     alt: "Brand film production for campaigns across Singapore and Southeast Asia — Bombay Blanc",
