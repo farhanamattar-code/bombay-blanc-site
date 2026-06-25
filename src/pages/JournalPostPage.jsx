@@ -38,7 +38,7 @@ export default function JournalPostPage() {
     setMeta("og:title", post.seoTitle);
     setMeta("og:description", post.seoDescription);
     setMeta("og:type", "article");
-    setMeta("og:url", `https://www.bombayblanc.com/journal/${post.slug}`);
+    setMeta("og:url", `https://www.bombayblanc.com/journal/${post.slug}/`);
     if (post.heroImage) setMeta("og:image", `https://www.bombayblanc.com${post.heroImage}`);
 
     // Canonical
@@ -48,7 +48,7 @@ export default function JournalPostPage() {
       canonical.setAttribute("rel", "canonical");
       document.head.appendChild(canonical);
     }
-    canonical.setAttribute("href", `https://www.bombayblanc.com/journal/${post.slug}`);
+    canonical.setAttribute("href", `https://www.bombayblanc.com/journal/${post.slug}/`);
 
     let script = document.querySelector("#article-schema");
     if (!script) {
@@ -70,7 +70,7 @@ export default function JournalPostPage() {
         url: "https://www.bombayblanc.com",
       },
       image: post.heroImage ? `https://www.bombayblanc.com${post.heroImage}` : undefined,
-      mainEntityOfPage: `https://www.bombayblanc.com/journal/${post.slug}`,
+      mainEntityOfPage: `https://www.bombayblanc.com/journal/${post.slug}/`,
     });
 
     return () => {

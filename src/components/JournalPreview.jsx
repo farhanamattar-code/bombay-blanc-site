@@ -48,7 +48,7 @@ export default function JournalPreview() {
         {/* Featured post — horizontal editorial layout */}
         <Reveal>
           <Link
-            to={`/journal/${featured.slug}`}
+            to={`/journal/${featured.slug}/`}
             className="group block no-underline"
           >
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-0 border border-khadi/20">
@@ -106,7 +106,7 @@ export default function JournalPreview() {
             {rest.map((post) => (
               <Reveal key={post.slug}>
                 <Link
-                  to={`/journal/${post.slug}`}
+                  to={`/journal/${post.slug}/`}
                   className="group block no-underline border border-khadi/20 p-6 lg:p-8 transition-all duration-300 hover:border-khadi/40"
                   style={{ background: 'rgba(242,235,218,0.04)' }}
                 >

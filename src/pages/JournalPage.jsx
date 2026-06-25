@@ -31,7 +31,7 @@ function formatDate(dateStr) {
 function PostCard({ slug, title, subtitle, date, category, hook }) {
   return (
     <Link
-      to={`/journal/${slug}`}
+      to={`/journal/${slug}/`}
       className="group block no-underline border-t border-khadi py-10 lg:py-12 transition-colors duration-300 hover:bg-bone/30"
     >
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-start">
