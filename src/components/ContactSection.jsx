@@ -273,10 +273,20 @@ export default function ContactSection() {
               <p className="text-center font-mono text-[11px] tracking-[0.18em] uppercase text-ash">
                 Prefer email?{" "}
                 <a
-                  href="mailto:studio@bombayblanc.com"
+                  href="mailto:hana@bombayblanc.com"
                   className="text-indigo no-underline border-b border-khadi pb-px transition-colors duration-300 hover:border-vermilion"
                 >
-                  studio@bombayblanc.com
+                  hana@bombayblanc.com
+                </a>
+              </p>
+
+              <p className="text-center font-mono text-[11px] tracking-[0.18em] uppercase text-ash mt-3">
+                Or call{" "}
+                <a
+                  href="tel:+6596621046"
+                  className="text-indigo no-underline border-b border-khadi pb-px transition-colors duration-300 hover:border-vermilion"
+                >
+                  +65 9662 1046
                 </a>
               </p>
             </div>
