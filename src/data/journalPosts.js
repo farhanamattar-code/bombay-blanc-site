@@ -1,5 +1,109 @@
 const journalPosts = [
   {
+    slug: "cinema-kept-breaking-the-wrong-wall",
+    title: "Cinema Kept Breaking the Wrong Wall",
+    subtitle: "For a century the avant-garde chased realness on screen. The phone dissolved the wall they were reaching for — by accident, in a decade.",
+    date: "2026-07-17",
+    category: "Fifth Wall Fridays",
+    seoTitle: "Cinema Kept Breaking the Wrong Wall — The Fifth Wall | Bombay Blanc",
+    seoDescription: "Direct address, cinéma vérité, Dogme 95 — a century of film tried to break through to real and never dissolved the fifth wall. The creator economy did it in a decade. Hana Mattar, Bombay Blanc.",
+    seoKeywords: "fifth wall, fourth wall, Dogme 95, cinéma vérité, direct address, breaking the fourth wall, authenticity in film, creator economy, brand film, film history, Hana Mattar, Bombay Blanc",
+    heroImage: "/images/hana-mattar-the-fifth-wall-cinema-kept-breaking-the-wrong-wall-bombay-blanc.jpg",
+    heroAlt: "A pale Mughal cusped stone archway set into a cream plaster wall opens onto a dark, empty cinema — rows of velvet seats facing a single luminous blank screen. Cinema Kept Breaking the Wrong Wall, The Fifth Wall by Hana Mattar, Bombay Blanc, a creative production house in Singapore and Bombay.",
+    articleImage: "/images/hana-mattar-the-fifth-wall-cinema-kept-breaking-the-wrong-wall-bombay-blanc.jpg",
+    articleImageAlt: "A pale Mughal-style cusped stone archway in a cream plaster wall, opening onto a dark cinema auditorium of empty velvet seats facing one bright blank screen — the fourth wall, framed. Cinema Kept Breaking the Wrong Wall by Hana Mattar, Bombay Blanc.",
+    articleImageCaption: "Fifth Wall Fridays · The Wall Cinema Kept Facing",
+    hook: "The first time a film looked back at me, I was maybe eleven, and I stayed exactly where I was. A character turned, spoke straight to the camera, told me a secret the others could not hear. It was thrilling. It was also, plainly, still a film. I was still in my seat.",
+    pullQuote: "A century of film tried to break through to the audience. It never once got into their life. It could not. It was a place you went.",
+    body: [
+      {
+        type: "text",
+        content: "The first time a film looked back at me, I was maybe eleven, and I stayed exactly where I was. A character turned, spoke straight to the camera, told me a secret the others in the scene could not hear. It was thrilling — the little conspiracy of it, the sense of being chosen. It was also, plainly, still a film. The lights would come up. I would still be in my seat. The wink did not move me an inch."
+      },
+      {
+        type: "text",
+        content: "I have thought about that seat for most of my working life, because film has spent a century trying to get me out of it. And I have started to believe it was reaching for the wrong wall the entire time."
+      },
+      {
+        type: "heading",
+        content: "A hundred years of reaching"
+      },
+      {
+        type: "text",
+        content: "The direct address came first — the actor breaking the fourth wall, turning to acknowledge that we were there. Godard did it to remind you the film was a film. Later it became charm: a boy in Chicago skips school and narrates his day to you like an old friend. The device is old and it still works, but notice what it actually does. It does not remove the wall. It leans on it. The whole pleasure depends on the wall being there to lean across."
+      },
+      {
+        type: "text",
+        content: "Then came the hunger for real. Cinéma vérité took the camera off the tripod and into the street, handheld, breathing, chasing life as it happened. The documentary impulse, the shaky frame, the available light — all of it an argument that the constructed image had been lying and here, at last, was the truth. It was braver work. It was still projected onto a screen in a dark room full of strangers who had bought a ticket to be there."
+      },
+      {
+        type: "heading",
+        content: "The Scandinavians tried to write it into law"
+      },
+      {
+        type: "text",
+        content: "The most honest attempt I know came out of the part of the world that later taught me restraint. In 1995 a handful of Danish directors signed a manifesto they called the Vow of Chastity — Dogme 95. No artificial light. No props brought in. No music laid over. The camera in the hand, the location as it was found. A set of rules whose entire purpose was to strip away the artifice and leave only the real."
+      },
+      {
+        type: "text",
+        content: "I came to those films in my Oslo years, when I was learning that discipline and truth were the same muscle. And they are extraordinary — raw, close, unbearable in the right way. But here is the thing the manifesto could not legislate. You still watched them. You still sat down, in a cinema or later on a laptop propped on your knees, in a space you had entered on purpose to receive a film. The chastity was real. The wall was untouched."
+      },
+      {
+        type: "heading",
+        content: "The wrong wall"
+      },
+      {
+        type: "text",
+        content: "Every one of these was an assault on the fourth wall, or on the artifice inside the frame. Break the fourth wall and the performer admits you exist. Strip the artifice and the image swears it is not lying. Both are moves made inside the cinema — inside the agreement that this is a place you have gone to watch something."
+      },
+      {
+        type: "text",
+        content: "The fifth wall is not inside that agreement. It is the agreement itself. It is the fact of the marked-off place — the ticket, the dark room, the screen at the far end, the understanding that when this is over you will get up and return to your life. A century of film tried to break through to the audience. It never once got into their life. It could not. It was a place you went."
+      },
+      {
+        type: "heading",
+        content: "What the phone did by accident"
+      },
+      {
+        type: "text",
+        content: "The thing the avant-garde could not do with a manifesto, a piece of glass in your palm did without meaning to. The screen stopped being a destination. It came home, into the hand, into the bed, into the queue for coffee. And the work stopped being a place you went and became a thing that arrived — in the same scroll, the same posture, the same idle Tuesday minute as a message from your sister."
+      },
+      {
+        type: "text",
+        content: "That is the whole event. Not a more convincing performance. No performance-space at all. Dogme wanted to shoot life as found; the phone made the watching itself something found, mid-life, unbidden. The creator economy inherited a screen with no marked-off room around it and simply made work for the world as it actually is now — and in doing so dissolved, in about a decade, the wall a hundred years of cinema had been leaning on the whole time."
+      },
+      {
+        type: "heading",
+        content: "The joke the craft is left holding"
+      },
+      {
+        type: "text",
+        content: "There is an irony in this that I cannot stop turning over. Dogme banned the lights to reach the truth. The fifth wall asks for every light you own — and then asks you to hide all of them. The old avant-garde chased realness by subtraction: take away the artifice and truth remains. The work we make now reaches it by concealment: build the whole apparatus, light the room three days early, dress a counter with three days of real use, and leave not one visible seam."
+      },
+      {
+        type: "text",
+        content: "Realness stopped being a rulebook you obey and became a seam you hide. That is a harder discipline, not an easier one. It is the discipline behind everything we make — rich material, controlled by craft; heat, held by restraint. The film has to feel like life and be made like film, because the person watching is not in a cinema forgiving your seams in the dark. They are in their kitchen, and a false note in a kitchen is not a flaw in a film. It is a stranger who lied to get in."
+      },
+      {
+        type: "heading",
+        content: "An inquiry, not a verdict"
+      },
+      {
+        type: "text",
+        content: "I do not think cinema failed. I think it was reaching, for a hundred years, for something it could not touch from inside the room it was made in — and the reaching produced most of what I love about the form. What unsettles me is that the thing it reached for arrived by accident, carried in on a device nobody designed to be intimate, and landed in our lives before most of us had decided whether we wanted it there."
+      },
+      {
+        type: "text",
+        content: "So the question I am sitting with this Friday is not how to break the wall. It is already gone. It is what we owe the room now that we are inside it uninvited, holding the most skilled work of our lives and asked to make it look like nothing at all. That feels like the beginning of a longer argument. I will keep pulling on it."
+      }
+    ],
+    cta: {
+      text: "Want to see the fifth wall built rather than argued?",
+      link: "/#work",
+      linkText: "See the films.",
+    },
+  },
+  {
     slug: "the-fifth-wall",
     title: "The Fifth Wall",
     subtitle: "The most produced content in the world right now is the content that looks the least produced.",
