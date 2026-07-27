@@ -1,5 +1,165 @@
 const journalPosts = [
   {
+    slug: "two-walls-and-a-lie",
+    title: "Two Walls and a Lie",
+    subtitle: "Two of the greatest films ever made do opposite things with the walls between us — and between them, they explain why so much of what we now call intimacy is neither intimate nor true.",
+    date: "2026-07-27",
+    category: "Fifth Wall Fridays",
+    seoTitle: "Two Walls and a Lie — In the Mood for Love, Dogville and the Fifth Wall | Bombay Blanc",
+    seoDescription: "One film keeps every wall and breaks your heart; one strips them all and tells the truth. What In the Mood for Love and Dogville reveal about intimacy, exposure, and why the creator economy's proximity is felt as a lie. Hana Mattar, Bombay Blanc.",
+    seoKeywords: "the fifth wall, two walls and a lie, In the Mood for Love, Dogville, Wong Kar Wai, Lars von Trier, creator economy, intimacy, authenticity, restraint, contained heat, brand film, Hana Mattar, Bombay Blanc",
+    heroImage: "/images/two-walls-and-a-lie-fifth-wall-bombay-blanc.jpg",
+    heroAlt: "A woman alone at the end of a dim, warm-lit corridor seen through a doorway, one red note at the window — intimacy and the fifth wall. Two Walls and a Lie by Hana Mattar, Bombay Blanc, a creative production house in Singapore and Bombay.",
+    articleImage: "/images/two-walls-and-a-lie-fifth-wall-bombay-blanc.jpg",
+    articleImageAlt: "A solitary woman at the far end of a dim, warm corridor, framed through a doorway with a single note of red at the window — the fifth wall and the art of withholding. Two Walls and a Lie by Hana Mattar, Bombay Blanc.",
+    articleImageCaption: "The Fifth Wall · Two Walls and a Lie",
+    hook: "For eight weeks I wrote, every Friday, about a wall I named the fifth. Two films I have loved for years finally showed me what the story was — and they showed it by doing exactly opposite things. One keeps every wall standing and breaks your heart. The other tears every wall down and tells the truth.",
+    pullQuote: "Keep every wall, or strip them all. The lie is the thing in the middle, doing neither, and calling the exposure intimacy.",
+    body: [
+      {
+        type: "text",
+        content: "For eight weeks I wrote, every Friday, about a wall I named the fifth. The fourth wall is the old one — the invisible pane between the stage and the seats, the one an actor breaks when they turn and look at you. The fifth is the one I kept working on: not the divide between the performer and the audience, but the divide between the world of the work and the world of your life. For a century, advertising lived on the far side of it. You knew the billboard was a billboard. You agreed to pretend it wasn't."
+      },
+      {
+        type: "text",
+        content: "The series began as a worry — the creator economy had dissolved that wall, and I thought the dissolving was the whole story. It isn't. Two films I have loved for years finally showed me what the story actually is, and they showed it to me by doing exactly opposite things. One keeps every wall standing and breaks your heart. The other tears every wall down and tells the truth. Set them side by side and they draw the shape of the thing I had been circling all along."
+      },
+      {
+        type: "heading",
+        content: "The wall kept"
+      },
+      {
+        type: "text",
+        content: "Start with In the Mood for Love. Wong Kar Wai's film about two people whose spouses are having an affair, and who fall for each other, and who never let it happen. You have probably seen it. What you remember is not an event, because there are almost none. What you remember is the ache — the way you watch Chow and Su through doorways, around corners, in mirrors, down a narrow corridor to a noodle stall in the rain. There is always something between you and them. A frame, a curtain, a wall. They never touch. The faces of their spouses are never shown. And it is the most intimate film I know."
+      },
+      {
+        type: "text",
+        content: "Sit with that, because it undoes something. The most intimate film ever made never lets you in. It withholds almost everything. And the withholding is not the obstacle to the intimacy — the withholding is the intimacy."
+      },
+      {
+        type: "text",
+        content: "Here is what took me twenty years and this film to understand. The two walls are not one wall and its absence. They are two different walls, and they move independently. The fourth wall is physical: am I addressed, am I let in, is the camera looking at me. The fifth wall is quieter: is the interior world of the work allowed into my life. Wong keeps the fourth wall thick — you are always barred, always peering through something — and he quietly takes the fifth wall down, so that you leave the cinema carrying two strangers' longing as if it were your own. Barred at the body. Let in at the soul."
+      },
+      {
+        type: "text",
+        content: "You can watch the two walls come apart in things far smaller than films. A late-night phone call can be all access and no intimacy — you talk for an hour and hang up knowing nothing that matters. A letter, found years later, can be pure interior and no access at all — the person long gone, the wall absolute, and still it lets you further in than the call ever did. Access and closeness were never the same axis. We only began to confuse them when the camera moved into the kitchen."
+      },
+      {
+        type: "text",
+        content: "That is one way to make a person feel something true. Keep every wall up, withhold almost everything, and let the ache do the rest. It is the discipline of restraint, and when it works there is nothing more powerful in the medium."
+      },
+      {
+        type: "heading",
+        content: "The wall stripped"
+      },
+      {
+        type: "text",
+        content: "Now the opposite. Dogville, Lars von Trier, 2003. If In the Mood for Love is all walls, Dogville is none. Von Trier shot it on a black soundstage and drew the entire town in chalk on the floor. Elm Street is a line. The houses are outlines. There are no doors — actors mime the latches — no roofs, barely any props, and a camera hung in the gods so that you look down and see every house at once, everyone, all the time, with nowhere to hide. A narrator talks you through it. You are never once allowed to forget you are watching a construction."
+      },
+      {
+        type: "text",
+        content: "And here is the thing my whole framework had missed until I put the two films together. Stripping every wall does not produce intimacy. It produces the opposite. Total access, total visibility — and what you feel is not closeness. It is exposure. Judgment. Dread. You watch a town reveal its cruelty precisely because there is no set left to hide behind, and by the end you are implicated in it. Von Trier removes the walls not to let you in, but to leave the story nowhere to run."
+      },
+      {
+        type: "text",
+        content: "The story itself is simple and merciless. A woman on the run — Grace — is taken in by the town, and the town, discovering slowly that it can, turns her shelter into servitude and then into something worse, each new cruelty a little smaller than the last, so that no one ever has to catch the moment they became cruel. You watch it from above, through walls that aren't there, and the missing walls are the whole design: nobody in Dogville can say they didn't see, and neither can you. The overhead shot makes a jury of the audience. When the reckoning comes — and it comes total — it does not land as spectacle. It lands as verdict."
+      },
+      {
+        type: "text",
+        content: "There is a lineage to this, and it is worth naming, because it tells you the bare stage is a discipline and not a gimmick. Thornton Wilder emptied the stage of scenery in Our Town in 1938 — a ladder for a second storey, mimed soda fountains, the dead speaking plainly from chairs — and found that stripping the props let the plain enormity of ordinary life through. Brecht broke the illusion on purpose so an audience would think instead of swoon. Von Trier is working in that tradition, not against craft but with a different theory of it: that the illusion is sometimes the thing standing between the audience and the truth, and the honest move is to take it away."
+      },
+      {
+        type: "text",
+        content: "So Dogville confirms the same law as In the Mood for Love, from the far side of it: access is not intimacy. Wong proves that withholding creates closeness. Von Trier proves that total visibility does not — it creates truth, which is a colder and more frightening thing. Two films, opposite methods, the same underlying law."
+      },
+      {
+        type: "text",
+        content: "And there is a second inversion, sharper than the first. In the Mood for Love hides its craft to feel real — the lighting that took three days to look like an accident, the frame built to look found. Dogville does the reverse: it flaunts its artifice to feel true. Chalk. Lines on a floor. The most obviously fake set in serious cinema, and it lands harder than any built town could, because you cannot be seduced by production values into missing what the people are doing to each other. The faker the set looks, the more naked the truth. Von Trier understood that sometimes the honest move is to refuse the illusion entirely — to let the seams show so nothing can be smuggled past you."
+      },
+      {
+        type: "heading",
+        content: "Two masters, one discipline"
+      },
+      {
+        type: "text",
+        content: "It would be easy to call these opposite films, and leave it there. They are not opposite in the way that matters. They are opposite in method and identical in rigour. Von Trier's chalk lines are as controlled, as authored, as ruthless a decision as Wong's doorframes. Neither man is improvising. Both are making a precise choice about what to reveal, and when, and both are willing to give up almost everything else to protect that choice. Wong gives up plot, event, resolution. Von Trier gives up the entire physical world. What they keep is authorship — the discipline of deciding."
+      },
+      {
+        type: "text",
+        content: "So there are, it turns out, two honest ways to make a stranger feel something real. You can keep every wall up and let them ache toward what you withhold. Or you can strip every wall down and force them to see what they would rather not. Restraint, or exposure. Intimacy, or truth. Both are hard. Both are decisions. Both are the opposite of easy."
+      },
+      {
+        type: "text",
+        content: "I have spent twenty years on the other side of this, on production floors, and the decision is the part no one puts on a call sheet. Anyone can light a room. The judgement is knowing which lamp to kill so the frame keeps its secret — or, on another job, knowing to take the gels down and the polish off and let the thing look plain, because plain is what is true here. The tools change; that choice does not. It is the same muscle whether you are hiding the craft like Wong or refusing it like von Trier: the discipline of deciding what the audience does not get to have."
+      },
+      {
+        type: "heading",
+        content: "The lie in the middle"
+      },
+      {
+        type: "text",
+        content: "Which brings me, at last, to what the eight Fridays were really about — and to the thing that has been bothering me since I started the series without being able to name it."
+      },
+      {
+        type: "text",
+        content: "The creator economy took the form of Dogville and the deception of In the Mood for Love, and kept the discipline of neither."
+      },
+      {
+        type: "text",
+        content: "Look at what a feed actually is. The walls are gone — the work arrives in your kitchen, on your Tuesday morning, a hand's width from your face, shot like a life rather than a campaign. That is Dogville's move: tear down the set, remove the distance, show everything. But the craft is hidden, not flaunted — the ring light dressed to look like a window, the second take that looks like the first, the room styled to look unstyled. That is In the Mood for Love's move: hide the making so the thing feels real. Take the exposure of one and the concealment of the other, drop the authorship that made either of them honest, and you get the defining texture of the modern feed: proximity that reads, eventually and unfailingly, as a lie."
+      },
+      {
+        type: "text",
+        content: "It is not intimate. There is no withheld interior to ache toward; there is a very good impression of one. And it is not true. There is no refusal of illusion; there is illusion pretending it isn't there. It reaches for Wong's closeness by von Trier's method and, having borrowed the surface of both and the discipline of neither, it arrives at neither. It arrives at content."
+      },
+      {
+        type: "text",
+        content: "This is the through-line under everything I wrote this summer. When I said intimacy is local — that what reads as intimate in Helsinki reads as unfinished in Mumbai — I was describing walls built to different heights in different places. When I said the brand is a guest now, no longer the host, I was describing a wall that has to be lowered on purpose, by trust, rather than a door anyone may walk through by right. When I traced how cinema kept breaking the fourth wall — the direct address, the handheld chase after something real — I had not yet seen that the films that stay with us longest never broke it at all. They kept it, and lowered the other one. Or, like Dogville, they tore it down and told you exactly what they were doing. Every one of those posts was reaching for the same point from a different side. Restraint or exposure. The lie is doing neither."
+      },
+      {
+        type: "text",
+        content: "For anyone building a brand, this is not film theory — it is the most expensive mistake in the room. Brands now buy proximity by the yard: more posts, more access, more of the founder's face, more behind-the-scenes, on the belief that closeness is a volume you can purchase. It isn't. Proximity without a withheld interior is not intimacy; it is a stranger who walked into your kitchen and started performing. The audience feels the difference long before they can name it, and what they eventually name it is inauthentic — the most expensive word a brand can earn, because it cannot be bought back. The brands that will be trusted are the ones that have chosen a discipline: what to withhold so that what they show finally lands, or what to lay bare so that nothing they show can be doubted. Everything in between is spend."
+      },
+      {
+        type: "heading",
+        content: "What this asks of anyone making work now"
+      },
+      {
+        type: "text",
+        content: "I am writing this in a year when the tools can manufacture the look of intimacy on demand. That is not a side note; it is the reason this matters more than it did. When the seam is invisible and the access is total and a machine can produce the unmade bed and the found light and the candid glance in seconds, the thing that turns rare — and therefore valuable — is the decision. Not the execution. The decision."
+      },
+      {
+        type: "text",
+        content: "I will say the awkward part plainly, because I would rather say it than have it said for me: the image at the top of this essay was made by AI. On purpose. It is a demonstration, not a shortcut. The seam is already gone; machines are getting very good at the surface of intimacy. And that is exactly why the human part — knowing what to withhold, or what to expose, and having the nerve to give up everything else to protect that choice — stops being the craft of the hand and becomes the whole of the job. AI got good at the surface. The craft is knowing what to keep off it, or what to strip away to reveal. When the making is free, the deciding is everything."
+      },
+      {
+        type: "text",
+        content: "There is a version of my own studio's belief buried in these two films, and I would rather name it than smuggle it in. In the Mood for Love is contained heat — the reddest, most longing film ever shot, and nothing is permitted to happen. Heat, held by restraint. Dogville is almost pure restraint with the heat stripped out — white chalk on a black stage, clinical, exposed, true. Between them they hold the tension the studio is built on, abundance and discipline, and they prove that the discipline is the part that can't be faked. A machine can generate the abundance now. It cannot generate the decision about what to leave out."
+      },
+      {
+        type: "heading",
+        content: "The close"
+      },
+      {
+        type: "text",
+        content: "So the series ends where it did not expect to. Not on a warning about a wall coming down, but on a quieter, harder question — the only kind worth ending on. Everyone can reach everyone now. Every wall is ours to raise or lower at will. Which means the real question is no longer how much can I show you — we have answered that; the answer is everything. It is this: what am I willing to keep back, or willing to lay bare, on purpose — so that the little I reveal, or the everything I refuse to dress up, means something when it reaches you."
+      },
+      {
+        type: "text",
+        content: "Keep every wall, or strip them all. Both are honest. Both are yours to choose. The lie is the thing in the middle, doing neither, and calling the exposure intimacy."
+      },
+      {
+        type: "text",
+        content: "— Hana Mattar, Bombay Blanc. This is where the Fifth Wall series comes together. Thank you for arguing with me. The Fifth Wall will return."
+      }
+    ],
+    cta: {
+      text: "Want to see the fifth wall built rather than argued?",
+      link: "/#work",
+      linkText: "See the films.",
+    },
+  },
+  {
     slug: "cinema-kept-breaking-the-wrong-wall",
     title: "Cinema Kept Breaking the Wrong Wall",
     subtitle: "For a century the avant-garde chased realness on screen. The phone dissolved the wall they were reaching for — by accident, in a decade.",
